@@ -136,7 +136,6 @@
             this.Controls.Add(this.linkRegister);
             this.Name = "Form1";
             this.Text = "SendFoodz Login";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
