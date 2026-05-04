@@ -70,13 +70,7 @@ namespace LogIn1
             txtConfirmPassword.UseSystemPasswordChar = !show;
         }
 
-        private void btnBackToLogin_Click(object sender, EventArgs e)
-        {
-            Form1 loginForm = new Form1();
-            loginForm.Show();
 
-            this.Hide();
-        }
 
         private void SignUp_Load(object sender, EventArgs e)
         {
@@ -86,6 +80,14 @@ namespace LogIn1
         private void SignUp_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBackToLogin_Click_1(object sender, EventArgs e)
+        {
+            Form1 loginForm = new Form1();
+            loginForm.Show();
+
+            this.Hide();
         }
     }
 }
