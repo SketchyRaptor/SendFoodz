@@ -14,7 +14,7 @@ namespace LogIn1
     {
         public static List<Account> accounts = new List<Account>()
         {
-            new Account { Username = "User123", Password = "123", Role = "Customer" }
+            new Account { Username = "User123", Password = "123", Role = "Customers" }
         };
 
         public Form1()
