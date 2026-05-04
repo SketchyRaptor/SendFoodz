@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LogIn1
-{
+{   
+    
     public partial class CustomerDashboard : Form
     {
         public CustomerDashboard()
@@ -18,6 +19,16 @@ namespace LogIn1
         }
 
         private void CustomerDashboard_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void welcomeMessageTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
