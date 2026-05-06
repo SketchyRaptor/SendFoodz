@@ -52,6 +52,12 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChowkingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChowkingMenu.Designer.cs">
+      <DependentUpon>ChowkingMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="JollibeeMenu.Designer.cs">
       <DependentUpon>JollibeeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="McdoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="McdoMenu.Designer.cs">
+      <DependentUpon>McdoMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="PlaceOrder.cs">
       <SubType>Form</SubType>
@@ -93,6 +105,9 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChowkingMenu.resx">
+      <DependentUpon>ChowkingMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerDashboard.resx">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JollibeeMenu.resx">
       <DependentUpon>JollibeeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="McdoMenu.resx">
+      <DependentUpon>McdoMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlaceOrder.resx">
       <DependentUpon>PlaceOrder.cs</DependentUpon>
@@ -169,6 +187,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Trash Decal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\384547699_1521965211913975_3601350127719588962_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\393441813_305023295650801_5856665953481699226_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\395517735_817801410097474_2498383284007517753_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\682794330_1281813117492175_644626612769313241_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\685708735_3503893506424551_5048291314755121252_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\684158566_1740812020664177_4007561215611831389_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

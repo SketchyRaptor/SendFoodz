@@ -22,8 +22,8 @@ namespace first
         {
             this.Close();
 
-           // customerDashBoard cdb = new customerDashBoard();
-           // cdb.Show();
+           CustomerDashboard cdb = new CustomerDashboard();
+           cdb.Show();
 
             this.Hide();
         }
@@ -38,17 +38,15 @@ namespace first
 
         private void mViewButton_Click(object sender, EventArgs e)
         {
-           // mcdoMenu mm = new mcdoMenu();
-           // mm.Show();
-
+           McdoMenu mm = new McdoMenu();
+            mm.Show();
             this.Hide();
         }
 
         private void cViewButton_Click(object sender, EventArgs e)
         {
-            //chowkingMenu cm = new chowkingMenu();
-            //cm.Show();
-
+            ChowkingMenu cm = new ChowkingMenu();
+            cm.Show();
             this.Hide();
         }
 

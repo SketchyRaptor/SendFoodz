@@ -1,6 +1,6 @@
 ﻿namespace LogIn1
 {
-    partial class JollibeeMenu
+    partial class McdoMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.button21 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.button20 = new System.Windows.Forms.Button();
@@ -103,11 +102,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -163,18 +163,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(329, 774);
             this.panel12.TabIndex = 2;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.Gray;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(21, 682);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(291, 69);
-            this.button21.TabIndex = 6;
-            this.button21.Text = "BACK";
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // pictureBox11
             // 
@@ -943,29 +931,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Controls.Add(this.label3);
-            this.panel14.Controls.Add(this.label1);
-            this.panel14.Controls.Add(this.label2);
-            this.panel14.Location = new System.Drawing.Point(71, 36);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1310, 67);
-            this.panel14.TabIndex = 2;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::LogIn1.Properties.Resources.ChatGPT_Image_Apr_17__2026__02_55_18_PM;
-            this.pictureBox12.Location = new System.Drawing.Point(15, 8);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(109, 50);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 4;
-            this.pictureBox12.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -977,30 +942,65 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Choose your favorite food";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(525, -6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 49);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Mcdo";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(119, 12);
+            this.label1.Location = new System.Drawing.Point(117, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "SendFoodZ";
             // 
-            // label2
+            // button21
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(505, -1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 49);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Jollibee";
+            this.button21.BackColor = System.Drawing.Color.Gray;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Location = new System.Drawing.Point(21, 682);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(291, 69);
+            this.button21.TabIndex = 6;
+            this.button21.Text = "BACK";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // JollibeeMenu
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.pictureBox12);
+            this.panel14.Controls.Add(this.label3);
+            this.panel14.Controls.Add(this.label1);
+            this.panel14.Controls.Add(this.label2);
+            this.panel14.Location = new System.Drawing.Point(71, 37);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1310, 67);
+            this.panel14.TabIndex = 1;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::LogIn1.Properties.Resources.ChatGPT_Image_Apr_17__2026__02_55_18_PM;
+            this.pictureBox12.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(109, 50);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 4;
+            this.pictureBox12.TabStop = false;
+            // 
+            // McdoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1008,9 +1008,9 @@
             this.ClientSize = new System.Drawing.Size(1480, 944);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel1);
-            this.Name = "JollibeeMenu";
+            this.Name = "McdoMenu";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.JollibeeMenu_Load);
+            this.Load += new System.EventHandler(this.McdoMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -1128,11 +1128,11 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }

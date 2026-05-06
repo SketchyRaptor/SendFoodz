@@ -1,6 +1,6 @@
 ﻿namespace LogIn1
 {
-    partial class JollibeeMenu
+    partial class ChowkingMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -951,10 +951,10 @@
             this.panel14.Controls.Add(this.label3);
             this.panel14.Controls.Add(this.label1);
             this.panel14.Controls.Add(this.label2);
-            this.panel14.Location = new System.Drawing.Point(71, 36);
+            this.panel14.Location = new System.Drawing.Point(72, 36);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1310, 67);
-            this.panel14.TabIndex = 2;
+            this.panel14.TabIndex = 3;
             // 
             // pictureBox12
             // 
@@ -994,13 +994,13 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(505, -1);
+            this.label2.Location = new System.Drawing.Point(484, -7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 49);
+            this.label2.Size = new System.Drawing.Size(218, 49);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Jollibee";
+            this.label2.Text = "Chowking";
             // 
-            // JollibeeMenu
+            // ChowkingMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1008,9 +1008,9 @@
             this.ClientSize = new System.Drawing.Size(1480, 944);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel1);
-            this.Name = "JollibeeMenu";
+            this.Name = "ChowkingMenu";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.JollibeeMenu_Load);
+            this.Load += new System.EventHandler(this.ChowkingMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

@@ -63,6 +63,66 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _384547699_1521965211913975_3601350127719588962_n {
+            get {
+                object obj = ResourceManager.GetObject("384547699_1521965211913975_3601350127719588962_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _393441813_305023295650801_5856665953481699226_n {
+            get {
+                object obj = ResourceManager.GetObject("393441813_305023295650801_5856665953481699226_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _395517735_817801410097474_2498383284007517753_n {
+            get {
+                object obj = ResourceManager.GetObject("395517735_817801410097474_2498383284007517753_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _682794330_1281813117492175_644626612769313241_n {
+            get {
+                object obj = ResourceManager.GetObject("682794330_1281813117492175_644626612769313241_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _684158566_1740812020664177_4007561215611831389_n {
+            get {
+                object obj = ResourceManager.GetObject("684158566_1740812020664177_4007561215611831389_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _685708735_3503893506424551_5048291314755121252_n {
+            get {
+                object obj = ResourceManager.GetObject("685708735_3503893506424551_5048291314755121252_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Burger_Steaks_and_Mushroom_Gravy__Jollibee_Style__Vegan_ {
             get {
                 object obj = ResourceManager.GetObject("Burger Steaks and Mushroom Gravy (Jollibee Style, Vegan)", resourceCulture);

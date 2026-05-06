@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace LogIn1
 {
-    public partial class JollibeeMenu : Form
+    public partial class ChowkingMenu : Form
     {
-        public JollibeeMenu()
+        public ChowkingMenu()
         {
             InitializeComponent();
         }
 
-        private void JollibeeMenu_Load(object sender, EventArgs e)
+        private void ChowkingMenu_Load(object sender, EventArgs e)
         {
 
         }
