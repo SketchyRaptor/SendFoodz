@@ -1,6 +1,6 @@
 ﻿namespace LogIn1
 {
-    partial class Menu
+    partial class JollibeeMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -970,7 +970,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Menu_Load);
+            this.Load += new System.EventHandler(this.JollibeeMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -1008,7 +1008,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
 
         }
 

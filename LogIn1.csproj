@@ -64,11 +64,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="JollibeeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="JollibeeMenu.Designer.cs">
+      <DependentUpon>JollibeeMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="PlaceOrder.cs">
       <SubType>Form</SubType>
@@ -78,6 +78,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="restaurantMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restaurantMenu.Designer.cs">
+      <DependentUpon>restaurantMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,8 +99,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="JollibeeMenu.resx">
+      <DependentUpon>JollibeeMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlaceOrder.resx">
       <DependentUpon>PlaceOrder.cs</DependentUpon>
@@ -109,6 +115,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="restaurantMenu.resx">
+      <DependentUpon>restaurantMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +136,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ChatGPT Image Apr 17, 2026, 02_55_18 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jollibee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu - Fast Food Delivery &amp; Pickup _ Jollibee USA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burger Steaks and Mushroom Gravy %28Jollibee Style, Vegan%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yumburger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jollibee Menu %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jollibee Menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jollibee Việt Nam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jollibee%27s New Products for 2012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash Decal.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

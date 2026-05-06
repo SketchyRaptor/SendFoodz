@@ -345,6 +345,7 @@
             this.orderButton.TabIndex = 0;
             this.orderButton.Text = "Order";
             this.orderButton.UseVisualStyleBackColor = false;
+            this.orderButton.Click += new System.EventHandler(this.orderButton_Click);
             // 
             // panel5
             // 

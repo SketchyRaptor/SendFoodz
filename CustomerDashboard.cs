@@ -1,4 +1,5 @@
-﻿using System;
+﻿using first;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,13 @@ namespace LogIn1
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void orderButton_Click(object sender, EventArgs e)
+        {
+            restaurantMenu resto = new restaurantMenu();
+            resto.Show();
+            this.Hide();
         }
     }
 }
