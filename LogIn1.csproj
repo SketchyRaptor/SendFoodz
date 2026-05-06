@@ -206,5 +206,35 @@
   <ItemGroup>
     <None Include="Resources\684158566_1740812020664177_4007561215611831389_n.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu - Fast Food Delivery &amp; Pickup _ Jollibee USA %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cheeseburger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Big Mac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McDelivery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\原味麥脆鷄腿 _ Original Crispy Chicken Legs %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McDonald%27s French Fries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chowking Siomai Chao Fan Family Platter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chowking Siomai Chao Fan.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
