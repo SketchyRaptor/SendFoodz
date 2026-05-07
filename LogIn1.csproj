@@ -88,6 +88,12 @@
     <Compile Include="MerchantDashBoard.Designer.cs">
       <DependentUpon>MerchantDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MerchantProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MerchantProducts.Designer.cs">
+      <DependentUpon>MerchantProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlaceOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MerchantDashBoard.resx">
       <DependentUpon>MerchantDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MerchantProducts.resx">
+      <DependentUpon>MerchantProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlaceOrder.resx">
       <DependentUpon>PlaceOrder.cs</DependentUpon>
