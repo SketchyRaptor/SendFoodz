@@ -46,13 +46,13 @@ namespace LogIn1
                     // Check user role and navigate to appropriate dashboard
                     if (acc.Role == "Merchant")
                     {
-                        MerchantDashboard merchantDashboard = new MerchantDashboard();
+                        MerchantDashBoard merchantDashboard = new MerchantDashBoard();
                         merchantDashboard.Show();
                     }
                     else if (acc.Role == "Rider")
                     {
-                        RiderDashboard riderDashboard = new RiderDashboard();
-                        riderDashboard.Show();
+                       // RiderDashboard riderDashboard = new RiderDashboard();
+                       // riderDashboard.Show();
                     }
                     else // Customer
                     {
