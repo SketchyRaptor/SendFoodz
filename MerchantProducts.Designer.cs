@@ -35,8 +35,8 @@
             this.grpProductInfo = new System.Windows.Forms.GroupBox();
             this.btnSelectImage = new System.Windows.Forms.Button();
             this.lblImageName = new System.Windows.Forms.Label();
-            this.txtProductDescription = new System.Windows.Forms.TextBox();
-            this.lblDescription = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.lblPrice = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.lblProductName = new System.Windows.Forms.Label();
             this.btnAddProduct = new System.Windows.Forms.Button();
@@ -126,8 +126,8 @@
             this.grpProductInfo.Controls.Add(this.txtQuantity);
             this.grpProductInfo.Controls.Add(this.pictureBox1);
             this.grpProductInfo.Controls.Add(this.lblImageName);
-            this.grpProductInfo.Controls.Add(this.txtProductDescription);
-            this.grpProductInfo.Controls.Add(this.lblDescription);
+            this.grpProductInfo.Controls.Add(this.txtPrice);
+            this.grpProductInfo.Controls.Add(this.lblPrice);
             this.grpProductInfo.Controls.Add(this.txtProductName);
             this.grpProductInfo.Controls.Add(this.lblProductName);
             this.grpProductInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
@@ -161,23 +161,23 @@
             this.lblImageName.TabIndex = 4;
             this.lblImageName.Text = "No image selected";
             // 
-            // txtProductDescription
+            // txtPrice
             // 
-            this.txtProductDescription.Location = new System.Drawing.Point(15, 120);
-            this.txtProductDescription.Multiline = true;
-            this.txtProductDescription.Name = "txtProductDescription";
-            this.txtProductDescription.Size = new System.Drawing.Size(360, 30);
-            this.txtProductDescription.TabIndex = 3;
+            this.txtPrice.Location = new System.Drawing.Point(15, 120);
+            this.txtPrice.Multiline = true;
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(360, 30);
+            this.txtPrice.TabIndex = 3;
             // 
-            // lblDescription
+            // lblPrice
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblDescription.Location = new System.Drawing.Point(15, 100);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(100, 20);
-            this.lblDescription.TabIndex = 2;
-            this.lblDescription.Text = "Description";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.lblPrice.Location = new System.Drawing.Point(15, 100);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(49, 20);
+            this.lblPrice.TabIndex = 2;
+            this.lblPrice.Text = "Price";
             // 
             // txtProductName
             // 
@@ -228,7 +228,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(684, 420);
+            this.dataGridView1.Size = new System.Drawing.Size(950, 420);
             this.dataGridView1.TabIndex = 0;
             // 
             // colName
@@ -317,8 +317,8 @@
         private System.Windows.Forms.GroupBox grpProductInfo;
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.TextBox txtProductName;
-        private System.Windows.Forms.TextBox txtProductDescription;
-        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblImageName;
         private System.Windows.Forms.Button btnSelectImage;
         private System.Windows.Forms.Button btnAddProduct;

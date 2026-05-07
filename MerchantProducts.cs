@@ -21,8 +21,9 @@ namespace LogIn1
         {
             InitializeComponent();
             InitializeUI();
+            
         }
-
+       
         private void InitializeUI()
         {
             // Main Panel
