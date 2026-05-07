@@ -84,7 +84,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(10, 10);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(180, 37);
+            this.lblTitle.Size = new System.Drawing.Size(223, 37);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Add Products";
             // 
@@ -98,13 +98,13 @@
             // 
             // splitterMain.Panel1
             // 
-            this.splitterMain.Panel1.Controls.Add(this.pnlInputForm);
             this.splitterMain.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitterMain.Panel1.Controls.Add(this.pnlInputForm);
             // 
             // splitterMain.Panel2
             // 
-            this.splitterMain.Panel2.Controls.Add(this.dgvProducts);
             this.splitterMain.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitterMain.Panel2.Controls.Add(this.dgvProducts);
             this.splitterMain.Size = new System.Drawing.Size(1380, 840);
             this.splitterMain.SplitterDistance = 420;
             this.splitterMain.TabIndex = 0;
@@ -208,7 +208,7 @@
             this.lblImageName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.lblImageName.Location = new System.Drawing.Point(15, 155);
             this.lblImageName.Name = "lblImageName";
-            this.lblImageName.Size = new System.Drawing.Size(130, 20);
+            this.lblImageName.Size = new System.Drawing.Size(140, 20);
             this.lblImageName.TabIndex = 4;
             this.lblImageName.Text = "No image selected";
             // 
@@ -226,7 +226,7 @@
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.lblDescription.Location = new System.Drawing.Point(15, 100);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(87, 20);
+            this.lblDescription.Size = new System.Drawing.Size(100, 20);
             this.lblDescription.TabIndex = 2;
             this.lblDescription.Text = "Description";
             // 
@@ -234,7 +234,7 @@
             // 
             this.txtProductName.Location = new System.Drawing.Point(15, 60);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(360, 26);
+            this.txtProductName.Size = new System.Drawing.Size(360, 30);
             this.txtProductName.TabIndex = 1;
             // 
             // lblProductName
@@ -243,7 +243,7 @@
             this.lblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.lblProductName.Location = new System.Drawing.Point(15, 40);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(103, 20);
+            this.lblProductName.Size = new System.Drawing.Size(122, 20);
             this.lblProductName.TabIndex = 0;
             this.lblProductName.Text = "Product Name";
             // 
@@ -319,7 +319,6 @@
             this.colImage.MinimumWidth = 100;
             this.colImage.Name = "colImage";
             this.colImage.ReadOnly = true;
-            this.colImage.Width = 100;
             // 
             // colEdit
             // 
@@ -361,7 +360,6 @@
             this.splitterMain.ResumeLayout(false);
             this.pnlInputForm.ResumeLayout(false);
             this.grpFoodOptions.ResumeLayout(false);
-            this.pnlFoodOptionsContainer.ResumeLayout(false);
             this.grpProductInfo.ResumeLayout(false);
             this.grpProductInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProductImage)).EndInit();

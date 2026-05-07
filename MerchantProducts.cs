@@ -272,6 +272,25 @@ namespace LogIn1
             }
         }
 
+        private void MerchantProducts_Resize(object sender, EventArgs e)
+        {
+            // Adjust splitter distance proportionally when form is resized
+            if (this.WindowState != FormWindowState.Minimized)
+            {
+                // Keep left panel at 30% of form width, but not less than 350px and not more than 500px
+                int newSplitterDistance = (int)(this.ClientSize.Width * 0.30);
+                newSplitterDistance = Math.Max(350, Math.Min(500, newSplitterDistance));
+
+                if (splitterMain.SplitterDistance != newSplitterDistance)
+                {
+                    splitterMain.SplitterDistance = newSplitterDistance;
+                }
+
+                // Refresh the layout
+                this.Refresh();
+            }
+        }
+
         private void ClearForm_Click(object sender, EventArgs e)
         {
             TextBox nameTextBox = this.Controls.Find("productNameTextBox", true).FirstOrDefault() as TextBox;
