@@ -30,7 +30,7 @@ namespace first
 
         private void jViewButton_Click(object sender, EventArgs e)
         {
-            JollibeeMenu jm = new JollibeeMenu();
+            MenuThree jm = new MenuThree();
             jm.Show();
 
             this.Hide();
@@ -38,14 +38,14 @@ namespace first
 
         private void mViewButton_Click(object sender, EventArgs e)
         {
-           McdoMenu mm = new McdoMenu();
+           MenuTwo mm = new MenuTwo();
             mm.Show();
             this.Hide();
         }
 
         private void cViewButton_Click(object sender, EventArgs e)
         {
-            ChowkingMenu cm = new ChowkingMenu();
+            MenuOne cm = new MenuOne();
             cm.Show();
             this.Hide();
         }

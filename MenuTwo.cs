@@ -11,21 +11,21 @@ using System.Windows.Forms;
 
 namespace LogIn1
 {
-    public partial class JollibeeMenu : Form
+    public partial class MenuTwo : Form
     {
-        public JollibeeMenu()
+        public MenuTwo()
         {
             InitializeComponent();
         }
 
-        private void JollibeeMenu_Load(object sender, EventArgs e)
+        private void McdoMenu_Load(object sender, EventArgs e)
         {
 
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            restaurantMenu rm = new restaurantMenu();
+            restaurantMenu rm  = new restaurantMenu();
             rm.Show();
             this.Hide();
         }

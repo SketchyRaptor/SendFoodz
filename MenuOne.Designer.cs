@@ -1,6 +1,6 @@
 ﻿namespace LogIn1
 {
-    partial class JollibeeMenu
+    partial class MenuOne
     {
         /// <summary>
         /// Required designer variable.
@@ -107,7 +107,7 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblRestoName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -297,9 +297,9 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(34, 7);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(156, 20);
+            this.label21.Size = new System.Drawing.Size(132, 20);
             this.label21.TabIndex = 11;
-            this.label21.Text = "9. Chickenjoy Solo";
+            this.label21.Text = "9. Buchi Platter";
             // 
             // textBox9
             // 
@@ -369,11 +369,11 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(34, 9);
+            this.label20.Location = new System.Drawing.Point(24, 9);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(177, 20);
+            this.label20.Size = new System.Drawing.Size(186, 20);
             this.label20.TabIndex = 10;
-            this.label20.Text = "8. Chocolate Sundae";
+            this.label20.Text = "8. Halo-Halo Supreme";
             // 
             // textBox8
             // 
@@ -445,9 +445,9 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(45, 7);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(120, 20);
+            this.label19.Size = new System.Drawing.Size(164, 20);
             this.label19.TabIndex = 9;
-            this.label19.Text = "7. Super Meal";
+            this.label19.Text = "7. 3-PC Siopao Box";
             // 
             // textBox7
             // 
@@ -519,9 +519,9 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(32, 11);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(168, 20);
+            this.label18.Size = new System.Drawing.Size(139, 20);
             this.label18.TabIndex = 8;
-            this.label18.Text = "6. Peach Mango Pie";
+            this.label18.Text = "6. Fried Chicken";
             // 
             // textBox6
             // 
@@ -591,11 +591,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(48, 10);
+            this.label17.Location = new System.Drawing.Point(23, 10);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(151, 20);
+            this.label17.Size = new System.Drawing.Size(200, 20);
             this.label17.TabIndex = 7;
-            this.label17.Text = "5. Bucket of Fries";
+            this.label17.Text = "5. Fried Chicken Lauriat";
             // 
             // textBox5
             // 
@@ -667,9 +667,9 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(24, 10);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(184, 20);
+            this.label16.Size = new System.Drawing.Size(155, 20);
             this.label16.TabIndex = 6;
-            this.label16.Text = "4. Yumburger w/ Fries";
+            this.label16.Text = "4. Spicy Chao Fan";
             // 
             // textBox4
             // 
@@ -741,9 +741,9 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(38, 5);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(135, 20);
+            this.label15.Size = new System.Drawing.Size(148, 20);
             this.label15.TabIndex = 7;
-            this.label15.Text = "3. Burger Steak";
+            this.label15.Text = "3. Pork Chao Fan";
             // 
             // button6
             // 
@@ -813,11 +813,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(48, 6);
+            this.label14.Location = new System.Drawing.Point(35, 5);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 20);
+            this.label14.Size = new System.Drawing.Size(171, 20);
             this.label14.TabIndex = 6;
-            this.label14.Text = "2. Spaghetti";
+            this.label14.Text = "2. Siomai Chao Fan ";
             // 
             // button4
             // 
@@ -861,7 +861,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::LogIn1.Properties.Resources.Menu___Fast_Food_Delivery___Pickup___Jollibee_USA;
+            this.pictureBox2.Image = global::LogIn1.Properties.Resources.Chowking_Siomai_Chao_Fan;
             this.pictureBox2.Location = new System.Drawing.Point(16, 29);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(209, 120);
@@ -887,11 +887,11 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(45, 7);
+            this.label13.Location = new System.Drawing.Point(32, 7);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 20);
+            this.label13.Size = new System.Drawing.Size(197, 20);
             this.label13.TabIndex = 5;
-            this.label13.Text = "1. Chicken Bucket";
+            this.label13.Text = "1. Siomai Family Platter";
             // 
             // textBox1
             // 
@@ -935,7 +935,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::LogIn1.Properties.Resources.Jollibee;
+            this.pictureBox1.Image = global::LogIn1.Properties.Resources.Chowking_Siomai_Chao_Fan_Family_Platter;
             this.pictureBox1.Location = new System.Drawing.Point(16, 30);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(205, 121);
@@ -950,11 +950,11 @@
             this.panel14.Controls.Add(this.pictureBox12);
             this.panel14.Controls.Add(this.label3);
             this.panel14.Controls.Add(this.label1);
-            this.panel14.Controls.Add(this.label2);
-            this.panel14.Location = new System.Drawing.Point(71, 36);
+            this.panel14.Controls.Add(this.lblRestoName);
+            this.panel14.Location = new System.Drawing.Point(72, 36);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1310, 67);
-            this.panel14.TabIndex = 2;
+            this.panel14.TabIndex = 3;
             // 
             // pictureBox12
             // 
@@ -989,18 +989,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "SendFoodZ";
             // 
-            // label2
+            // lblRestoName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(505, -1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 49);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Jollibee";
+            this.lblRestoName.AutoSize = true;
+            this.lblRestoName.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestoName.ForeColor = System.Drawing.Color.Red;
+            this.lblRestoName.Location = new System.Drawing.Point(484, -7);
+            this.lblRestoName.Name = "lblRestoName";
+            this.lblRestoName.Size = new System.Drawing.Size(218, 49);
+            this.lblRestoName.TabIndex = 2;
+            this.lblRestoName.Text = "Chowking";
             // 
-            // JollibeeMenu
+            // MenuOne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1008,9 +1008,9 @@
             this.ClientSize = new System.Drawing.Size(1480, 944);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel1);
-            this.Name = "JollibeeMenu";
+            this.Name = "MenuOne";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.JollibeeMenu_Load);
+            this.Load += new System.EventHandler(this.ChowkingMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -1062,7 +1062,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
@@ -1111,7 +1110,6 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
@@ -1133,6 +1131,8 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRestoName;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

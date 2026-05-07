@@ -1,6 +1,6 @@
 ﻿namespace LogIn1
 {
-    partial class McdoMenu
+    partial class MenuTwo
     {
         /// <summary>
         /// Required designer variable.

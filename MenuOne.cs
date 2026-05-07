@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace LogIn1
 {
-    public partial class ChowkingMenu : Form
+    public partial class MenuOne : Form
     {
-        public ChowkingMenu()
+        public MenuOne()
         {
             InitializeComponent();
         }

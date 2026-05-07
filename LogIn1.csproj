@@ -52,11 +52,11 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChowkingMenu.cs">
+    <Compile Include="MenuOne.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChowkingMenu.Designer.cs">
-      <DependentUpon>ChowkingMenu.cs</DependentUpon>
+    <Compile Include="MenuOne.Designer.cs">
+      <DependentUpon>MenuOne.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerDashboard.cs">
       <SubType>Form</SubType>
@@ -70,17 +70,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="JollibeeMenu.cs">
+    <Compile Include="MenuThree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="JollibeeMenu.Designer.cs">
-      <DependentUpon>JollibeeMenu.cs</DependentUpon>
+    <Compile Include="MenuThree.Designer.cs">
+      <DependentUpon>MenuThree.cs</DependentUpon>
     </Compile>
-    <Compile Include="McdoMenu.cs">
+    <Compile Include="MenuTwo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="McdoMenu.Designer.cs">
-      <DependentUpon>McdoMenu.cs</DependentUpon>
+    <Compile Include="MenuTwo.Designer.cs">
+      <DependentUpon>MenuTwo.cs</DependentUpon>
     </Compile>
     <Compile Include="PlaceOrder.cs">
       <SubType>Form</SubType>
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChowkingMenu.resx">
-      <DependentUpon>ChowkingMenu.cs</DependentUpon>
+    <EmbeddedResource Include="MenuOne.resx">
+      <DependentUpon>MenuOne.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDashboard.resx">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>
@@ -114,11 +114,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JollibeeMenu.resx">
-      <DependentUpon>JollibeeMenu.cs</DependentUpon>
+    <EmbeddedResource Include="MenuThree.resx">
+      <DependentUpon>MenuThree.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="McdoMenu.resx">
-      <DependentUpon>McdoMenu.cs</DependentUpon>
+    <EmbeddedResource Include="MenuTwo.resx">
+      <DependentUpon>MenuTwo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlaceOrder.resx">
       <DependentUpon>PlaceOrder.cs</DependentUpon>
