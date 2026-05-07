@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,8 +43,22 @@ namespace LogIn1
                 {
                     MessageBox.Show("login succesfull");
 
-                    CustomerDashboard dashboard = new CustomerDashboard();
-                    dashboard.Show();
+                    // Check user role and navigate to appropriate dashboard
+                    if (acc.Role == "Merchant")
+                    {
+                        MerchantDashboard merchantDashboard = new MerchantDashboard();
+                        merchantDashboard.Show();
+                    }
+                    else if (acc.Role == "Rider")
+                    {
+                        RiderDashboard riderDashboard = new RiderDashboard();
+                        riderDashboard.Show();
+                    }
+                    else // Customer
+                    {
+                        CustomerDashboard customerDashboard = new CustomerDashboard();
+                        customerDashboard.Show();
+                    }
 
                     this.Hide();
                     return;
@@ -58,15 +72,13 @@ namespace LogIn1
         {
             public string Username { get; set; }
             public string Password { get; set; }
-            public string Role { get; set; } // "Customer" or "Rider"
+            public string Role { get; set; } // "Customer", "Merchant", or "Rider"
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
         }
-
-
 
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -75,6 +87,7 @@ namespace LogIn1
 
             this.Hide();
         }
+
         //load riders
         public static List<string> riders = new List<string>()
         {
@@ -82,6 +95,7 @@ namespace LogIn1
             "Rider002",
             "Rider003"
         };
+
         //load orders
         public static List<string> pendingOrders = new List<string>()
         {
