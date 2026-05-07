@@ -41,73 +41,73 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblNine = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.lblPriceNine = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblEigth = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.lblPriceEigth = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblSeven = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lblPriceSeven = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblSix = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.lblPriceSix = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblFive = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.lblPriceFive = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblFour = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lblPriceFour = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblThree = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblPriceThree = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblTwo = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblPriceTwo = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblOne = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPriceOne = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblRestoName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -116,25 +116,25 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -280,26 +280,26 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label21);
+            this.panel11.Controls.Add(this.pictureBox9);
+            this.panel11.Controls.Add(this.lblNine);
             this.panel11.Controls.Add(this.textBox9);
             this.panel11.Controls.Add(this.button17);
             this.panel11.Controls.Add(this.button18);
-            this.panel11.Controls.Add(this.label12);
-            this.panel11.Controls.Add(this.pictureBox9);
+            this.panel11.Controls.Add(this.lblPriceNine);
             this.panel11.Location = new System.Drawing.Point(569, 519);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(241, 209);
             this.panel11.TabIndex = 6;
             // 
-            // label21
+            // lblNine
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(34, 7);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 20);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "9. Buchi Platter";
+            this.lblNine.AutoSize = true;
+            this.lblNine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNine.Location = new System.Drawing.Point(34, 7);
+            this.lblNine.Name = "lblNine";
+            this.lblNine.Size = new System.Drawing.Size(29, 20);
+            this.lblNine.TabIndex = 11;
+            this.lblNine.Text = "9. ";
             // 
             // textBox9
             // 
@@ -330,50 +330,39 @@
             this.button18.Text = "-";
             this.button18.UseVisualStyleBackColor = false;
             // 
-            // label12
+            // lblPriceNine
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(76, 151);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 20);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "₱120.00";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Image = global::LogIn1.Properties.Resources.download;
-            this.pictureBox9.Location = new System.Drawing.Point(16, 30);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(205, 118);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
+            this.lblPriceNine.AutoSize = true;
+            this.lblPriceNine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceNine.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceNine.Name = "lblPriceNine";
+            this.lblPriceNine.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceNine.TabIndex = 1;
+            this.lblPriceNine.Text = "₱";
             // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label20);
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Controls.Add(this.lblEigth);
             this.panel10.Controls.Add(this.textBox8);
             this.panel10.Controls.Add(this.button15);
             this.panel10.Controls.Add(this.button16);
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Controls.Add(this.lblPriceEigth);
             this.panel10.Location = new System.Drawing.Point(299, 519);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(241, 209);
             this.panel10.TabIndex = 6;
             // 
-            // label20
+            // lblEigth
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(24, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(186, 20);
-            this.label20.TabIndex = 10;
-            this.label20.Text = "8. Halo-Halo Supreme";
+            this.lblEigth.AutoSize = true;
+            this.lblEigth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEigth.Location = new System.Drawing.Point(24, 9);
+            this.lblEigth.Name = "lblEigth";
+            this.lblEigth.Size = new System.Drawing.Size(29, 20);
+            this.lblEigth.TabIndex = 10;
+            this.lblEigth.Text = "8. ";
             // 
             // textBox8
             // 
@@ -404,50 +393,39 @@
             this.button16.Text = "-";
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // label11
+            // lblPriceEigth
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(76, 151);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 20);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "₱120.00";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Image = global::LogIn1.Properties.Resources.Jollibee_s_New_Products_for_2012;
-            this.pictureBox8.Location = new System.Drawing.Point(16, 30);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(205, 118);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
+            this.lblPriceEigth.AutoSize = true;
+            this.lblPriceEigth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceEigth.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceEigth.Name = "lblPriceEigth";
+            this.lblPriceEigth.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceEigth.TabIndex = 1;
+            this.lblPriceEigth.Text = "₱";
             // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label19);
+            this.panel9.Controls.Add(this.pictureBox7);
+            this.panel9.Controls.Add(this.lblSeven);
             this.panel9.Controls.Add(this.textBox7);
             this.panel9.Controls.Add(this.button13);
             this.panel9.Controls.Add(this.button14);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.pictureBox7);
+            this.panel9.Controls.Add(this.lblPriceSeven);
             this.panel9.Location = new System.Drawing.Point(26, 519);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(241, 209);
             this.panel9.TabIndex = 6;
             // 
-            // label19
+            // lblSeven
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(45, 7);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(164, 20);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "7. 3-PC Siopao Box";
+            this.lblSeven.AutoSize = true;
+            this.lblSeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeven.Location = new System.Drawing.Point(45, 7);
+            this.lblSeven.Name = "lblSeven";
+            this.lblSeven.Size = new System.Drawing.Size(29, 20);
+            this.lblSeven.TabIndex = 9;
+            this.lblSeven.Text = "7. ";
             // 
             // textBox7
             // 
@@ -478,50 +456,39 @@
             this.button14.Text = "-";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // label10
+            // lblPriceSeven
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(76, 151);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "₱120.00";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Image = global::LogIn1.Properties.Resources.Jollibee_Việt_Nam;
-            this.pictureBox7.Location = new System.Drawing.Point(16, 30);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(205, 118);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
+            this.lblPriceSeven.AutoSize = true;
+            this.lblPriceSeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceSeven.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceSeven.Name = "lblPriceSeven";
+            this.lblPriceSeven.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceSeven.TabIndex = 1;
+            this.lblPriceSeven.Text = "₱";
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.lblSix);
             this.panel8.Controls.Add(this.textBox6);
             this.panel8.Controls.Add(this.button11);
             this.panel8.Controls.Add(this.button12);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.pictureBox6);
+            this.panel8.Controls.Add(this.lblPriceSix);
             this.panel8.Location = new System.Drawing.Point(569, 289);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(241, 209);
             this.panel8.TabIndex = 6;
             // 
-            // label18
+            // lblSix
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(32, 11);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(139, 20);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "6. Fried Chicken";
+            this.lblSix.AutoSize = true;
+            this.lblSix.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSix.Location = new System.Drawing.Point(32, 11);
+            this.lblSix.Name = "lblSix";
+            this.lblSix.Size = new System.Drawing.Size(29, 20);
+            this.lblSix.TabIndex = 8;
+            this.lblSix.Text = "6. ";
             // 
             // textBox6
             // 
@@ -552,50 +519,39 @@
             this.button12.Text = "-";
             this.button12.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // lblPriceSix
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(76, 151);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "₱120.00";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Image = global::LogIn1.Properties.Resources.Jollibee_Menu;
-            this.pictureBox6.Location = new System.Drawing.Point(16, 33);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(205, 115);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.lblPriceSix.AutoSize = true;
+            this.lblPriceSix.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceSix.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceSix.Name = "lblPriceSix";
+            this.lblPriceSix.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceSix.TabIndex = 1;
+            this.lblPriceSix.Text = "₱";
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label17);
+            this.panel7.Controls.Add(this.pictureBox5);
+            this.panel7.Controls.Add(this.lblFive);
             this.panel7.Controls.Add(this.textBox5);
             this.panel7.Controls.Add(this.button9);
             this.panel7.Controls.Add(this.button10);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.pictureBox5);
+            this.panel7.Controls.Add(this.lblPriceFive);
             this.panel7.Location = new System.Drawing.Point(299, 289);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(241, 209);
             this.panel7.TabIndex = 6;
             // 
-            // label17
+            // lblFive
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(23, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(200, 20);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "5. Fried Chicken Lauriat";
+            this.lblFive.AutoSize = true;
+            this.lblFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFive.Location = new System.Drawing.Point(23, 10);
+            this.lblFive.Name = "lblFive";
+            this.lblFive.Size = new System.Drawing.Size(24, 20);
+            this.lblFive.TabIndex = 7;
+            this.lblFive.Text = "5.";
             // 
             // textBox5
             // 
@@ -626,50 +582,39 @@
             this.button10.Text = "-";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // label8
+            // lblPriceFive
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(76, 151);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "₱120.00";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Image = global::LogIn1.Properties.Resources.Jollibee_Menu__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(16, 33);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(205, 115);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.lblPriceFive.AutoSize = true;
+            this.lblPriceFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceFive.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceFive.Name = "lblPriceFive";
+            this.lblPriceFive.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceFive.TabIndex = 1;
+            this.lblPriceFive.Text = "₱";
             // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label16);
+            this.panel6.Controls.Add(this.pictureBox4);
+            this.panel6.Controls.Add(this.lblFour);
             this.panel6.Controls.Add(this.textBox4);
             this.panel6.Controls.Add(this.button7);
             this.panel6.Controls.Add(this.button8);
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.pictureBox4);
+            this.panel6.Controls.Add(this.lblPriceFour);
             this.panel6.Location = new System.Drawing.Point(26, 289);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(241, 209);
             this.panel6.TabIndex = 5;
             // 
-            // label16
+            // lblFour
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(24, 10);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(155, 20);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "4. Spicy Chao Fan";
+            this.lblFour.AutoSize = true;
+            this.lblFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFour.Location = new System.Drawing.Point(24, 10);
+            this.lblFour.Name = "lblFour";
+            this.lblFour.Size = new System.Drawing.Size(29, 20);
+            this.lblFour.TabIndex = 6;
+            this.lblFour.Text = "4. ";
             // 
             // textBox4
             // 
@@ -700,50 +645,39 @@
             this.button8.Text = "-";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // lblPriceFour
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(76, 151);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "₱120.00";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = global::LogIn1.Properties.Resources.Yumburger;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 33);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(205, 118);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.lblPriceFour.AutoSize = true;
+            this.lblPriceFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceFour.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceFour.Name = "lblPriceFour";
+            this.lblPriceFour.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceFour.TabIndex = 1;
+            this.lblPriceFour.Text = "₱";
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.lblThree);
             this.panel5.Controls.Add(this.button6);
             this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.button5);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.lblPriceThree);
             this.panel5.Location = new System.Drawing.Point(569, 50);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(241, 209);
             this.panel5.TabIndex = 2;
             // 
-            // label15
+            // lblThree
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(38, 5);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(148, 20);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "3. Pork Chao Fan";
+            this.lblThree.AutoSize = true;
+            this.lblThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThree.Location = new System.Drawing.Point(38, 5);
+            this.lblThree.Name = "lblThree";
+            this.lblThree.Size = new System.Drawing.Size(29, 20);
+            this.lblThree.TabIndex = 7;
+            this.lblThree.Text = "3. ";
             // 
             // button6
             // 
@@ -774,50 +708,39 @@
             this.button5.Text = "-";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // lblPriceThree
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(76, 151);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 20);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "₱120.00";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = global::LogIn1.Properties.Resources.Burger_Steaks_and_Mushroom_Gravy__Jollibee_Style__Vegan_;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 29);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(205, 120);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.lblPriceThree.AutoSize = true;
+            this.lblPriceThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceThree.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceThree.Name = "lblPriceThree";
+            this.lblPriceThree.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceThree.TabIndex = 3;
+            this.lblPriceThree.Text = "₱";
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.lblTwo);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.textBox2);
             this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.lblPriceTwo);
             this.panel4.Location = new System.Drawing.Point(299, 50);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(241, 209);
             this.panel4.TabIndex = 1;
             // 
-            // label14
+            // lblTwo
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(35, 5);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(171, 20);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "2. Siomai Chao Fan ";
+            this.lblTwo.AutoSize = true;
+            this.lblTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTwo.Location = new System.Drawing.Point(35, 5);
+            this.lblTwo.Name = "lblTwo";
+            this.lblTwo.Size = new System.Drawing.Size(29, 20);
+            this.lblTwo.TabIndex = 6;
+            this.lblTwo.Text = "2. ";
             // 
             // button4
             // 
@@ -848,50 +771,39 @@
             this.button3.Text = "-";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // lblPriceTwo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(76, 151);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "₱120.00";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::LogIn1.Properties.Resources.Chowking_Siomai_Chao_Fan;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 29);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(209, 120);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.lblPriceTwo.AutoSize = true;
+            this.lblPriceTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceTwo.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceTwo.Name = "lblPriceTwo";
+            this.lblPriceTwo.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceTwo.TabIndex = 2;
+            this.lblPriceTwo.Text = "₱";
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.lblOne);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.lblPriceOne);
             this.panel3.Location = new System.Drawing.Point(26, 48);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(241, 209);
             this.panel3.TabIndex = 0;
             // 
-            // label13
+            // lblOne
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(32, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(197, 20);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "1. Siomai Family Platter";
+            this.lblOne.AutoSize = true;
+            this.lblOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOne.Location = new System.Drawing.Point(32, 7);
+            this.lblOne.Name = "lblOne";
+            this.lblOne.Size = new System.Drawing.Size(29, 20);
+            this.lblOne.TabIndex = 5;
+            this.lblOne.Text = "1. ";
             // 
             // textBox1
             // 
@@ -922,26 +834,15 @@
             this.button1.Text = "-";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lblPriceOne
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(76, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "₱120.00";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::LogIn1.Properties.Resources.Chowking_Siomai_Chao_Fan_Family_Platter;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblPriceOne.AutoSize = true;
+            this.lblPriceOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceOne.Location = new System.Drawing.Point(76, 151);
+            this.lblPriceOne.Name = "lblPriceOne";
+            this.lblPriceOne.Size = new System.Drawing.Size(21, 20);
+            this.lblPriceOne.TabIndex = 1;
+            this.lblPriceOne.Text = "₱";
             // 
             // panel14
             // 
@@ -1000,6 +901,96 @@
             this.lblRestoName.TabIndex = 2;
             this.lblRestoName.Text = "Chowking";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(27, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Location = new System.Drawing.Point(25, 38);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(28, 41);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(28, 41);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Location = new System.Drawing.Point(25, 41);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Location = new System.Drawing.Point(27, 40);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 12;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox8.Location = new System.Drawing.Point(28, 40);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 13;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox9.Location = new System.Drawing.Point(25, 40);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(189, 107);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 14;
+            this.pictureBox9.TabStop = false;
+            // 
             // MenuOne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1021,34 +1012,34 @@
             this.panel2.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1059,13 +1050,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblPriceThree;
+        private System.Windows.Forms.Label lblPriceTwo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPriceOne;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
@@ -1078,46 +1067,40 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label lblPriceSix;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label lblPriceFive;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lblPriceFour;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label lblPriceNine;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label lblPriceEigth;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblPriceSeven;
+        private System.Windows.Forms.Label lblNine;
+        private System.Windows.Forms.Label lblEigth;
+        private System.Windows.Forms.Label lblSeven;
+        private System.Windows.Forms.Label lblSix;
+        private System.Windows.Forms.Label lblFive;
+        private System.Windows.Forms.Label lblFour;
+        private System.Windows.Forms.Label lblThree;
+        private System.Windows.Forms.Label lblTwo;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label22;
@@ -1132,7 +1115,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblRestoName;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblOne;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
