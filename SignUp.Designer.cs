@@ -59,6 +59,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.rbMerchant = new System.Windows.Forms.RadioButton();
             this.groupRole.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -164,6 +165,7 @@
             // 
             // groupRole
             // 
+            this.groupRole.Controls.Add(this.rbMerchant);
             this.groupRole.Controls.Add(this.rbCustomer);
             this.groupRole.Controls.Add(this.rbRider);
             this.groupRole.Location = new System.Drawing.Point(23, 325);
@@ -185,7 +187,7 @@
             // 
             // rbRider
             // 
-            this.rbRider.Location = new System.Drawing.Point(200, 30);
+            this.rbRider.Location = new System.Drawing.Point(281, 30);
             this.rbRider.Name = "rbRider";
             this.rbRider.Size = new System.Drawing.Size(104, 24);
             this.rbRider.TabIndex = 1;
@@ -232,6 +234,17 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Fast and Easy Food Delivery";
             // 
+            // rbMerchant
+            // 
+            this.rbMerchant.AutoSize = true;
+            this.rbMerchant.Location = new System.Drawing.Point(161, 30);
+            this.rbMerchant.Name = "rbMerchant";
+            this.rbMerchant.Size = new System.Drawing.Size(101, 24);
+            this.rbMerchant.TabIndex = 2;
+            this.rbMerchant.TabStop = true;
+            this.rbMerchant.Text = "Merchant";
+            this.rbMerchant.UseVisualStyleBackColor = true;
+            // 
             // SignUp
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -241,6 +254,7 @@
             this.Text = "SendFoodz Sign Up";
             this.Load += new System.EventHandler(this.SignUp_Load_1);
             this.groupRole.ResumeLayout(false);
+            this.groupRole.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -253,5 +267,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RadioButton rbMerchant;
     }
 }

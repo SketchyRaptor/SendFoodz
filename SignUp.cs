@@ -24,7 +24,14 @@ namespace LogIn1
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             string confirmPassword = txtConfirmPassword.Text;
-            string role = rbCustomer.Checked ? "Customer" : "Rider";
+            string role = "";
+            if (rbCustomer.Checked)
+                role = "Customer";
+            else if (rbMerchant.Checked)
+                role = "Merchant";
+            else if (rbRider.Checked)
+                role = "Rider";
+
 
             if (username == "" || password == "")
             {
