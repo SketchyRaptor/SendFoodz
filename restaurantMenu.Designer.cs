@@ -1,4 +1,4 @@
-﻿namespace first
+namespace first
 {
     partial class restaurantMenu
     {
@@ -29,245 +29,114 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.jViewButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mViewButton = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cViewButton = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.backButtonResMenu = new System.Windows.Forms.Button();
-            this.pictureBoxOne = new System.Windows.Forms.PictureBox();
-            this.pictureBoxTwo = new System.Windows.Forms.PictureBox();
-            this.pictureBoxThree = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lblNameOne = new System.Windows.Forms.Label();
-            this.lblNameTwo = new System.Windows.Forms.Label();
-            this.lblNameThree = new System.Windows.Forms.Label();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelBottomNav = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOne)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTwo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThree)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panelTitle.SuspendLayout();
+            this.panelBottomNav.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.jViewButton);
-            this.panel1.Controls.Add(this.pictureBoxOne);
-            this.panel1.Location = new System.Drawing.Point(14, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.panelTitle);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(269, 417);
+            this.panel1.Size = new System.Drawing.Size(1000, 700);
             this.panel1.TabIndex = 0;
             // 
-            // jViewButton
+            // panelTitle
             // 
-            this.jViewButton.Location = new System.Drawing.Point(35, 342);
-            this.jViewButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.jViewButton.Name = "jViewButton";
-            this.jViewButton.Size = new System.Drawing.Size(196, 44);
-            this.jViewButton.TabIndex = 2;
-            this.jViewButton.Text = "View";
-            this.jViewButton.UseVisualStyleBackColor = true;
-            this.jViewButton.Click += new System.EventHandler(this.jViewButton_Click);
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTitle.Controls.Add(this.lblTitle);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(998, 50);
+            this.panelTitle.TabIndex = 0;
             // 
-            // panel2
+            // lblTitle
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.mViewButton);
-            this.panel2.Controls.Add(this.pictureBoxTwo);
-            this.panel2.Location = new System.Drawing.Point(315, 15);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(269, 417);
-            this.panel2.TabIndex = 1;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(10, 10);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(220, 37);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Restaurant Menu";
             // 
-            // mViewButton
+            // flowLayoutPanel1
             // 
-            this.mViewButton.Location = new System.Drawing.Point(37, 341);
-            this.mViewButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.mViewButton.Name = "mViewButton";
-            this.mViewButton.Size = new System.Drawing.Size(196, 44);
-            this.mViewButton.TabIndex = 3;
-            this.mViewButton.Text = "View";
-            this.mViewButton.UseVisualStyleBackColor = true;
-            this.mViewButton.Click += new System.EventHandler(this.mViewButton_Click);
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 50);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(998, 600);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // panel3
+            // panelBottomNav
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.cViewButton);
-            this.panel3.Controls.Add(this.pictureBoxThree);
-            this.panel3.Location = new System.Drawing.Point(618, 16);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(269, 417);
-            this.panel3.TabIndex = 1;
+            this.panelBottomNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelBottomNav.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelBottomNav.Controls.Add(this.btnRefresh);
+            this.panelBottomNav.Controls.Add(this.btnBack);
+            this.panelBottomNav.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottomNav.Location = new System.Drawing.Point(0, 650);
+            this.panelBottomNav.Name = "panelBottomNav";
+            this.panelBottomNav.Size = new System.Drawing.Size(1000, 50);
+            this.panelBottomNav.TabIndex = 3;
             // 
-            // cViewButton
+            // btnRefresh
             // 
-            this.cViewButton.Location = new System.Drawing.Point(37, 336);
-            this.cViewButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cViewButton.Name = "cViewButton";
-            this.cViewButton.Size = new System.Drawing.Size(196, 44);
-            this.cViewButton.TabIndex = 4;
-            this.cViewButton.Text = "View";
-            this.cViewButton.UseVisualStyleBackColor = true;
-            this.cViewButton.Click += new System.EventHandler(this.cViewButton_Click);
+            this.btnRefresh.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(500, 8);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(120, 32);
+            this.btnRefresh.TabIndex = 1;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // panel4
+            // btnBack
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.backButtonResMenu);
-            this.panel4.Location = new System.Drawing.Point(338, 469);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(226, 54);
-            this.panel4.TabIndex = 2;
-            // 
-            // backButtonResMenu
-            // 
-            this.backButtonResMenu.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.backButtonResMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButtonResMenu.Location = new System.Drawing.Point(71, 6);
-            this.backButtonResMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.backButtonResMenu.Name = "backButtonResMenu";
-            this.backButtonResMenu.Size = new System.Drawing.Size(82, 41);
-            this.backButtonResMenu.TabIndex = 0;
-            this.backButtonResMenu.Text = "Back";
-            this.backButtonResMenu.UseVisualStyleBackColor = false;
-            this.backButtonResMenu.Click += new System.EventHandler(this.backButtonResMenu_Click);
-            // 
-            // pictureBoxOne
-            // 
-            this.pictureBoxOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxOne.Location = new System.Drawing.Point(21, 52);
-            this.pictureBoxOne.Name = "pictureBoxOne";
-            this.pictureBoxOne.Size = new System.Drawing.Size(225, 348);
-            this.pictureBoxOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxOne.TabIndex = 3;
-            this.pictureBoxOne.TabStop = false;
-            // 
-            // pictureBoxTwo
-            // 
-            this.pictureBoxTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxTwo.Location = new System.Drawing.Point(21, 52);
-            this.pictureBoxTwo.Name = "pictureBoxTwo";
-            this.pictureBoxTwo.Size = new System.Drawing.Size(225, 348);
-            this.pictureBoxTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxTwo.TabIndex = 4;
-            this.pictureBoxTwo.TabStop = false;
-            // 
-            // pictureBoxThree
-            // 
-            this.pictureBoxThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxThree.Location = new System.Drawing.Point(21, 52);
-            this.pictureBoxThree.Name = "pictureBoxThree";
-            this.pictureBoxThree.Size = new System.Drawing.Size(225, 348);
-            this.pictureBoxThree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxThree.TabIndex = 5;
-            this.pictureBoxThree.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.lblNameOne);
-            this.panel5.Location = new System.Drawing.Point(39, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(190, 36);
-            this.panel5.TabIndex = 4;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.lblNameTwo);
-            this.panel6.Location = new System.Drawing.Point(36, 10);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(190, 36);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.lblNameThree);
-            this.panel7.Location = new System.Drawing.Point(42, 10);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(190, 36);
-            this.panel7.TabIndex = 5;
-            // 
-            // lblNameOne
-            // 
-            this.lblNameOne.AutoSize = true;
-            this.lblNameOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameOne.Location = new System.Drawing.Point(14, 2);
-            this.lblNameOne.Name = "lblNameOne";
-            this.lblNameOne.Size = new System.Drawing.Size(85, 29);
-            this.lblNameOne.TabIndex = 0;
-            this.lblNameOne.Text = "label1";
-            // 
-            // lblNameTwo
-            // 
-            this.lblNameTwo.AutoSize = true;
-            this.lblNameTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameTwo.Location = new System.Drawing.Point(17, 3);
-            this.lblNameTwo.Name = "lblNameTwo";
-            this.lblNameTwo.Size = new System.Drawing.Size(85, 29);
-            this.lblNameTwo.TabIndex = 1;
-            this.lblNameTwo.Text = "label1";
-            // 
-            // lblNameThree
-            // 
-            this.lblNameThree.AutoSize = true;
-            this.lblNameThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameThree.Location = new System.Drawing.Point(20, 3);
-            this.lblNameThree.Name = "lblNameThree";
-            this.lblNameThree.Size = new System.Drawing.Size(85, 29);
-            this.lblNameThree.TabIndex = 2;
-            this.lblNameThree.Text = "label1";
+            this.btnBack.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(850, 8);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(120, 32);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.backButtonResMenu_Click);
             // 
             // restaurantMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1031, 619);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Controls.Add(this.panelBottomNav);
             this.Name = "restaurantMenu";
-            this.Text = "restaurantMenu";
+            this.Text = "Restaurant Menu";
+            this.Load += new System.EventHandler(this.restaurantMenu_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOne)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTwo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThree)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
+            this.panelBottomNav.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -275,21 +144,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button backButtonResMenu;
-        private System.Windows.Forms.Button jViewButton;
-        private System.Windows.Forms.Button mViewButton;
-        private System.Windows.Forms.Button cViewButton;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBoxOne;
-        private System.Windows.Forms.PictureBox pictureBoxTwo;
-        private System.Windows.Forms.PictureBox pictureBoxThree;
-        private System.Windows.Forms.Label lblNameOne;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lblNameTwo;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label lblNameThree;
+        private System.Windows.Forms.Panel panelTitle;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panelBottomNav;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
