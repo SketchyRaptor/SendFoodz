@@ -307,6 +307,11 @@ namespace LogIn1
             selectedProductImagePath = string.Empty;
             editingProductIndex = -1;
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Product
