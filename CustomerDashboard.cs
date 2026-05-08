@@ -36,7 +36,7 @@ namespace LogIn1
 
         private void orderButton_Click(object sender, EventArgs e)
         {
-            restaurantMenu resto = new restaurantMenu();
+            restaurantMenuTrial resto = new restaurantMenuTrial();
             resto.Show();
             this.Hide();
         }
