@@ -15,8 +15,40 @@ namespace LogIn1
         public MerchantDashBoard()
         {
             InitializeComponent();
+            LoadCurrentBackground();
+        }
+        private void LoadCurrentBackground()
+        {
+            // Load existing background image if any
+            Image bg = MerchantSettingsStorage.GetBackgroundImage(Form1.CurrentUsername);
+            if (bg != null)
+                picBackgroundPreview.Image = bg;
         }
 
+        private void btnUploadBackground_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+                ofd.Title = "Select Background Image for Your Shop";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        Image newImage = Image.FromFile(ofd.FileName);
+                        MerchantSettingsStorage.SetBackgroundImage(Form1.CurrentUsername, newImage);
+                        picBackgroundPreview.Image = newImage;
+                        MessageBox.Show("Background image updated successfully!", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error loading image: " + ex.Message, "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
         private void btnEditMenu_Click(object sender, EventArgs e)
         {
             // Navigate to MerchantProducts form

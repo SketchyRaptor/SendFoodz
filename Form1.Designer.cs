@@ -59,7 +59,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(138, 45);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(279, 45);
+            this.lblTitle.Size = new System.Drawing.Size(237, 37);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "SendFoodz Login";
             // 
@@ -69,7 +69,7 @@
             this.lblUsername.BackColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(51, 174);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 20);
+            this.lblUsername.Size = new System.Drawing.Size(70, 16);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username";
             // 
@@ -77,24 +77,24 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(420, 296);
+            this.lblPassword.Location = new System.Drawing.Point(338, 299);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(420, 229);
+            this.txtUsername.Location = new System.Drawing.Point(338, 232);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(400, 26);
+            this.txtUsername.Size = new System.Drawing.Size(400, 22);
             this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(420, 324);
+            this.txtPassword.Location = new System.Drawing.Point(338, 327);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(400, 26);
+            this.txtPassword.Size = new System.Drawing.Size(400, 22);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -102,7 +102,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.OrangeRed;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(420, 422);
+            this.btnLogin.Location = new System.Drawing.Point(338, 425);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(400, 40);
             this.btnLogin.TabIndex = 5;
@@ -114,9 +114,9 @@
             // 
             this.chkShowPassword.AutoSize = true;
             this.chkShowPassword.BackColor = System.Drawing.Color.White;
-            this.chkShowPassword.Location = new System.Drawing.Point(420, 364);
+            this.chkShowPassword.Location = new System.Drawing.Point(338, 367);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(148, 24);
+            this.chkShowPassword.Size = new System.Drawing.Size(125, 20);
             this.chkShowPassword.TabIndex = 6;
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.UseVisualStyleBackColor = false;
@@ -127,9 +127,9 @@
             this.linkRegister.AutoSize = true;
             this.linkRegister.BackColor = System.Drawing.Color.White;
             this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkRegister.Location = new System.Drawing.Point(553, 474);
+            this.linkRegister.Location = new System.Drawing.Point(471, 477);
             this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(134, 22);
+            this.linkRegister.Size = new System.Drawing.Size(110, 18);
             this.linkRegister.TabIndex = 7;
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "Create Account";
@@ -138,12 +138,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblUsername);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Location = new System.Drawing.Point(369, 29);
+            this.panel1.Location = new System.Drawing.Point(287, 32);
             this.panel1.Name = "panel1";
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel1.Size = new System.Drawing.Size(484, 517);
             this.panel1.TabIndex = 8;
             // 
@@ -164,7 +166,7 @@
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(142, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 20);
+            this.label1.Size = new System.Drawing.Size(181, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Fast and Easy Food Delivery";
             // 
@@ -180,6 +182,7 @@
             this.Controls.Add(this.linkRegister);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "SendFoodz Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

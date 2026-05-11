@@ -7,7 +7,8 @@ namespace LogIn1
 {
     public partial class OrderMenu : Form
     {
-        private List<CartItem> cart = new List<CartItem>();
+        // Static cart – persists across different merchant selections
+        private static List<CartItem> cart = new List<CartItem>();
         private string currentMerchant;
 
         public OrderMenu(string merchantUsername)
@@ -21,10 +22,20 @@ namespace LogIn1
             // Load existing products for this merchant
             LoadMerchantProducts();
 
-            // Handle "Add to Cart" button clicks
+            // Load the shared cart into the grid
+            RefreshCartGrid();
+
+            // Handle events
             dgvMenu.CellClick += DgvMenu_CellClick;
-            dgvCart.CellClick += DgvCart_CellClick;   // to remove items
+            dgvCart.CellClick += DgvCart_CellClick;
             btnPlaceOrder.Click += BtnPlaceOrder_Click;
+            btnBack.Click += btnBack_Click;   // already wired in designer, but safe to reassign
+        }
+
+        // ===== FIX: missing event handler for pnlMenu.Paint =====
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+            // Optional: custom drawing if needed – leave empty for now
         }
 
         private void LoadMerchantProducts()
@@ -39,7 +50,6 @@ namespace LogIn1
 
         private void OnProductAdded(string merchantUsername, ProductItem product)
         {
-            // Only add to this menu if the product belongs to the current merchant
             if (merchantUsername == currentMerchant)
             {
                 dgvMenu.Rows.Add(product.Image, product.Name, product.Price, "Add to Cart");
@@ -124,9 +134,15 @@ namespace LogIn1
             cart.Clear();
             RefreshCartGrid();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            CustomerDashboard back = new CustomerDashboard();
+            back.Show();
+            this.Close();
+        }
     }
 
-    // Helper class for cart items (unchanged)
     public class CartItem
     {
         public string Name { get; set; }
@@ -135,7 +151,6 @@ namespace LogIn1
         public decimal Total { get; set; }
     }
 
-    // QuantityDialog (unchanged)
     public class QuantityDialog : Form
     {
         private NumericUpDown numQty;
