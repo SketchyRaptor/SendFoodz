@@ -80,7 +80,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(9, 8);
+            this.lblTitle.Location = new System.Drawing.Point(25, 2);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(189, 31);
             this.lblTitle.TabIndex = 1;
@@ -102,7 +102,7 @@
             // 
             // splitterMain.Panel2
             // 
-            this.splitterMain.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitterMain.Panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.splitterMain.Panel2.Controls.Add(this.dataGridView1);
             this.splitterMain.Size = new System.Drawing.Size(1226, 672);
             this.splitterMain.SplitterDistance = 373;
@@ -111,7 +111,7 @@
             // pnlInputForm
             // 
             this.pnlInputForm.AutoScroll = true;
-            this.pnlInputForm.BackColor = System.Drawing.Color.White;
+            this.pnlInputForm.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlInputForm.Controls.Add(this.btnBack);
             this.pnlInputForm.Controls.Add(this.btnSelectImage);
             this.pnlInputForm.Controls.Add(this.grpProductInfo);
@@ -157,7 +157,7 @@
             // 
             // grpProductInfo
             // 
-            this.grpProductInfo.BackColor = System.Drawing.Color.White;
+            this.grpProductInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.grpProductInfo.Controls.Add(this.label1);
             this.grpProductInfo.Controls.Add(this.txtQuantity);
             this.grpProductInfo.Controls.Add(this.pictureBox1);
@@ -277,12 +277,12 @@
             this.colPrice,
             this.colQty,
             this.colTotal});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 12);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(844, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(816, 643);
             this.dataGridView1.TabIndex = 0;
             // 
             // colName
