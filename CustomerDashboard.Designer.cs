@@ -53,7 +53,7 @@
             this.panel7.BackColor = System.Drawing.Color.Red;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.btnLogout);
-            this.panel7.Location = new System.Drawing.Point(785, 29);
+            this.panel7.Location = new System.Drawing.Point(782, 29);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(234, 37);
             this.panel7.TabIndex = 5;
