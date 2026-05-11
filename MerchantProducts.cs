@@ -1,333 +1,129 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LogIn1
 {
     public partial class MerchantProducts : Form
     {
-        private List<Product> products = new List<Product>();
-        private string selectedProductImagePath = string.Empty;
-        private int editingProductIndex = -1;
-
         public MerchantProducts()
         {
             InitializeComponent();
-            InitializeUI();
-            
-        }
-       
-        private void InitializeUI()
-        {
-            // Main Panel
-            Panel mainPanel = new Panel
+
+            // Add an image column to the DataGridView
+            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn
             {
-                Dock = DockStyle.Fill,
-                AutoScroll = true,
-                BackColor = Color.WhiteSmoke
+                Name = "colImage",
+                HeaderText = "Image",
+                ImageLayout = DataGridViewImageCellLayout.Zoom,  // Fit image in cell
+                Width = 80                                      // Fixed width for image column
             };
+            dataGridView1.Columns.Insert(0, imageColumn);       // Insert as first column (optional)
 
-            // Top Panel for Product Management
-            Panel topPanel = new Panel
-            {
-                Dock = DockStyle.Top,
-                Height = 350,
-                BackColor = Color.White,
-                BorderStyle = BorderStyle.FixedSingle
-            };
+            // Auto-size other columns to fill remaining space
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Product Name
-            Label nameLabel = new Label { Text = "Product Name:", Location = new Point(10, 10), AutoSize = true };
-            TextBox nameTextBox = new TextBox { Name = "productNameTextBox", Location = new Point(150, 10), Width = 250 };
-            topPanel.Controls.Add(nameLabel);
-            topPanel.Controls.Add(nameTextBox);
-
-            // Product Description
-            Label descLabel = new Label { Text = "Description:", Location = new Point(10, 45), AutoSize = true };
-            TextBox descTextBox = new TextBox { Name = "productDescTextBox", Location = new Point(150, 45), Width = 250, Height = 60, Multiline = true };
-            topPanel.Controls.Add(descLabel);
-            topPanel.Controls.Add(descTextBox);
-
-            // Product Image Upload
-            Label imageLabel = new Label { Text = "Product Image:", Location = new Point(10, 115), AutoSize = true };
-            Button uploadImageButton = new Button { Text = "Upload Image", Location = new Point(150, 110), Width = 120, Name = "uploadImageBtn" };
-            Label imagePath = new Label { Name = "imagePathLabel", Location = new Point(280, 115), AutoSize = true, Text = "No image selected" };
-            uploadImageButton.Click += UploadImageButton_Click;
-            topPanel.Controls.Add(imageLabel);
-            topPanel.Controls.Add(uploadImageButton);
-            topPanel.Controls.Add(imagePath);
-
-            // Food Options Section
-            Label foodOptionsLabel = new Label { Text = "Food Options:", Location = new Point(10, 150), Font = new Font("Arial", 10, FontStyle.Bold), AutoSize = true };
-            topPanel.Controls.Add(foodOptionsLabel);
-
-            // Food Option Item (Name & Price)
-            Label foodNameLabel = new Label { Text = "Food Name:", Location = new Point(10, 180), AutoSize = true };
-            TextBox foodNameTextBox = new TextBox { Name = "foodNameTextBox", Location = new Point(150, 180), Width = 250 };
-            topPanel.Controls.Add(foodNameLabel);
-            topPanel.Controls.Add(foodNameTextBox);
-
-            Label priceLabel = new Label { Text = "Price:", Location = new Point(10, 215), AutoSize = true };
-            TextBox priceTextBox = new TextBox { Name = "priceTextBox", Location = new Point(150, 215), Width = 250 };
-            topPanel.Controls.Add(priceLabel);
-            topPanel.Controls.Add(priceTextBox);
-
-            // Add Food Option Button
-            Button addFoodOptionButton = new Button { Text = "Add Food Option", Location = new Point(150, 250), Width = 130, Name = "addFoodOptionBtn" };
-            addFoodOptionButton.Click += AddFoodOption_Click;
-            topPanel.Controls.Add(addFoodOptionButton);
-
-            // Add/Update Product Button
-            Button addProductButton = new Button { Text = "Add Product", Location = new Point(150, 290), Width = 130, Name = "addProductBtn", BackColor = Color.LimeGreen, ForeColor = Color.White };
-            addProductButton.Click += AddProduct_Click;
-            topPanel.Controls.Add(addProductButton);
-
-            // Clear Form Button
-            Button clearButton = new Button { Text = "Clear Form", Location = new Point(290, 290), Width = 110, Name = "clearBtn" };
-            clearButton.Click += ClearForm_Click;
-            topPanel.Controls.Add(clearButton);
-
-            mainPanel.Controls.Add(topPanel);
-
-            // Products List Panel
-            Panel listPanel = new Panel
-            {
-                Dock = DockStyle.Fill,
-                AutoScroll = true,
-                BackColor = Color.WhiteSmoke
-            };
-
-            // DataGridView for Products
-            DataGridView productsGrid = new DataGridView
-            {
-                Name = "productsGrid",
-                Dock = DockStyle.Fill,
-                AutoGenerateColumns = false,
-                AllowUserToAddRows = false,
-                AllowUserToDeleteRows = false,
-                ReadOnly = false
-            };
-
-            productsGrid.Columns.Add("ProductName", "Product Name");
-            productsGrid.Columns.Add("Description", "Description");
-            productsGrid.Columns.Add("FoodOptions", "Food Options");
-            productsGrid.Columns.Add("ImagePath", "Image");
-
-            DataGridViewButtonColumn editButtonColumn = new DataGridViewButtonColumn
-            {
-                Name = "EditColumn",
-                HeaderText = "Edit",
-                Text = "Edit",
-                UseColumnTextForButtonValue = true
-            };
-            productsGrid.Columns.Add(editButtonColumn);
-
-            DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
-            {
-                Name = "DeleteColumn",
-                HeaderText = "Delete",
-                Text = "Delete",
-                UseColumnTextForButtonValue = true
-            };
-            productsGrid.Columns.Add(deleteButtonColumn);
-
-            productsGrid.CellClick += ProductsGrid_CellClick;
-
-            listPanel.Controls.Add(productsGrid);
-            mainPanel.Controls.Add(listPanel);
-
-            this.Controls.Add(mainPanel);
+            // Wire up the Select Image button click event
+            btnSelectImage.Click += BtnSelectImage_Click;
         }
 
-        private void UploadImageButton_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif|All Files|*.*",
-                Title = "Select Product Image"
-            };
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                selectedProductImagePath = openFileDialog.FileName;
-                Label imagePathLabel = this.Controls.Find("imagePathLabel", true).FirstOrDefault() as Label;
-                if (imagePathLabel != null)
-                {
-                    imagePathLabel.Text = Path.GetFileName(selectedProductImagePath);
-                }
-            }
-        }
-
-        private void AddFoodOption_Click(object sender, EventArgs e)
-        {
-            TextBox foodNameTextBox = this.Controls.Find("foodNameTextBox", true).FirstOrDefault() as TextBox;
-            TextBox priceTextBox = this.Controls.Find("priceTextBox", true).FirstOrDefault() as TextBox;
-
-            if (string.IsNullOrWhiteSpace(foodNameTextBox?.Text))
-            {
-                MessageBox.Show("Please enter a food name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (!decimal.TryParse(priceTextBox?.Text, out decimal price) || price <= 0)
-            {
-                MessageBox.Show("Please enter a valid price.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Create a new food option entry (you can display these in a separate list or directly in product)
-            MessageBox.Show($"Food Option Added: {foodNameTextBox.Text} - ${price:F2}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Clear food option fields
-            foodNameTextBox.Clear();
-            priceTextBox.Clear();
-        }
-
-        private void AddProduct_Click(object sender, EventArgs e)
-        {
-            TextBox nameTextBox = this.Controls.Find("productNameTextBox", true).FirstOrDefault() as TextBox;
-            TextBox descTextBox = this.Controls.Find("productDescTextBox", true).FirstOrDefault() as TextBox;
-
-            if (string.IsNullOrWhiteSpace(nameTextBox?.Text))
-            {
-                MessageBox.Show("Please enter a product name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            var product = new Product
-            {
-                Name = nameTextBox.Text,
-                Description = descTextBox?.Text ?? string.Empty,
-                ImagePath = selectedProductImagePath,
-                FoodOptions = new List<FoodOption> { /* Add collected food options */ }
-            };
-
-            if (editingProductIndex >= 0)
-            {
-                products[editingProductIndex] = product;
-                editingProductIndex = -1;
-            }
-            else
-            {
-                products.Add(product);
-            }
-
-            RefreshProductsList();
-            ClearForm_Click(null, null);
-            MessageBox.Show("Product added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void ProductsGrid_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0) return;
-
-            if (e.ColumnIndex == 4) // Edit column
-            {
-                editingProductIndex = e.RowIndex;
-                var product = products[e.RowIndex];
-
-                TextBox nameTextBox = this.Controls.Find("productNameTextBox", true).FirstOrDefault() as TextBox;
-                TextBox descTextBox = this.Controls.Find("productDescTextBox", true).FirstOrDefault() as TextBox;
-
-                nameTextBox.Text = product.Name;
-                descTextBox.Text = product.Description;
-                selectedProductImagePath = product.ImagePath;
-
-                Label imagePathLabel = this.Controls.Find("imagePathLabel", true).FirstOrDefault() as Label;
-                imagePathLabel.Text = string.IsNullOrEmpty(product.ImagePath) ? "No image selected" : Path.GetFileName(product.ImagePath);
-            }
-            else if (e.ColumnIndex == 5) // Delete column
-            {
-                if (MessageBox.Show("Are you sure you want to delete this product?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    products.RemoveAt(e.RowIndex);
-                    RefreshProductsList();
-                }
-            }
-        }
-
-        private void RefreshProductsList()
-        {
-            DataGridView productsGrid = this.Controls.Find("productsGrid", true).FirstOrDefault() as DataGridView;
-            if (productsGrid != null)
-            {
-                productsGrid.Rows.Clear();
-                foreach (var product in products)
-                {
-                    productsGrid.Rows.Add(
-                        product.Name,
-                        product.Description,
-                        string.Join(", ", product.FoodOptions.Select(f => $"{f.Name} (${f.Price:F2})")),
-                        string.IsNullOrEmpty(product.ImagePath) ? "No Image" : "✓ Image",
-                        "Edit",
-                        "Delete"
-                    );
-                }
-            }
-        }
-
-        private void MerchantProducts_Resize(object sender, EventArgs e)
-        {
-            // Adjust splitter distance proportionally when form is resized
-            if (this.WindowState != FormWindowState.Minimized)
-            {
-                // Keep left panel at 30% of form width, but not less than 350px and not more than 500px
-                int newSplitterDistance = (int)(this.ClientSize.Width * 0.30);
-                newSplitterDistance = Math.Max(350, Math.Min(500, newSplitterDistance));
-
-                if (splitterMain.SplitterDistance != newSplitterDistance)
-                {
-                    splitterMain.SplitterDistance = newSplitterDistance;
-                }
-
-                // Refresh the layout
-                this.Refresh();
-            }
-        }
-
-        private void ClearForm_Click(object sender, EventArgs e)
-        {
-            TextBox nameTextBox = this.Controls.Find("productNameTextBox", true).FirstOrDefault() as TextBox;
-            TextBox descTextBox = this.Controls.Find("productDescTextBox", true).FirstOrDefault() as TextBox;
-            TextBox foodNameTextBox = this.Controls.Find("foodNameTextBox", true).FirstOrDefault() as TextBox;
-            TextBox priceTextBox = this.Controls.Find("priceTextBox", true).FirstOrDefault() as TextBox;
-            Label imagePathLabel = this.Controls.Find("imagePathLabel", true).FirstOrDefault() as Label;
-
-            nameTextBox.Clear();
-            descTextBox.Clear();
-            foodNameTextBox.Clear();
-            priceTextBox.Clear();
-            imagePathLabel.Text = "No image selected";
-            selectedProductImagePath = string.Empty;
-            editingProductIndex = -1;
-        }
-
+        // ==================== SAVE PRODUCT ====================
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
+            // Validate Product Name
+            if (string.IsNullOrWhiteSpace(txtProductName.Text))
+            {
+                MessageBox.Show("Please enter a product name.", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtProductName.Focus();
+                return;
+            }
 
+            // Validate Price
+            if (!decimal.TryParse(txtPrice.Text, out decimal price) || price < 0)
+            {
+                MessageBox.Show("Please enter a valid price (e.g., 19.99).", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPrice.Focus();
+                return;
+            }
+
+            // Validate Quantity
+            if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity < 0)
+            {
+                MessageBox.Show("Please enter a valid quantity (positive integer).", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtQuantity.Focus();
+                return;
+            }
+
+            // Calculate Total
+            decimal total = price * quantity;
+
+            // Get the product image (nullable)
+            Image productImage = pictureBox1.Image;
+
+            // Add a new row to DataGridView
+            // Columns order: colImage (index 0), colName, colPrice, colQty, colTotal
+            dataGridView1.Rows.Add(productImage,          // Image column
+                                   txtProductName.Text,  // Name
+                                   price,                // Price
+                                   quantity,             // Quantity
+                                   total);               // Total
+
+            // Clear input fields for next product
+            txtProductName.Clear();
+            txtPrice.Clear();
+            txtQuantity.Clear();
+            pictureBox1.Image = null;
+            lblImageName.Text = "No image selected";
+
+            // Optional: scroll to the newly added row
+            if (dataGridView1.Rows.Count > 0)
+                dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.Rows.Count - 1;
+
+            // Notify user
+            MessageBox.Show("Product saved successfully!", "Success",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-    }
 
-    public class Product
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string ImagePath { get; set; }
-        public List<FoodOption> FoodOptions { get; set; } = new List<FoodOption>();
-    }
+        // ==================== SELECT IMAGE ====================
+        private void BtnSelectImage_Click(object sender, EventArgs e)
+        {
+            // openFileDialog is already defined in the designer
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // Load the full-size image into the PictureBox
+                    Image originalImage = Image.FromFile(openFileDialog.FileName);
+                    pictureBox1.Image = originalImage;
+                    // Display file name in the label
+                    lblImageName.Text = Path.GetFileName(openFileDialog.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Could not load image: " + ex.Message, "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
 
-    public class FoodOption
-    {
-        public string Name { get; set; }
-        public decimal Price { get; set; }
+        // ==================== (Optional) Your existing Product & FoodOption classes ====================
+        // (Keep these if needed elsewhere in your project)
+        public class Product
+        {
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public string ImagePath { get; set; }
+            public System.Collections.Generic.List<FoodOption> FoodOptions { get; set; } = new System.Collections.Generic.List<FoodOption>();
+        }
 
-
+        public class FoodOption
+        {
+            public string Name { get; set; }
+            public decimal Price { get; set; }
+        }
     }
 }

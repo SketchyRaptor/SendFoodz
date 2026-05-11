@@ -32,23 +32,23 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.splitterMain = new System.Windows.Forms.SplitContainer();
             this.pnlInputForm = new System.Windows.Forms.Panel();
-            this.grpProductInfo = new System.Windows.Forms.GroupBox();
             this.btnSelectImage = new System.Windows.Forms.Button();
+            this.grpProductInfo = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblImageName = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.lblPrice = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.lblProductName = new System.Windows.Forms.Label();
-            this.btnAddProduct = new System.Windows.Forms.Button();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.btnSaveProduct = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitterMain)).BeginInit();
             this.splitterMain.Panel1.SuspendLayout();
@@ -56,8 +56,8 @@
             this.splitterMain.SuspendLayout();
             this.pnlInputForm.SuspendLayout();
             this.grpProductInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -111,13 +111,26 @@
             this.pnlInputForm.BackColor = System.Drawing.Color.White;
             this.pnlInputForm.Controls.Add(this.btnSelectImage);
             this.pnlInputForm.Controls.Add(this.grpProductInfo);
-            this.pnlInputForm.Controls.Add(this.btnAddProduct);
+            this.pnlInputForm.Controls.Add(this.btnSaveProduct);
             this.pnlInputForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlInputForm.Location = new System.Drawing.Point(0, 0);
             this.pnlInputForm.Name = "pnlInputForm";
             this.pnlInputForm.Padding = new System.Windows.Forms.Padding(15);
             this.pnlInputForm.Size = new System.Drawing.Size(420, 840);
             this.pnlInputForm.TabIndex = 0;
+            // 
+            // btnSelectImage
+            // 
+            this.btnSelectImage.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSelectImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.btnSelectImage.ForeColor = System.Drawing.Color.White;
+            this.btnSelectImage.Location = new System.Drawing.Point(235, 335);
+            this.btnSelectImage.Name = "btnSelectImage";
+            this.btnSelectImage.Size = new System.Drawing.Size(155, 32);
+            this.btnSelectImage.TabIndex = 6;
+            this.btnSelectImage.Text = "Select Image";
+            this.btnSelectImage.UseVisualStyleBackColor = false;
             // 
             // grpProductInfo
             // 
@@ -138,18 +151,31 @@
             this.grpProductInfo.TabStop = false;
             this.grpProductInfo.Text = "Product Information";
             // 
-            // btnSelectImage
+            // label1
             // 
-            this.btnSelectImage.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSelectImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelectImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.btnSelectImage.ForeColor = System.Drawing.Color.White;
-            this.btnSelectImage.Location = new System.Drawing.Point(235, 335);
-            this.btnSelectImage.Name = "btnSelectImage";
-            this.btnSelectImage.Size = new System.Drawing.Size(155, 32);
-            this.btnSelectImage.TabIndex = 6;
-            this.btnSelectImage.Text = "Select Image";
-            this.btnSelectImage.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(15, 164);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Quantity";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Location = new System.Drawing.Point(15, 187);
+            this.txtQuantity.Multiline = true;
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(360, 30);
+            this.txtQuantity.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(19, 243);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(171, 109);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // lblImageName
             // 
@@ -196,25 +222,21 @@
             this.lblProductName.TabIndex = 0;
             this.lblProductName.Text = "Product Name";
             // 
-            // btnAddProduct
+            // btnSaveProduct
             // 
-            this.btnAddProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnSaveProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.Location = new System.Drawing.Point(12, 387);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(390, 45);
-            this.btnAddProduct.TabIndex = 0;
-            this.btnAddProduct.Text = "Save Product";
-            this.btnAddProduct.UseVisualStyleBackColor = false;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif|All Files|*.*";
+            this.btnSaveProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSaveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSaveProduct.ForeColor = System.Drawing.Color.White;
+            this.btnSaveProduct.Location = new System.Drawing.Point(12, 387);
+            this.btnSaveProduct.Name = "btnSaveProduct";
+            this.btnSaveProduct.Size = new System.Drawing.Size(390, 45);
+            this.btnSaveProduct.TabIndex = 0;
+            this.btnSaveProduct.Text = "Save Product";
+            this.btnSaveProduct.UseVisualStyleBackColor = false;
+            this.btnSaveProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // dataGridView1
             // 
@@ -252,38 +274,16 @@
             this.colQty.Name = "colQty";
             this.colQty.Width = 150;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(19, 243);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 109);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(15, 187);
-            this.txtQuantity.Multiline = true;
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(360, 30);
-            this.txtQuantity.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(15, 164);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Quantity";
-            // 
             // colTotal
             // 
             this.colTotal.HeaderText = "Total";
             this.colTotal.MinimumWidth = 8;
             this.colTotal.Name = "colTotal";
             this.colTotal.Width = 150;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif|All Files|*.*";
             // 
             // MerchantProducts
             // 
@@ -302,8 +302,8 @@
             this.pnlInputForm.ResumeLayout(false);
             this.grpProductInfo.ResumeLayout(false);
             this.grpProductInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,7 +321,7 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblImageName;
         private System.Windows.Forms.Button btnSelectImage;
-        private System.Windows.Forms.Button btnAddProduct;
+        private System.Windows.Forms.Button btnSaveProduct;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtQuantity;

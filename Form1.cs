@@ -46,8 +46,8 @@ namespace LogIn1
                     // Check user role and navigate to appropriate dashboard
                     if (acc.Role == "Merchant")
                     {
-                       MerchantTrial trial = new MerchantTrial();
-                        trial.Show();
+                       MerchantDashBoard merchantDashBoard = new MerchantDashBoard();
+                        merchantDashBoard.Show();
                     }
                     else if (acc.Role == "Rider")
                     {
