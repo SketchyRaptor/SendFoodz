@@ -29,7 +29,7 @@ namespace LogIn1
             dgvMenu.CellClick += DgvMenu_CellClick;
             dgvCart.CellClick += DgvCart_CellClick;
             btnPlaceOrder.Click += BtnPlaceOrder_Click;
-            btnBack.Click += btnBack_Click;   // already wired in designer, but safe to reassign
+           // btnBack.Click += btnBack_Click;   // already wired in designer, but safe to reassign
         }
 
         // ===== FIX: missing event handler for pnlMenu.Paint =====
