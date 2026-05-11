@@ -29,7 +29,7 @@ namespace LogIn1
             dgvMenu.CellClick += DgvMenu_CellClick;
             dgvCart.CellClick += DgvCart_CellClick;
             btnPlaceOrder.Click += BtnPlaceOrder_Click;
-            btnBack.Click += btnBack_Click;   // already wired in designer, but safe to reassign
+           // btnBack.Click += btnBack_Click;   // already wired in designer, but safe to reassign
         }
 
         // ===== FIX: missing event handler for pnlMenu.Paint =====
@@ -128,11 +128,39 @@ namespace LogIn1
             }
 
             decimal total = cart.Sum(i => i.Total);
-            MessageBox.Show($"Order placed successfully!\nTotal amount: ₱{total:F2}\nThank you!",
+
+            Order newOrder = new Order
+            {
+                CustomerName = Form1.CurrentUsername,
+                MerchantName = currentMerchant,
+                Total = total,
+                Status = "Active",
+                Stage = "Pending",
+                Rider = AssignRider()
+            };
+
+            foreach (var item in cart)
+            {
+                newOrder.ItemsSummary.Add($"{item.Name} x{item.Quantity}");
+            }
+
+            newOrder.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order placed. Stage: Pending");
+
+            OrderStorage.AllOrders.Add(newOrder);   // <-- changed
+
+            MessageBox.Show($"Order placed successfully!\nOrder ID: {newOrder.OrderId}\nTotal: ₱{total:F2}\nRider: {newOrder.Rider}\nThank you!",
                 "Order Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             cart.Clear();
             RefreshCartGrid();
+        }
+
+        private string AssignRider()
+        {
+            // Use the static riders list from Form1
+            if (Form1.riders != null && Form1.riders.Count > 0)
+                return Form1.riders[0];
+            return "Unassigned";
         }
 
         private void btnBack_Click(object sender, EventArgs e)

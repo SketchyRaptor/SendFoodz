@@ -143,5 +143,10 @@ namespace LogIn1
             LoadMerchantList();       // reload in case new merchant added
             LoadMerchants(searchBarTextBox.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
