@@ -103,6 +103,7 @@
             // splitterMain.Panel2
             // 
             this.splitterMain.Panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.splitterMain.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.splitterMain.Panel2.Controls.Add(this.dataGridView1);
             this.splitterMain.Size = new System.Drawing.Size(1226, 672);
             this.splitterMain.SplitterDistance = 373;
@@ -112,6 +113,7 @@
             // 
             this.pnlInputForm.AutoScroll = true;
             this.pnlInputForm.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlInputForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlInputForm.Controls.Add(this.btnBack);
             this.pnlInputForm.Controls.Add(this.btnSelectImage);
             this.pnlInputForm.Controls.Add(this.grpProductInfo);
@@ -132,10 +134,10 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(13, 365);
+            this.btnBack.Location = new System.Drawing.Point(13, 369);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(347, 36);
+            this.btnBack.Size = new System.Drawing.Size(345, 36);
             this.btnBack.TabIndex = 7;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -147,10 +149,10 @@
             this.btnSelectImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnSelectImage.ForeColor = System.Drawing.Color.White;
-            this.btnSelectImage.Location = new System.Drawing.Point(209, 268);
+            this.btnSelectImage.Location = new System.Drawing.Point(207, 261);
             this.btnSelectImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelectImage.Name = "btnSelectImage";
-            this.btnSelectImage.Size = new System.Drawing.Size(138, 26);
+            this.btnSelectImage.Size = new System.Drawing.Size(138, 33);
             this.btnSelectImage.TabIndex = 6;
             this.btnSelectImage.Text = "Select Image";
             this.btnSelectImage.UseVisualStyleBackColor = false;
@@ -198,6 +200,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(17, 194);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -260,10 +263,10 @@
             this.btnSaveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnSaveProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSaveProduct.Location = new System.Drawing.Point(11, 310);
+            this.btnSaveProduct.Location = new System.Drawing.Point(13, 321);
             this.btnSaveProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveProduct.Name = "btnSaveProduct";
-            this.btnSaveProduct.Size = new System.Drawing.Size(347, 36);
+            this.btnSaveProduct.Size = new System.Drawing.Size(345, 36);
             this.btnSaveProduct.TabIndex = 0;
             this.btnSaveProduct.Text = "Save Product";
             this.btnSaveProduct.UseVisualStyleBackColor = false;
