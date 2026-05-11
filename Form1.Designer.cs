@@ -79,6 +79,7 @@
             this.lblPassword.BackColor = System.Drawing.Color.White;
             this.lblPassword.Location = new System.Drawing.Point(338, 299);
             this.lblPassword.Name = "lblPassword";
+            this.lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
@@ -106,6 +107,7 @@
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(338, 425);
             this.btnLogin.Name = "btnLogin";
+            this.btnLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnLogin.Size = new System.Drawing.Size(400, 40);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
@@ -118,6 +120,7 @@
             this.chkShowPassword.BackColor = System.Drawing.Color.White;
             this.chkShowPassword.Location = new System.Drawing.Point(338, 367);
             this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkShowPassword.Size = new System.Drawing.Size(125, 20);
             this.chkShowPassword.TabIndex = 6;
             this.chkShowPassword.Text = "Show Password";
@@ -131,6 +134,7 @@
             this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegister.Location = new System.Drawing.Point(471, 477);
             this.linkRegister.Name = "linkRegister";
+            this.linkRegister.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.linkRegister.Size = new System.Drawing.Size(110, 18);
             this.linkRegister.TabIndex = 7;
             this.linkRegister.TabStop = true;
@@ -148,7 +152,7 @@
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Location = new System.Drawing.Point(287, 32);
             this.panel1.Name = "panel1";
-            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panel1.Size = new System.Drawing.Size(484, 517);
             this.panel1.TabIndex = 8;
             // 
