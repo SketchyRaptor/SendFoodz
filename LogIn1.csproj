@@ -121,6 +121,12 @@
       <DependentUpon>restaurantMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="RetaurantClass.cs" />
+    <Compile Include="RiderDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderDashboard.Designer.cs">
+      <DependentUpon>RiderDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </Compile>
     <EmbeddedResource Include="restaurantMenu.resx">
       <DependentUpon>restaurantMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RiderDashboard.resx">
+      <DependentUpon>RiderDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
