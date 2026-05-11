@@ -28,7 +28,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtUsername = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnViewOrder = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -183,7 +183,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.btnViewOrder);
             this.panel6.Location = new System.Drawing.Point(38, 138);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
@@ -210,15 +210,15 @@
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Text = "User\'s Name";
             // 
-            // button1
+            // btnViewOrder
             // 
-            this.button1.Location = new System.Drawing.Point(-1, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnViewOrder.Location = new System.Drawing.Point(-1, -1);
+            this.btnViewOrder.Name = "btnViewOrder";
+            this.btnViewOrder.Size = new System.Drawing.Size(193, 63);
+            this.btnViewOrder.TabIndex = 0;
+            this.btnViewOrder.Text = "View Order";
+            this.btnViewOrder.UseVisualStyleBackColor = true;
+            this.btnViewOrder.Click += new System.EventHandler(this.button1_Click);
             // 
             // CustomerDashboard
             // 
@@ -263,6 +263,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowMerchants;   // renamed from panelMerchants
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnViewOrder;
     }
 }

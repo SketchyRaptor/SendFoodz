@@ -146,7 +146,9 @@ namespace LogIn1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ViewOrder viewOrder = new ViewOrder();
+            viewOrder.Show();
+            this.Close();
         }
     }
 }
