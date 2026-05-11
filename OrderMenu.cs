@@ -131,6 +131,11 @@ namespace LogIn1
             back.Show();
             this.Close();
         }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     // Helper class for cart items (unchanged)
