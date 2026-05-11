@@ -135,6 +135,11 @@ namespace LogIn1
             dashboard.Show();
             this.Close();
         }
+
+        private void grpProductInfo_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class ProductItem

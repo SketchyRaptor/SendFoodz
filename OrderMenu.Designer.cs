@@ -161,7 +161,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(692, 298);
+            this.btnBack.Location = new System.Drawing.Point(687, 302);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(195, 42);
@@ -194,7 +194,7 @@
             this.colCartQty,
             this.colCartPrice,
             this.colCartTotal});
-            this.dgvCart.Location = new System.Drawing.Point(20, 78);
+            this.dgvCart.Location = new System.Drawing.Point(21, 78);
             this.dgvCart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvCart.Name = "dgvCart";
             this.dgvCart.RowHeadersVisible = false;
@@ -232,7 +232,7 @@
             this.btnPlaceOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlaceOrder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnPlaceOrder.ForeColor = System.Drawing.Color.White;
-            this.btnPlaceOrder.Location = new System.Drawing.Point(922, 298);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(922, 302);
             this.btnPlaceOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Size = new System.Drawing.Size(195, 42);
@@ -266,7 +266,7 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblCartTitle);
-            this.panel2.Location = new System.Drawing.Point(21, 8);
+            this.panel2.Location = new System.Drawing.Point(22, 8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1096, 64);
             this.panel2.TabIndex = 5;
