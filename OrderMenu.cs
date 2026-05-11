@@ -124,6 +124,13 @@ namespace LogIn1
             cart.Clear();
             RefreshCartGrid();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            CustomerDashboard back = new CustomerDashboard();
+            back.Show();
+            this.Close();
+        }
     }
 
     // Helper class for cart items (unchanged)

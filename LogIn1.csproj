@@ -52,12 +52,6 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuOne.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuOne.Designer.cs">
-      <DependentUpon>MenuOne.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,24 +63,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuThree.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuThree.Designer.cs">
-      <DependentUpon>MenuThree.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuTrial.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuTrial.Designer.cs">
-      <DependentUpon>MenuTrial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuTwo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuTwo.Designer.cs">
-      <DependentUpon>MenuTwo.cs</DependentUpon>
     </Compile>
     <Compile Include="MerchantDashBoard.cs">
       <SubType>Form</SubType>
@@ -114,12 +90,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="restaurantMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="restaurantMenu.Designer.cs">
-      <DependentUpon>restaurantMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="RetaurantClass.cs" />
     <Compile Include="RiderDashboard.cs">
       <SubType>Form</SubType>
@@ -136,29 +106,20 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuOne.resx">
-      <DependentUpon>MenuOne.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomerDashboard.resx">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuThree.resx">
-      <DependentUpon>MenuThree.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuTrial.resx">
-      <DependentUpon>MenuTrial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuTwo.resx">
-      <DependentUpon>MenuTwo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MerchantDashBoard.resx">
       <DependentUpon>MerchantDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MerchantProducts.resx">
       <DependentUpon>MerchantProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderMenu.resx">
+      <DependentUpon>OrderMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlaceOrder.resx">
       <DependentUpon>PlaceOrder.cs</DependentUpon>
@@ -173,9 +134,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="restaurantMenu.resx">
-      <DependentUpon>restaurantMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RiderDashboard.resx">
       <DependentUpon>RiderDashboard.cs</DependentUpon>
     </EmbeddedResource>
