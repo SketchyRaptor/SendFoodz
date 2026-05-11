@@ -54,12 +54,12 @@
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.btnBackToLogin = new System.Windows.Forms.Button();
             this.groupRole = new System.Windows.Forms.GroupBox();
+            this.rbMerchant = new System.Windows.Forms.RadioButton();
             this.rbCustomer = new System.Windows.Forms.RadioButton();
             this.rbRider = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.rbMerchant = new System.Windows.Forms.RadioButton();
             this.groupRole.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,7 +72,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(122, 11);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(313, 45);
+            this.lblTitle.Size = new System.Drawing.Size(265, 37);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "SendFoodz Sign Up";
             // 
@@ -81,7 +81,7 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Location = new System.Drawing.Point(19, 95);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 20);
+            this.lblUsername.Size = new System.Drawing.Size(70, 16);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
@@ -90,7 +90,7 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Location = new System.Drawing.Point(19, 159);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password";
             // 
@@ -99,7 +99,7 @@
             this.lblConfirmPassword.AutoSize = true;
             this.lblConfirmPassword.Location = new System.Drawing.Point(15, 222);
             this.lblConfirmPassword.Name = "lblConfirmPassword";
-            this.lblConfirmPassword.Size = new System.Drawing.Size(137, 20);
+            this.lblConfirmPassword.Size = new System.Drawing.Size(115, 16);
             this.lblConfirmPassword.TabIndex = 4;
             this.lblConfirmPassword.Text = "Confirm Password";
             // 
@@ -107,14 +107,15 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(19, 118);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(400, 26);
+            this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtUsername.Size = new System.Drawing.Size(400, 22);
             this.txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(19, 182);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(400, 26);
+            this.txtPassword.Size = new System.Drawing.Size(400, 22);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -122,7 +123,7 @@
             // 
             this.txtConfirmPassword.Location = new System.Drawing.Point(19, 254);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(400, 26);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(400, 22);
             this.txtConfirmPassword.TabIndex = 7;
             this.txtConfirmPassword.UseSystemPasswordChar = true;
             // 
@@ -143,7 +144,7 @@
             this.chkShowPassword.AutoSize = true;
             this.chkShowPassword.Location = new System.Drawing.Point(23, 286);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(148, 24);
+            this.chkShowPassword.Size = new System.Drawing.Size(125, 20);
             this.chkShowPassword.TabIndex = 8;
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
@@ -174,6 +175,17 @@
             this.groupRole.TabIndex = 0;
             this.groupRole.TabStop = false;
             this.groupRole.Text = "Select Role";
+            // 
+            // rbMerchant
+            // 
+            this.rbMerchant.AutoSize = true;
+            this.rbMerchant.Location = new System.Drawing.Point(161, 30);
+            this.rbMerchant.Name = "rbMerchant";
+            this.rbMerchant.Size = new System.Drawing.Size(83, 20);
+            this.rbMerchant.TabIndex = 2;
+            this.rbMerchant.TabStop = true;
+            this.rbMerchant.Text = "Merchant";
+            this.rbMerchant.UseVisualStyleBackColor = true;
             // 
             // rbCustomer
             // 
@@ -230,20 +242,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(126, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 20);
+            this.label1.Size = new System.Drawing.Size(181, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Fast and Easy Food Delivery";
-            // 
-            // rbMerchant
-            // 
-            this.rbMerchant.AutoSize = true;
-            this.rbMerchant.Location = new System.Drawing.Point(161, 30);
-            this.rbMerchant.Name = "rbMerchant";
-            this.rbMerchant.Size = new System.Drawing.Size(101, 24);
-            this.rbMerchant.TabIndex = 2;
-            this.rbMerchant.TabStop = true;
-            this.rbMerchant.Text = "Merchant";
-            this.rbMerchant.UseVisualStyleBackColor = true;
             // 
             // SignUp
             // 

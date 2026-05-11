@@ -87,6 +87,7 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(338, 232);
             this.txtUsername.Name = "txtUsername";
+            this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUsername.Size = new System.Drawing.Size(400, 22);
             this.txtUsername.TabIndex = 3;
             // 
@@ -94,6 +95,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(338, 327);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtPassword.Size = new System.Drawing.Size(400, 22);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSystemPasswordChar = true;
@@ -139,13 +141,14 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.CausesValidation = false;
             this.panel1.Controls.Add(this.lblUsername);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Location = new System.Drawing.Point(287, 32);
             this.panel1.Name = "panel1";
-            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel1.Size = new System.Drawing.Size(484, 517);
             this.panel1.TabIndex = 8;
             // 
