@@ -94,8 +94,27 @@ namespace LogIn1
                 BackColor = Color.LightSteelBlue,
                 FlatStyle = FlatStyle.Flat,
                 Font = new Font("Segoe UI", 10F, FontStyle.Bold),
-                Margin = new Padding(10)
+                Margin = new Padding(10),
+                 ForeColor = Color.White,
+                TextAlign = ContentAlignment.MiddleCenter
             };
+            // Try to get merchant's background image
+            Image bgImage = MerchantSettingsStorage.GetBackgroundImage(username);
+            if (bgImage != null)
+            {
+                merchantButton.BackgroundImage = bgImage;
+                merchantButton.BackgroundImageLayout = ImageLayout.Stretch;
+                // Make text readable by adding a semi-transparent overlay
+                merchantButton.FlatAppearance.BorderSize = 0;
+                // Optional: darken text background
+                merchantButton.BackColor = Color.FromArgb(100, 0, 0, 0);  // semi-transparent black
+            }
+            else
+            {
+                merchantButton.BackColor = Color.LightSteelBlue;
+                merchantButton.ForeColor = Color.Black;
+            }
+
             merchantButton.Click += MerchantButton_Click;
             flowMerchants.Controls.Add(merchantButton);
         }

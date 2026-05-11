@@ -37,6 +37,8 @@ namespace LogIn1
             this.panelEditMenu = new System.Windows.Forms.Panel();
             this.btnSalesHistory = new System.Windows.Forms.Button();
             this.btnEditMenu = new System.Windows.Forms.Button();
+            this.btnUploadBackground = new System.Windows.Forms.Button();
+            this.picBackgroundPreview = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -122,6 +124,10 @@ namespace LogIn1
             this.panelEditMenu.Name = "panelEditMenu";
             this.panelEditMenu.Size = new System.Drawing.Size(700, 300);
             this.panelEditMenu.TabIndex = 0;
+            this.panelEditMenu.Controls.Add(this.btnSalesHistory);
+            this.panelEditMenu.Controls.Add(this.btnEditMenu);
+            this.panelEditMenu.Controls.Add(this.btnUploadBackground);
+            this.panelEditMenu.Controls.Add(this.picBackgroundPreview);
             // 
             // btnEditMenu
             // 
@@ -162,6 +168,27 @@ namespace LogIn1
             this.panelEditMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
+            this.btnEditMenu.Location = new System.Drawing.Point(50, 50);
+            this.btnSalesHistory.Location = new System.Drawing.Point(370, 50);
+            // New button position:
+            this.btnUploadBackground.BackColor = System.Drawing.Color.LightGray;
+            this.btnUploadBackground.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnUploadBackground.Location = new System.Drawing.Point(50, 160);
+            this.btnUploadBackground.Name = "btnUploadBackground";
+            this.btnUploadBackground.Size = new System.Drawing.Size(200, 35);
+            this.btnUploadBackground.TabIndex = 2;
+            this.btnUploadBackground.Text = "Upload Background Image";
+            this.btnUploadBackground.UseVisualStyleBackColor = false;
+            this.btnUploadBackground.Click += new System.EventHandler(this.btnUploadBackground_Click);
+
+            // Preview PictureBox
+            this.picBackgroundPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBackgroundPreview.Location = new System.Drawing.Point(300, 140);
+            this.picBackgroundPreview.Name = "picBackgroundPreview";
+            this.picBackgroundPreview.Size = new System.Drawing.Size(150, 80);
+            this.picBackgroundPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBackgroundPreview.TabIndex = 3;
+            this.picBackgroundPreview.TabStop = false;
         }
 
         #endregion
@@ -175,5 +202,7 @@ namespace LogIn1
         private System.Windows.Forms.Panel panelEditMenu;
         private System.Windows.Forms.Button btnEditMenu;
         private System.Windows.Forms.Button btnSalesHistory;
+        private System.Windows.Forms.Button btnUploadBackground;
+        private System.Windows.Forms.PictureBox picBackgroundPreview;
     }
 }

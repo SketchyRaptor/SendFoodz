@@ -16,7 +16,7 @@ namespace LogIn1
 
         private string loggedInMerchant;
 
-        // Public method to get a merchant's product list (safe copy or reference)
+        // Public method to get a merchant's product list
         public static List<ProductItem> GetProductsForMerchant(string merchantUsername)
         {
             if (!merchantProducts.ContainsKey(merchantUsername))
@@ -62,7 +62,7 @@ namespace LogIn1
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            // Validation...
+            // Validation
             if (string.IsNullOrWhiteSpace(txtProductName.Text))
             {
                 MessageBox.Show("Please enter a product name.", "Validation Error");
@@ -130,6 +130,9 @@ namespace LogIn1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            // Return to MerchantDashboard, not CustomerDashboard
+            MerchantDashBoard dashboard = new MerchantDashBoard();
+            dashboard.Show();
             this.Close();
         }
     }
@@ -141,5 +144,59 @@ namespace LogIn1
         public int Quantity { get; set; }
         public decimal Total { get; set; }
         public Image Image { get; set; }
+    }
+
+    // Merchant settings storage (for background images)
+    public static class MerchantSettingsStorage
+    {
+        private static Dictionary<string, string> merchantBackgrounds = new Dictionary<string, string>();
+        private static string backgroundsFolder = Path.Combine(Application.StartupPath, "MerchantBackgrounds");
+
+        static MerchantSettingsStorage()
+        {
+            if (!Directory.Exists(backgroundsFolder))
+                Directory.CreateDirectory(backgroundsFolder);
+        }
+
+        public static void SetBackgroundImage(string merchantUsername, Image image)
+        {
+            if (image == null)
+            {
+                if (merchantBackgrounds.ContainsKey(merchantUsername))
+                    merchantBackgrounds.Remove(merchantUsername);
+                string filePath = Path.Combine(backgroundsFolder, merchantUsername + ".jpg");
+                if (File.Exists(filePath))
+                    File.Delete(filePath);
+                return;
+            }
+
+            string savePath = Path.Combine(backgroundsFolder, merchantUsername + ".jpg");
+            image.Save(savePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+            merchantBackgrounds[merchantUsername] = savePath;
+        }
+
+        public static Image GetBackgroundImage(string merchantUsername)
+        {
+            if (merchantBackgrounds.ContainsKey(merchantUsername))
+            {
+                try
+                {
+                    return Image.FromFile(merchantBackgrounds[merchantUsername]);
+                }
+                catch { }
+            }
+            string filePath = Path.Combine(backgroundsFolder, merchantUsername + ".jpg");
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    Image img = Image.FromFile(filePath);
+                    merchantBackgrounds[merchantUsername] = filePath;
+                    return img;
+                }
+                catch { }
+            }
+            return null;
+        }
     }
 }
