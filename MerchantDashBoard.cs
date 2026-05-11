@@ -20,7 +20,7 @@ namespace LogIn1
         private void btnEditMenu_Click(object sender, EventArgs e)
         {
             // Navigate to MerchantProducts form
-            MerchantProducts merchantProducts = new MerchantProducts();
+            MerchantProducts merchantProducts = new MerchantProducts(Form1.CurrentUsername);
             merchantProducts.Show();
 
             this.Hide();

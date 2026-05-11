@@ -17,6 +17,8 @@ namespace LogIn1
             new Account { Username = "User123", Password = "123", Role = "Customer" }
         };
 
+        // NEW: store the currently logged-in username (for any role)
+        public static string CurrentUsername { get; private set; }
         public Form1()
         {
             InitializeComponent();
@@ -30,7 +32,7 @@ namespace LogIn1
             if (username == "admin" && password == "admin123")
             {
                 MessageBox.Show("Admin login succesfull");
-
+                CurrentUsername = username;  // optional for admin
                 AdminDashboard admin = new AdminDashboard();
                 admin.Show();
                 this.Hide();
@@ -42,7 +44,7 @@ namespace LogIn1
                 if (acc.Username == username && acc.Password == password)
                 {
                     MessageBox.Show("login succesfull");
-
+                    CurrentUsername = username;  // Store the logged in usernames
                     // Check user role and navigate to appropriate dashboard
                     if (acc.Role == "Merchant")
                     {

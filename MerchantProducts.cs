@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -7,123 +8,138 @@ namespace LogIn1
 {
     public partial class MerchantProducts : Form
     {
-        public MerchantProducts()
+        // Per-merchant product catalog (private, but accessible via method)
+        private static Dictionary<string, List<ProductItem>> merchantProducts = new Dictionary<string, List<ProductItem>>();
+
+        // Event includes merchant username and the product added
+        public static event Action<string, ProductItem> ProductAdded;
+
+        private string loggedInMerchant;
+
+        // Public method to get a merchant's product list (safe copy or reference)
+        public static List<ProductItem> GetProductsForMerchant(string merchantUsername)
+        {
+            if (!merchantProducts.ContainsKey(merchantUsername))
+                merchantProducts[merchantUsername] = new List<ProductItem>();
+            return merchantProducts[merchantUsername];
+        }
+
+        public MerchantProducts(string merchantUsername)
         {
             InitializeComponent();
+            loggedInMerchant = merchantUsername;
 
-            // Add an image column to the DataGridView
+            // Ensure the merchant has an entry
+            if (!merchantProducts.ContainsKey(loggedInMerchant))
+                merchantProducts[loggedInMerchant] = new List<ProductItem>();
+
+            // Add image column to DataGridView
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn
             {
                 Name = "colImage",
                 HeaderText = "Image",
-                ImageLayout = DataGridViewImageCellLayout.Zoom,  // Fit image in cell
-                Width = 80                                      // Fixed width for image column
+                ImageLayout = DataGridViewImageCellLayout.Zoom,
+                Width = 80
             };
-            dataGridView1.Columns.Insert(0, imageColumn);       // Insert as first column (optional)
-
-            // Auto-size other columns to fill remaining space
+            dataGridView1.Columns.Insert(0, imageColumn);
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Wire up the Select Image button click event
             btnSelectImage.Click += BtnSelectImage_Click;
+
+            // Load existing products for this merchant
+            LoadProductsForCurrentMerchant();
         }
 
-        // ==================== SAVE PRODUCT ====================
+        private void LoadProductsForCurrentMerchant()
+        {
+            dataGridView1.Rows.Clear();
+            var productList = merchantProducts[loggedInMerchant];
+            foreach (var product in productList)
+            {
+                dataGridView1.Rows.Add(product.Image, product.Name, product.Price, product.Quantity, product.Total);
+            }
+        }
+
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            // Validate Product Name
+            // Validation...
             if (string.IsNullOrWhiteSpace(txtProductName.Text))
             {
-                MessageBox.Show("Please enter a product name.", "Validation Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a product name.", "Validation Error");
                 txtProductName.Focus();
                 return;
             }
-
-            // Validate Price
             if (!decimal.TryParse(txtPrice.Text, out decimal price) || price < 0)
             {
-                MessageBox.Show("Please enter a valid price (e.g., 19.99).", "Validation Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a valid price.", "Validation Error");
                 txtPrice.Focus();
                 return;
             }
-
-            // Validate Quantity
             if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity < 0)
             {
-                MessageBox.Show("Please enter a valid quantity (positive integer).", "Validation Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a valid quantity.", "Validation Error");
                 txtQuantity.Focus();
                 return;
             }
 
-            // Calculate Total
             decimal total = price * quantity;
-
-            // Get the product image (nullable)
             Image productImage = pictureBox1.Image;
 
-            // Add a new row to DataGridView
-            // Columns order: colImage (index 0), colName, colPrice, colQty, colTotal
-            dataGridView1.Rows.Add(productImage,          // Image column
-                                   txtProductName.Text,  // Name
-                                   price,                // Price
-                                   quantity,             // Quantity
-                                   total);               // Total
+            // Add to grid
+            dataGridView1.Rows.Add(productImage, txtProductName.Text, price, quantity, total);
 
-            // Clear input fields for next product
+            ProductItem newProduct = new ProductItem
+            {
+                Name = txtProductName.Text,
+                Price = price,
+                Quantity = quantity,
+                Image = productImage,
+                Total = total
+            };
+            merchantProducts[loggedInMerchant].Add(newProduct);
+            ProductAdded?.Invoke(loggedInMerchant, newProduct);
+
+            // Clear inputs
             txtProductName.Clear();
             txtPrice.Clear();
             txtQuantity.Clear();
             pictureBox1.Image = null;
             lblImageName.Text = "No image selected";
 
-            // Optional: scroll to the newly added row
             if (dataGridView1.Rows.Count > 0)
                 dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.Rows.Count - 1;
 
-            // Notify user
-            MessageBox.Show("Product saved successfully!", "Success",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Product saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        // ==================== SELECT IMAGE ====================
         private void BtnSelectImage_Click(object sender, EventArgs e)
         {
-            // openFileDialog is already defined in the designer
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    // Load the full-size image into the PictureBox
-                    Image originalImage = Image.FromFile(openFileDialog.FileName);
-                    pictureBox1.Image = originalImage;
-                    // Display file name in the label
+                    pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
                     lblImageName.Text = Path.GetFileName(openFileDialog.FileName);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Could not load image: " + ex.Message, "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Could not load image: " + ex.Message, "Error");
                 }
             }
         }
 
-        // ==================== (Optional) Your existing Product & FoodOption classes ====================
-        // (Keep these if needed elsewhere in your project)
-        public class Product
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            public string Name { get; set; }
-            public string Description { get; set; }
-            public string ImagePath { get; set; }
-            public System.Collections.Generic.List<FoodOption> FoodOptions { get; set; } = new System.Collections.Generic.List<FoodOption>();
+            this.Close();
         }
+    }
 
-        public class FoodOption
-        {
-            public string Name { get; set; }
-            public decimal Price { get; set; }
-        }
+    public class ProductItem
+    {
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
+        public decimal Total { get; set; }
+        public Image Image { get; set; }
     }
 }
