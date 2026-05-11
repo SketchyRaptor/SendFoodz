@@ -279,5 +279,26 @@
   <ItemGroup>
     <None Include="Resources\Chowking Siomai Chao Fan.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_11-5-2026_152747_claude.ai.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image May 7, 2026, 02_38_16 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_ksa2u5ksa2u5ksa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_11-5-2026_152818_claude.ai.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_11-5-2026_152834_claude.ai.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-05-11 084156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_w76sjbw76sjbw76s.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

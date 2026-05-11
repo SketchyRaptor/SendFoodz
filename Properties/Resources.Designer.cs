@@ -153,6 +153,16 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_May_7__2026__02_38_16_PM {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image May 7, 2026, 02_38_16 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cheeseburger {
             get {
                 object obj = ResourceManager.GetObject("Cheeseburger", resourceCulture);
@@ -216,6 +226,26 @@ namespace LogIn1.Properties {
         internal static System.Drawing.Bitmap download__3_ {
             get {
                 object obj = ResourceManager.GetObject("download (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_ksa2u5ksa2u5ksa2 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_ksa2u5ksa2u5ksa2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_w76sjbw76sjbw76s {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_w76sjbw76sjbw76s", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +336,46 @@ namespace LogIn1.Properties {
         internal static System.Drawing.Bitmap Menu___Fast_Food_Delivery___Pickup___Jollibee_USA__1_ {
             get {
                 object obj = ResourceManager.GetObject("Menu - Fast Food Delivery & Pickup _ Jollibee USA (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_11_5_2026_152747_claude_ai {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_11-5-2026_152747_claude.ai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_11_5_2026_152818_claude_ai {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_11-5-2026_152818_claude.ai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_11_5_2026_152834_claude_ai {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_11-5-2026_152834_claude.ai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_05_11_084156 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-05-11 084156", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

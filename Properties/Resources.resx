@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Screenshot 2026-05-11 084156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2026-05-11 084156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="395517735_817801410097474_2498383284007517753_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\395517735_817801410097474_2498383284007517753_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,6 +132,9 @@
   </data>
   <data name="Trash Decal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trash Decal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chowking Siomai Chao Fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chowking Siomai Chao Fan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Menu - Fast Food Delivery &amp; Pickup _ Jollibee USA (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu - Fast Food Delivery &amp; Pickup _ Jollibee USA (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +145,14 @@
   <data name="Cheeseburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cheeseburger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Screenshot_11-5-2026_152747_claude.ai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_11-5-2026_152747_claude.ai.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Burger Steaks and Mushroom Gravy (Jollibee Style, Vegan)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Burger Steaks and Mushroom Gravy (Jollibee Style, Vegan).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatGPT Image May 7, 2026, 02_38_16 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatGPT Image May 7, 2026, 02_38_16 PM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jollibee's New Products for 2012" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jollibee's New Products for 2012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +160,8 @@
   <data name="Jollibee Việt Nam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jollibee Việt Nam.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="395517735_817801410097474_2498383284007517753_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\395517735_817801410097474_2498383284007517753_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chowking Siomai Chao Fan Family Platter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chowking Siomai Chao Fan Family Platter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="684158566_1740812020664177_4007561215611831389_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\684158566_1740812020664177_4007561215611831389_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +175,11 @@
   <data name="685708735_3503893506424551_5048291314755121252_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\685708735_3503893506424551_5048291314755121252_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chowking Siomai Chao Fan Family Platter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chowking Siomai Chao Fan Family Platter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Jollibee Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jollibee Menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_11-5-2026_152818_claude.ai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_11-5-2026_152818_claude.ai.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -177,6 +192,9 @@
   </data>
   <data name="ChatGPT Image Apr 17, 2026, 02_55_18 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatGPT Image Apr 17, 2026, 02_55_18 PM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_11-5-2026_152834_claude.ai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_11-5-2026_152834_claude.ai.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jollibee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jollibee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +217,10 @@
   <data name="Menu - Fast Food Delivery &amp; Pickup _ Jollibee USA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu - Fast Food Delivery &amp; Pickup _ Jollibee USA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chowking Siomai Chao Fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chowking Siomai Chao Fan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Gemini_Generated_Image_ksa2u5ksa2u5ksa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_ksa2u5ksa2u5ksa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gemini_Generated_Image_w76sjbw76sjbw76s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gemini_Generated_Image_w76sjbw76sjbw76s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
