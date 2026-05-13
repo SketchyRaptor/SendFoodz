@@ -115,7 +115,6 @@
             this.pnlInputForm.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlInputForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlInputForm.Controls.Add(this.btnBack);
-            this.pnlInputForm.Controls.Add(this.btnSelectImage);
             this.pnlInputForm.Controls.Add(this.grpProductInfo);
             this.pnlInputForm.Controls.Add(this.btnSaveProduct);
             this.pnlInputForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -134,7 +133,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(13, 369);
+            this.btnBack.Location = new System.Drawing.Point(13, 400);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(345, 36);
@@ -149,7 +148,7 @@
             this.btnSelectImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnSelectImage.ForeColor = System.Drawing.Color.White;
-            this.btnSelectImage.Location = new System.Drawing.Point(207, 261);
+            this.btnSelectImage.Location = new System.Drawing.Point(195, 268);
             this.btnSelectImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelectImage.Name = "btnSelectImage";
             this.btnSelectImage.Size = new System.Drawing.Size(138, 33);
@@ -161,6 +160,7 @@
             // 
             this.grpProductInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.grpProductInfo.Controls.Add(this.label1);
+            this.grpProductInfo.Controls.Add(this.btnSelectImage);
             this.grpProductInfo.Controls.Add(this.txtQuantity);
             this.grpProductInfo.Controls.Add(this.pictureBox1);
             this.grpProductInfo.Controls.Add(this.lblImageName);
@@ -173,7 +173,7 @@
             this.grpProductInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpProductInfo.Name = "grpProductInfo";
             this.grpProductInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpProductInfo.Size = new System.Drawing.Size(347, 293);
+            this.grpProductInfo.Size = new System.Drawing.Size(347, 316);
             this.grpProductInfo.TabIndex = 1;
             this.grpProductInfo.TabStop = false;
             this.grpProductInfo.Text = "Product Information";
@@ -201,10 +201,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 194);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 195);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -263,7 +264,7 @@
             this.btnSaveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnSaveProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSaveProduct.Location = new System.Drawing.Point(13, 321);
+            this.btnSaveProduct.Location = new System.Drawing.Point(13, 349);
             this.btnSaveProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveProduct.Name = "btnSaveProduct";
             this.btnSaveProduct.Size = new System.Drawing.Size(345, 36);
