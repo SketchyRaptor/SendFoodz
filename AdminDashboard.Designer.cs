@@ -57,6 +57,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRiders)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
@@ -89,7 +93,7 @@
             // dgvUsers
             // 
             this.dgvUsers.ColumnHeadersHeight = 34;
-            this.dgvUsers.Location = new System.Drawing.Point(42, 93);
+            this.dgvUsers.Location = new System.Drawing.Point(42, 101);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.RowHeadersWidth = 62;
             this.dgvUsers.Size = new System.Drawing.Size(415, 200);
@@ -99,7 +103,7 @@
             // dgvRiders
             // 
             this.dgvRiders.ColumnHeadersHeight = 34;
-            this.dgvRiders.Location = new System.Drawing.Point(43, 94);
+            this.dgvRiders.Location = new System.Drawing.Point(42, 113);
             this.dgvRiders.Name = "dgvRiders";
             this.dgvRiders.RowHeadersWidth = 62;
             this.dgvRiders.Size = new System.Drawing.Size(415, 200);
@@ -108,7 +112,7 @@
             // dgvOrders
             // 
             this.dgvOrders.ColumnHeadersHeight = 34;
-            this.dgvOrders.Location = new System.Drawing.Point(43, 90);
+            this.dgvOrders.Location = new System.Drawing.Point(40, 109);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.RowHeadersWidth = 62;
             this.dgvOrders.Size = new System.Drawing.Size(415, 200);
@@ -186,9 +190,10 @@
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.dgvOrders);
+            this.panel5.Controls.Add(this.button3);
             this.panel5.Location = new System.Drawing.Point(116, 346);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(498, 308);
+            this.panel5.Size = new System.Drawing.Size(498, 324);
             this.panel5.TabIndex = 11;
             // 
             // label3
@@ -197,7 +202,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(162, 27);
+            this.label3.Location = new System.Drawing.Point(146, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(299, 37);
             this.label3.TabIndex = 8;
@@ -207,9 +212,9 @@
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::LogIn1.Properties.Resources.Gemini_Generated_Image_w76sjbw76sjbw76s;
-            this.pictureBox4.Location = new System.Drawing.Point(43, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(58, 27);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(116, 84);
+            this.pictureBox4.Size = new System.Drawing.Size(78, 66);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
@@ -221,9 +226,10 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.dgvUsers);
+            this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(734, 17);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(498, 308);
+            this.panel4.Size = new System.Drawing.Size(498, 318);
             this.panel4.TabIndex = 10;
             // 
             // label2
@@ -232,7 +238,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(163, 27);
+            this.label2.Location = new System.Drawing.Point(156, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(238, 37);
             this.label2.TabIndex = 7;
@@ -242,9 +248,9 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::LogIn1.Properties.Resources.Screenshot_2026_05_11_084156;
-            this.pictureBox3.Location = new System.Drawing.Point(42, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(58, 20);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(116, 84);
+            this.pictureBox3.Size = new System.Drawing.Size(78, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -256,9 +262,10 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.dgvRiders);
-            this.panel3.Location = new System.Drawing.Point(116, 17);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Location = new System.Drawing.Point(116, 13);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(498, 308);
+            this.panel3.Size = new System.Drawing.Size(498, 322);
             this.panel3.TabIndex = 9;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -268,7 +275,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(163, 27);
+            this.label1.Location = new System.Drawing.Point(152, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 37);
             this.label1.TabIndex = 6;
@@ -278,9 +285,9 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::LogIn1.Properties.Resources.Screenshot_11_5_2026_152747_claude_ai;
-            this.pictureBox2.Location = new System.Drawing.Point(43, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 25);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(116, 84);
+            this.pictureBox2.Size = new System.Drawing.Size(78, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -292,9 +299,10 @@
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.Controls.Add(this.button4);
             this.panel6.Location = new System.Drawing.Point(734, 346);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(498, 308);
+            this.panel6.Size = new System.Drawing.Size(498, 324);
             this.panel6.TabIndex = 12;
             // 
             // label4
@@ -303,7 +311,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(162, 27);
+            this.label4.Location = new System.Drawing.Point(154, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(255, 37);
             this.label4.TabIndex = 9;
@@ -313,9 +321,9 @@
             // 
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = global::LogIn1.Properties.Resources.Screenshot_11_5_2026_152834_claude_ai;
-            this.pictureBox5.Location = new System.Drawing.Point(42, 3);
+            this.pictureBox5.Location = new System.Drawing.Point(58, 29);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(116, 84);
+            this.pictureBox5.Size = new System.Drawing.Size(78, 66);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -323,7 +331,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeight = 34;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 90);
+            this.dataGridView1.Location = new System.Drawing.Point(42, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(415, 200);
@@ -339,10 +347,63 @@
             this.panel7.Size = new System.Drawing.Size(1116, 59);
             this.panel7.TabIndex = 13;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(42, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(415, 84);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.Location = new System.Drawing.Point(42, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(415, 84);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 2;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button3.Location = new System.Drawing.Point(42, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(413, 84);
+            this.button3.TabIndex = 8;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderSize = 2;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button4.Location = new System.Drawing.Point(42, 18);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(415, 84);
+            this.button4.TabIndex = 9;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // AdminDashboard
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1378, 844);
+            this.ClientSize = new System.Drawing.Size(1377, 844);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "AdminDashboard";
@@ -393,5 +454,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
