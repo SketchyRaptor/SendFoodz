@@ -143,6 +143,16 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap burgerkingads {
+            get {
+                object obj = ResourceManager.GetObject("burgerkingads", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_Apr_17__2026__02_55_18_PM {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image Apr 17, 2026, 02_55_18 PM", resourceCulture);
@@ -306,6 +316,16 @@ namespace LogIn1.Properties {
         internal static System.Drawing.Bitmap McDelivery {
             get {
                 object obj = ResourceManager.GetObject("McDelivery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mcdoads {
+            get {
+                object obj = ResourceManager.GetObject("mcdoads", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

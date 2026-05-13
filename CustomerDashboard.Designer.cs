@@ -26,16 +26,22 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnViewOrder = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtUsername = new System.Windows.Forms.Label();
-            this.btnViewOrder = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -45,10 +51,9 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(334, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Location = new System.Drawing.Point(297, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1165, 854);
+            this.panel1.Size = new System.Drawing.Size(1036, 684);
             this.panel1.TabIndex = 0;
             // 
             // panel7
@@ -56,10 +61,9 @@
             this.panel7.BackColor = System.Drawing.Color.Red;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.btnLogout);
-            this.panel7.Location = new System.Drawing.Point(880, 36);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel7.Location = new System.Drawing.Point(782, 29);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(263, 46);
+            this.panel7.Size = new System.Drawing.Size(234, 37);
             this.panel7.TabIndex = 5;
             // 
             // btnLogout
@@ -68,9 +72,8 @@
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLogout.Location = new System.Drawing.Point(-1, -1);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(263, 46);
+            this.btnLogout.Size = new System.Drawing.Size(234, 37);
             this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -80,10 +83,9 @@
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.searchBarTextBox);
-            this.panel4.Location = new System.Drawing.Point(18, 36);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel4.Location = new System.Drawing.Point(16, 29);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(625, 46);
+            this.panel4.Size = new System.Drawing.Size(556, 37);
             this.panel4.TabIndex = 2;
             // 
             // searchBarTextBox
@@ -91,10 +93,9 @@
             this.searchBarTextBox.BackColor = System.Drawing.Color.White;
             this.searchBarTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchBarTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F);
-            this.searchBarTextBox.Location = new System.Drawing.Point(44, 8);
-            this.searchBarTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.searchBarTextBox.Location = new System.Drawing.Point(39, 6);
             this.searchBarTextBox.Name = "searchBarTextBox";
-            this.searchBarTextBox.Size = new System.Drawing.Size(549, 28);
+            this.searchBarTextBox.Size = new System.Drawing.Size(488, 23);
             this.searchBarTextBox.TabIndex = 0;
             // 
             // panel3
@@ -104,10 +105,9 @@
             this.panel3.Controls.Add(this.welcomeMessageTextBox);
             this.panel3.Controls.Add(this.MerchantsLabel);
             this.panel3.Controls.Add(this.flowMerchants);
-            this.panel3.Location = new System.Drawing.Point(18, 109);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(16, 87);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1128, 708);
+            this.panel3.Size = new System.Drawing.Size(1003, 567);
             this.panel3.TabIndex = 1;
             // 
             // welcomeMessageTextBox
@@ -115,20 +115,20 @@
             this.welcomeMessageTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.welcomeMessageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.welcomeMessageTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F);
-            this.welcomeMessageTextBox.Location = new System.Drawing.Point(27, 28);
-            this.welcomeMessageTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.welcomeMessageTextBox.Location = new System.Drawing.Point(24, 22);
             this.welcomeMessageTextBox.Name = "welcomeMessageTextBox";
             this.welcomeMessageTextBox.ReadOnly = true;
-            this.welcomeMessageTextBox.Size = new System.Drawing.Size(567, 42);
+            this.welcomeMessageTextBox.Size = new System.Drawing.Size(504, 35);
             this.welcomeMessageTextBox.TabIndex = 0;
+            this.welcomeMessageTextBox.Text = "Welcome  ";
             // 
             // MerchantsLabel
             // 
             this.MerchantsLabel.AutoSize = true;
             this.MerchantsLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold);
-            this.MerchantsLabel.Location = new System.Drawing.Point(21, 114);
+            this.MerchantsLabel.Location = new System.Drawing.Point(19, 91);
             this.MerchantsLabel.Name = "MerchantsLabel";
-            this.MerchantsLabel.Size = new System.Drawing.Size(134, 31);
+            this.MerchantsLabel.Size = new System.Drawing.Size(112, 26);
             this.MerchantsLabel.TabIndex = 3;
             this.MerchantsLabel.Text = "Merchants";
             // 
@@ -138,10 +138,9 @@
             this.flowMerchants.BackColor = System.Drawing.Color.White;
             this.flowMerchants.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowMerchants.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowMerchants.Location = new System.Drawing.Point(27, 164);
-            this.flowMerchants.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flowMerchants.Location = new System.Drawing.Point(24, 131);
             this.flowMerchants.Name = "flowMerchants";
-            this.flowMerchants.Size = new System.Drawing.Size(1074, 500);
+            this.flowMerchants.Size = new System.Drawing.Size(955, 400);
             this.flowMerchants.TabIndex = 4;
             this.flowMerchants.WrapContents = false;
             // 
@@ -153,30 +152,31 @@
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(34, 39);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(30, 31);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(273, 857);
+            this.panel2.Size = new System.Drawing.Size(243, 686);
             this.panel2.TabIndex = 0;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(38, 559);
+            this.panel9.Controls.Add(this.pictureBox2);
+            this.panel9.Location = new System.Drawing.Point(34, 447);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(193, 246);
+            this.panel9.Size = new System.Drawing.Size(172, 197);
             this.panel9.TabIndex = 1;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Location = new System.Drawing.Point(38, 274);
+            this.panel8.Controls.Add(this.pictureBox1);
+            this.panel8.Location = new System.Drawing.Point(34, 219);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(193, 237);
+            this.panel8.Size = new System.Drawing.Size(172, 190);
             this.panel8.TabIndex = 1;
             // 
             // panel6
@@ -184,48 +184,69 @@
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.btnViewOrder);
-            this.panel6.Location = new System.Drawing.Point(38, 138);
+            this.panel6.Location = new System.Drawing.Point(34, 110);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(193, 63);
+            this.panel6.Size = new System.Drawing.Size(172, 51);
             this.panel6.TabIndex = 1;
+            // 
+            // btnViewOrder
+            // 
+            this.btnViewOrder.Location = new System.Drawing.Point(-1, -1);
+            this.btnViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnViewOrder.Name = "btnViewOrder";
+            this.btnViewOrder.Size = new System.Drawing.Size(172, 50);
+            this.btnViewOrder.TabIndex = 0;
+            this.btnViewOrder.Text = "View Order";
+            this.btnViewOrder.UseVisualStyleBackColor = true;
+            this.btnViewOrder.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.txtUsername);
-            this.panel5.Location = new System.Drawing.Point(38, 36);
+            this.panel5.Location = new System.Drawing.Point(34, 29);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(193, 63);
+            this.panel5.Size = new System.Drawing.Size(172, 51);
             this.panel5.TabIndex = 0;
             // 
             // txtUsername
             // 
             this.txtUsername.AutoSize = true;
-            this.txtUsername.Location = new System.Drawing.Point(45, 20);
+            this.txtUsername.Location = new System.Drawing.Point(40, 16);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(100, 20);
+            this.txtUsername.Size = new System.Drawing.Size(86, 16);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Text = "User\'s Name";
             // 
-            // btnViewOrder
+            // pictureBox2
             // 
-            this.btnViewOrder.Location = new System.Drawing.Point(-1, -1);
-            this.btnViewOrder.Name = "btnViewOrder";
-            this.btnViewOrder.Size = new System.Drawing.Size(193, 63);
-            this.btnViewOrder.TabIndex = 0;
-            this.btnViewOrder.Text = "View Order";
-            this.btnViewOrder.UseVisualStyleBackColor = true;
-            this.btnViewOrder.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox2.Image = global::LogIn1.Properties.Resources.burgerkingads;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(172, 197);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LogIn1.Properties.Resources.mcdoads;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(172, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // CustomerDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1524, 932);
+            this.ClientSize = new System.Drawing.Size(1355, 746);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -240,9 +261,13 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,5 +289,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnViewOrder;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
