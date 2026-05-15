@@ -25,13 +25,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxScroll = new System.Windows.Forms.PictureBox();
-            this.btnLeft = new System.Windows.Forms.Button();
-            this.btnRight = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnRight = new System.Windows.Forms.Button();
+            this.btnLeft = new System.Windows.Forms.Button();
+            this.pictureBoxScroll = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,10 +54,10 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.White;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(51, 171);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(91, 20);
+            this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username";
             // 
@@ -65,10 +65,10 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.White;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(51, 264);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(86, 20);
+            this.lblPassword.Size = new System.Drawing.Size(78, 20);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
@@ -193,27 +193,49 @@
             this.panel2.Size = new System.Drawing.Size(585, 721);
             this.panel2.TabIndex = 9;
             // 
-            // pictureBoxScroll
+            // label5
             // 
-            this.pictureBoxScroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxScroll.Location = new System.Drawing.Point(127, 306);
-            this.pictureBoxScroll.Name = "pictureBoxScroll";
-            this.pictureBoxScroll.Size = new System.Drawing.Size(330, 214);
-            this.pictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxScroll.TabIndex = 0;
-            this.pictureBoxScroll.TabStop = false;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(73, 569);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(437, 40);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Fast. Fresh. Delivered.   ";
             // 
-            // btnLeft
+            // label4
             // 
-            this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeft.ForeColor = System.Drawing.Color.Red;
-            this.btnLeft.Location = new System.Drawing.Point(65, 384);
-            this.btnLeft.Name = "btnLeft";
-            this.btnLeft.Size = new System.Drawing.Size(56, 54);
-            this.btnLeft.TabIndex = 1;
-            this.btnLeft.Text = "◀";
-            this.btnLeft.UseVisualStyleBackColor = true;
-            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click_1);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(46, 205);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(489, 40);
+            this.label4.TabIndex = 5;
+            this.label4.Text = " Your Food Delivery Partner";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label3.Location = new System.Drawing.Point(162, 151);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(252, 40);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "SENDFOODZ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(147, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 40);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Welcome Back!";
             // 
             // btnRight
             // 
@@ -227,49 +249,27 @@
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
-            // label2
+            // btnLeft
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(147, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 40);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Welcome Back!";
+            this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeft.ForeColor = System.Drawing.Color.Red;
+            this.btnLeft.Location = new System.Drawing.Point(65, 384);
+            this.btnLeft.Name = "btnLeft";
+            this.btnLeft.Size = new System.Drawing.Size(56, 54);
+            this.btnLeft.TabIndex = 1;
+            this.btnLeft.Text = "◀";
+            this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click_1);
             // 
-            // label3
+            // pictureBoxScroll
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(162, 151);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 40);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "SENDFOODZ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(46, 205);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(489, 40);
-            this.label4.TabIndex = 5;
-            this.label4.Text = " Your Food Delivery Partner";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(73, 569);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(437, 40);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Fast. Fresh. Delivered.   ";
+            this.pictureBoxScroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxScroll.Location = new System.Drawing.Point(127, 306);
+            this.pictureBoxScroll.Name = "pictureBoxScroll";
+            this.pictureBoxScroll.Size = new System.Drawing.Size(330, 214);
+            this.pictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxScroll.TabIndex = 0;
+            this.pictureBoxScroll.TabStop = false;
             // 
             // Form1
             // 
