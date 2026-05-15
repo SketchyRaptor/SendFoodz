@@ -9,6 +9,7 @@ namespace LogIn1
         public ViewOrder()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             lblCustomerName.Text = $"Welcome, {Form1.CurrentUsername}";
             LoadOrders();
         }
@@ -65,6 +66,11 @@ namespace LogIn1
             CustomerDashboard dashboard = new CustomerDashboard();
             dashboard.Show();
             this.Close();
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

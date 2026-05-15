@@ -25,11 +25,17 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.lblCustomerName = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.lblOrderHistory = new System.Windows.Forms.Label();
             this.lstHistory = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvOrders
@@ -48,14 +54,14 @@
             this.colStage,
             this.colRider});
             this.dgvOrders.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvOrders.Location = new System.Drawing.Point(19, 74);
+            this.dgvOrders.Location = new System.Drawing.Point(72, 28);
             this.dgvOrders.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvOrders.Name = "dgvOrders";
             this.dgvOrders.ReadOnly = true;
             this.dgvOrders.RowHeadersVisible = false;
             this.dgvOrders.RowHeadersWidth = 51;
             this.dgvOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvOrders.Size = new System.Drawing.Size(960, 240);
+            this.dgvOrders.Size = new System.Drawing.Size(1080, 300);
             this.dgvOrders.TabIndex = 0;
             this.dgvOrders.SelectionChanged += new System.EventHandler(this.dgvOrders_SelectionChanged);
             // 
@@ -110,26 +116,32 @@
             // 
             // panelTop
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelTop.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTop.Controls.Add(this.label1);
+            this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Controls.Add(this.btnBack);
             this.panelTop.Controls.Add(this.btnRefresh);
             this.panelTop.Controls.Add(this.lblCustomerName);
-            this.panelTop.Controls.Add(this.lblTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1000, 56);
+            this.panelTop.Size = new System.Drawing.Size(1898, 82);
             this.panelTop.TabIndex = 1;
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBack.BackColor = System.Drawing.Color.White;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(0)))));
+            this.btnBack.FlatAppearance.BorderSize = 2;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(680, 14);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Location = new System.Drawing.Point(1541, 18);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 28);
+            this.btnBack.Size = new System.Drawing.Size(151, 48);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -137,12 +149,16 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRefresh.BackColor = System.Drawing.Color.White;
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(0)))));
+            this.btnRefresh.FlatAppearance.BorderSize = 2;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(800, 14);
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRefresh.Location = new System.Drawing.Point(1709, 18);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(100, 28);
+            this.btnRefresh.Size = new System.Drawing.Size(151, 48);
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
@@ -153,29 +169,18 @@
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblCustomerName.ForeColor = System.Drawing.Color.White;
-            this.lblCustomerName.Location = new System.Drawing.Point(220, 20);
+            this.lblCustomerName.Location = new System.Drawing.Point(248, 25);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(0, 23);
+            this.lblCustomerName.Size = new System.Drawing.Size(0, 28);
             this.lblCustomerName.TabIndex = 3;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(20, 12);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(151, 37);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "My Orders";
             // 
             // lblOrderHistory
             // 
             this.lblOrderHistory.AutoSize = true;
             this.lblOrderHistory.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblOrderHistory.Location = new System.Drawing.Point(12, 321);
+            this.lblOrderHistory.Location = new System.Drawing.Point(14, 12);
             this.lblOrderHistory.Name = "lblOrderHistory";
-            this.lblOrderHistory.Size = new System.Drawing.Size(121, 23);
+            this.lblOrderHistory.Size = new System.Drawing.Size(142, 28);
             this.lblOrderHistory.TabIndex = 2;
             this.lblOrderHistory.Text = "Order History";
             // 
@@ -183,23 +188,64 @@
             // 
             this.lstHistory.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lstHistory.FormattingEnabled = true;
-            this.lstHistory.ItemHeight = 16;
-            this.lstHistory.Location = new System.Drawing.Point(19, 348);
+            this.lstHistory.ItemHeight = 20;
+            this.lstHistory.Location = new System.Drawing.Point(72, 411);
             this.lstHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstHistory.Name = "lstHistory";
-            this.lstHistory.Size = new System.Drawing.Size(960, 116);
+            this.lstHistory.Size = new System.Drawing.Size(1080, 264);
             this.lstHistory.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LogIn1.Properties.Resources.ChatGPT_Image_Apr_17__2026__02_55_18_PM;
+            this.pictureBox1.Location = new System.Drawing.Point(46, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(126, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(177, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 40);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "SendFoodz";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblOrderHistory);
+            this.panel1.Location = new System.Drawing.Point(72, 351);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1080, 61);
+            this.panel1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.lstHistory);
+            this.panel2.Controls.Add(this.dgvOrders);
+            this.panel2.Location = new System.Drawing.Point(363, 172);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1204, 717);
+            this.panel2.TabIndex = 5;
             // 
             // ViewOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1000, 480);
-            this.Controls.Add(this.lstHistory);
-            this.Controls.Add(this.lblOrderHistory);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.panelTop);
-            this.Controls.Add(this.dgvOrders);
+            this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewOrder";
             this.Text = "My Orders - Customer";
@@ -207,14 +253,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblCustomerName;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnBack;
@@ -227,5 +275,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStage;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRider;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
