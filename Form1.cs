@@ -21,16 +21,21 @@ namespace LogIn1
             this.WindowState = FormWindowState.Maximized;
 
             this.Resize += Form1_Resize;
-            CenterLoginPanel();  // initial centering
+           CenterLoginPanel();  // initial centering
             this.MinimumSize = new Size(800, 600);  // prevent extreme shrinking
+
+
         }
+
+
 
         // Center the white panel inside the form on resize
         private void Form1_Resize(object sender, EventArgs e)
         {
-            CenterLoginPanel();
+            //CenterLoginPanel();
         }
 
+       
         private void CenterLoginPanel()
         {
             if (panel1 == null) return;
@@ -38,7 +43,7 @@ namespace LogIn1
             int y = (this.ClientSize.Height - panel1.Height) / 2;
             panel1.Location = new Point(Math.Max(0, x), Math.Max(0, y));
         }
-
+       
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
