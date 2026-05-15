@@ -125,10 +125,11 @@
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(1616, 24);
+            this.btnLogout.Location = new System.Drawing.Point(1720, 20);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(90, 37);
+            this.btnLogout.Size = new System.Drawing.Size(171, 49);
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -139,7 +140,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1502, 33);
+            this.label3.Location = new System.Drawing.Point(1636, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 22);
             this.label3.TabIndex = 4;
@@ -159,7 +160,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.ForeColor = System.Drawing.Color.Lime;
-            this.lblStatus.Location = new System.Drawing.Point(1482, 34);
+            this.lblStatus.Location = new System.Drawing.Point(1610, 37);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(25, 20);
             this.lblStatus.TabIndex = 2;
@@ -205,7 +206,7 @@
             this.lblEarnings.AutoSize = true;
             this.lblEarnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEarnings.ForeColor = System.Drawing.Color.Red;
-            this.lblEarnings.Location = new System.Drawing.Point(170, 73);
+            this.lblEarnings.Location = new System.Drawing.Point(152, 73);
             this.lblEarnings.Name = "lblEarnings";
             this.lblEarnings.Size = new System.Drawing.Size(38, 40);
             this.lblEarnings.TabIndex = 4;
@@ -215,7 +216,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(130, 27);
+            this.label7.Location = new System.Drawing.Point(133, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 22);
             this.label7.TabIndex = 4;
@@ -237,7 +238,7 @@
             this.lblCompleted.AutoSize = true;
             this.lblCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompleted.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblCompleted.Location = new System.Drawing.Point(162, 73);
+            this.lblCompleted.Location = new System.Drawing.Point(159, 73);
             this.lblCompleted.Name = "lblCompleted";
             this.lblCompleted.Size = new System.Drawing.Size(38, 40);
             this.lblCompleted.TabIndex = 3;
@@ -279,7 +280,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(132, 27);
+            this.label5.Location = new System.Drawing.Point(131, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 22);
             this.label5.TabIndex = 2;
@@ -301,7 +302,7 @@
             this.lblNewOrders.AutoSize = true;
             this.lblNewOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewOrders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblNewOrders.Location = new System.Drawing.Point(171, 73);
+            this.lblNewOrders.Location = new System.Drawing.Point(165, 73);
             this.lblNewOrders.Name = "lblNewOrders";
             this.lblNewOrders.Size = new System.Drawing.Size(38, 40);
             this.lblNewOrders.TabIndex = 2;
@@ -311,7 +312,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(136, 27);
+            this.label4.Location = new System.Drawing.Point(127, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 22);
             this.label4.TabIndex = 1;
@@ -330,6 +331,8 @@
             // 
             // panel7
             // 
+            this.panel7.AutoSize = true;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.lblPrice);
             this.panel7.Controls.Add(this.btnReject);
             this.panel7.Controls.Add(this.btnAccept);
@@ -339,8 +342,9 @@
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1179, 144);
+            this.panel7.Size = new System.Drawing.Size(1166, 136);
             this.panel7.TabIndex = 0;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // lblPrice
             // 
@@ -366,6 +370,7 @@
             // 
             // btnAccept
             // 
+            this.btnAccept.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAccept.BackColor = System.Drawing.Color.Lime;
             this.btnAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept.Location = new System.Drawing.Point(986, 16);
@@ -526,9 +531,9 @@
             this.flowLayoutCompletedOrders.BackColor = System.Drawing.Color.White;
             this.flowLayoutCompletedOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutCompletedOrders.Controls.Add(this.panel13);
-            this.flowLayoutCompletedOrders.Location = new System.Drawing.Point(1224, 139);
+            this.flowLayoutCompletedOrders.Location = new System.Drawing.Point(1236, 141);
             this.flowLayoutCompletedOrders.Name = "flowLayoutCompletedOrders";
-            this.flowLayoutCompletedOrders.Size = new System.Drawing.Size(465, 482);
+            this.flowLayoutCompletedOrders.Size = new System.Drawing.Size(650, 796);
             this.flowLayoutCompletedOrders.TabIndex = 6;
             // 
             // panel13
@@ -540,7 +545,7 @@
             this.panel13.Controls.Add(this.lblRCOCode);
             this.panel13.Location = new System.Drawing.Point(3, 3);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(446, 97);
+            this.panel13.Size = new System.Drawing.Size(618, 97);
             this.panel13.TabIndex = 0;
             // 
             // lblRCOStatus
@@ -588,16 +593,16 @@
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(1224, 91);
+            this.panel12.Location = new System.Drawing.Point(1236, 91);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(465, 51);
+            this.panel12.Size = new System.Drawing.Size(650, 51);
             this.panel12.TabIndex = 8;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(31, 7);
+            this.label10.Location = new System.Drawing.Point(107, 6);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(409, 37);
             this.label10.TabIndex = 7;
@@ -615,7 +620,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(35, 18);
+            this.pictureBox6.Location = new System.Drawing.Point(35, 22);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(153, 109);
             this.pictureBox6.TabIndex = 0;
@@ -676,7 +681,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1713, 960);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.flowLayoutCompletedOrders);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
@@ -700,6 +705,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.flowLayoutNewOrders.ResumeLayout(false);
+            this.flowLayoutNewOrders.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.flowLayoutCurrentOrders.ResumeLayout(false);

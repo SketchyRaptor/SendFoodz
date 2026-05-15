@@ -202,17 +202,25 @@ namespace LogIn1
         }
 
         // Resize adjustment
+        /*
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            foreach (Control ctrl in flowLayoutNewOrders.Controls)
-                if (ctrl is Panel p) p.Width = flowLayoutNewOrders.Width - 30;
-            foreach (Control ctrl in flowLayoutCurrentOrders.Controls)
-                if (ctrl is Panel p) p.Width = flowLayoutCurrentOrders.Width - 30;
-            foreach (Control ctrl in flowLayoutCompletedOrders.Controls)
-                if (ctrl is Panel p) p.Width = flowLayoutCompletedOrders.Width - 30;
-        }
+            int maxWidth = 800; // Set your desired maximum width
 
+            foreach (Control ctrl in flowLayoutNewOrders.Controls)
+                if (ctrl is Panel p)
+                    p.Width = Math.Min(flowLayoutNewOrders.Width - 30, maxWidth);
+
+            foreach (Control ctrl in flowLayoutCurrentOrders.Controls)
+                if (ctrl is Panel p)
+                    p.Width = Math.Min(flowLayoutCurrentOrders.Width - 30, maxWidth);
+
+            foreach (Control ctrl in flowLayoutCompletedOrders.Controls)
+                if (ctrl is Panel p)
+                    p.Width = Math.Min(flowLayoutCompletedOrders.Width - 30, maxWidth);
+        }
+        */
         // Existing empty handlers
         private void panel1_Paint(object sender, PaintEventArgs e) { }
         private void label3_Click(object sender, EventArgs e) { }
@@ -224,6 +232,11 @@ namespace LogIn1
             Form1 login = new Form1();
             login.Show();
             this.Close();
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
