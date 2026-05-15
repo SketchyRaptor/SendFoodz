@@ -185,7 +185,7 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(12, 91);
+            this.panel2.Location = new System.Drawing.Point(12, 114);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1191, 235);
             this.panel2.TabIndex = 1;
@@ -324,9 +324,9 @@
             this.flowLayoutNewOrders.BackColor = System.Drawing.Color.White;
             this.flowLayoutNewOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutNewOrders.Controls.Add(this.panel7);
-            this.flowLayoutNewOrders.Location = new System.Drawing.Point(12, 388);
+            this.flowLayoutNewOrders.Location = new System.Drawing.Point(12, 405);
             this.flowLayoutNewOrders.Name = "flowLayoutNewOrders";
-            this.flowLayoutNewOrders.Size = new System.Drawing.Size(1191, 233);
+            this.flowLayoutNewOrders.Size = new System.Drawing.Size(1191, 261);
             this.flowLayoutNewOrders.TabIndex = 2;
             // 
             // panel7
@@ -416,9 +416,9 @@
             this.flowLayoutCurrentOrders.BackColor = System.Drawing.Color.White;
             this.flowLayoutCurrentOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutCurrentOrders.Controls.Add(this.panel8);
-            this.flowLayoutCurrentOrders.Location = new System.Drawing.Point(12, 688);
+            this.flowLayoutCurrentOrders.Location = new System.Drawing.Point(12, 722);
             this.flowLayoutCurrentOrders.Name = "flowLayoutCurrentOrders";
-            this.flowLayoutCurrentOrders.Size = new System.Drawing.Size(1191, 249);
+            this.flowLayoutCurrentOrders.Size = new System.Drawing.Size(1191, 290);
             this.flowLayoutCurrentOrders.TabIndex = 3;
             // 
             // panel8
@@ -490,7 +490,7 @@
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label9);
-            this.panel10.Location = new System.Drawing.Point(12, 637);
+            this.panel10.Location = new System.Drawing.Point(12, 672);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1191, 51);
             this.panel10.TabIndex = 4;
@@ -510,7 +510,7 @@
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label8);
-            this.panel11.Location = new System.Drawing.Point(12, 338);
+            this.panel11.Location = new System.Drawing.Point(12, 355);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1191, 51);
             this.panel11.TabIndex = 5;
@@ -531,9 +531,9 @@
             this.flowLayoutCompletedOrders.BackColor = System.Drawing.Color.White;
             this.flowLayoutCompletedOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutCompletedOrders.Controls.Add(this.panel13);
-            this.flowLayoutCompletedOrders.Location = new System.Drawing.Point(1236, 141);
+            this.flowLayoutCompletedOrders.Location = new System.Drawing.Point(1236, 165);
             this.flowLayoutCompletedOrders.Name = "flowLayoutCompletedOrders";
-            this.flowLayoutCompletedOrders.Size = new System.Drawing.Size(650, 796);
+            this.flowLayoutCompletedOrders.Size = new System.Drawing.Size(650, 847);
             this.flowLayoutCompletedOrders.TabIndex = 6;
             // 
             // panel13
@@ -593,7 +593,7 @@
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(1236, 91);
+            this.panel12.Location = new System.Drawing.Point(1236, 115);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(650, 51);
             this.panel12.TabIndex = 8;
