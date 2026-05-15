@@ -146,9 +146,9 @@ namespace LogIn1
 
             newOrder.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order placed. Stage: Pending");
 
-            OrderStorage.AllOrders.Add(newOrder);   // <-- changed
+            OrderStorage.AddOrder(newOrder);  // <-- changed
 
-            MessageBox.Show($"Order placed successfully!\nOrder ID: {newOrder.OrderId}\nTotal: ₱{total:F2}\nRider: {newOrder.Rider}\nThank you!",
+            MessageBox.Show($"Order placed successfully!\nOrder ID: {newOrder.OrderId}\nTotal: ₱{total:F2}\nThank you!",
                 "Order Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             cart.Clear();
@@ -157,10 +157,8 @@ namespace LogIn1
 
         private string AssignRider()
         {
-            // Use the static riders list from Form1
-            if (Form1.riders != null && Form1.riders.Count > 0)
-                return Form1.riders[0];
-            return "Unassigned";
+            return null;   // initially unassigned, visible to all riders
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)

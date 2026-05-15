@@ -53,8 +53,8 @@ namespace LogIn1
                     }
                     else if (acc.Role == "Rider")
                     {
-                       // RiderDashboard riderDashboard = new RiderDashboard();
-                       // riderDashboard.Show();
+                        RiderDashboard riderDashboard = new RiderDashboard();
+                        riderDashboard.Show();
                     }
                     else // Customer
                     {
