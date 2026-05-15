@@ -8,15 +8,10 @@ namespace LogIn1
 {
     public partial class MerchantProducts : Form
     {
-        // Per-merchant product catalog (private, but accessible via method)
         private static Dictionary<string, List<ProductItem>> merchantProducts = new Dictionary<string, List<ProductItem>>();
-
-        // Event includes merchant username and the product added
         public static event Action<string, ProductItem> ProductAdded;
-
         private string loggedInMerchant;
 
-        // Public method to get a merchant's product list
         public static List<ProductItem> GetProductsForMerchant(string merchantUsername)
         {
             if (!merchantProducts.ContainsKey(merchantUsername))
@@ -27,9 +22,10 @@ namespace LogIn1
         public MerchantProducts(string merchantUsername)
         {
             InitializeComponent();
+            // Open in full screen
+            this.WindowState = FormWindowState.Maximized;
             loggedInMerchant = merchantUsername;
 
-            // Ensure the merchant has an entry
             if (!merchantProducts.ContainsKey(loggedInMerchant))
                 merchantProducts[loggedInMerchant] = new List<ProductItem>();
 
@@ -46,8 +42,33 @@ namespace LogIn1
 
             btnSelectImage.Click += BtnSelectImage_Click;
 
-            // Load existing products for this merchant
+            // Make input controls stretch horizontally inside the group box
+            this.Resize += MerchantProducts_Resize;
+            AdjustInputControls();
+
             LoadProductsForCurrentMerchant();
+        }
+
+        private void MerchantProducts_Resize(object sender, EventArgs e)
+        {
+            AdjustInputControls();
+        }
+
+        private void AdjustInputControls()
+        {
+            if (grpProductInfo == null || txtProductName == null) return;
+
+            int padding = 20;
+            int width = grpProductInfo.ClientSize.Width - 2 * padding;
+            if (width < 100) width = 100;
+
+            // Make textboxes and picturebox stretch horizontally
+            txtProductName.Width = width;
+            txtPrice.Width = width;
+            txtQuantity.Width = width;
+            pictureBox1.Width = width / 2;
+            btnSelectImage.Left = pictureBox1.Right + 10;
+            btnSelectImage.Width = width - pictureBox1.Width - 20;
         }
 
         private void LoadProductsForCurrentMerchant()
@@ -62,7 +83,6 @@ namespace LogIn1
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            // Validation
             if (string.IsNullOrWhiteSpace(txtProductName.Text))
             {
                 MessageBox.Show("Please enter a product name.", "Validation Error");
@@ -85,7 +105,6 @@ namespace LogIn1
             decimal total = price * quantity;
             Image productImage = pictureBox1.Image;
 
-            // Add to grid
             dataGridView1.Rows.Add(productImage, txtProductName.Text, price, quantity, total);
 
             ProductItem newProduct = new ProductItem
@@ -99,7 +118,6 @@ namespace LogIn1
             merchantProducts[loggedInMerchant].Add(newProduct);
             ProductAdded?.Invoke(loggedInMerchant, newProduct);
 
-            // Clear inputs
             txtProductName.Clear();
             txtPrice.Clear();
             txtQuantity.Clear();
@@ -130,15 +148,9 @@ namespace LogIn1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // Return to MerchantDashboard, not CustomerDashboard
             MerchantDashBoard dashboard = new MerchantDashBoard();
             dashboard.Show();
             this.Close();
-        }
-
-        private void grpProductInfo_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 
@@ -151,7 +163,6 @@ namespace LogIn1
         public Image Image { get; set; }
     }
 
-    // Merchant settings storage (for background images)
     public static class MerchantSettingsStorage
     {
         private static Dictionary<string, string> merchantBackgrounds = new Dictionary<string, string>();

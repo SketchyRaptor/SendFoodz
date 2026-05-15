@@ -7,36 +7,68 @@ namespace LogIn1
 {
     public partial class OrderMenu : Form
     {
-        // Static cart – persists across different merchant selections
         private static List<CartItem> cart = new List<CartItem>();
         private string currentMerchant;
 
         public OrderMenu(string merchantUsername)
         {
             InitializeComponent();
+            // Open in full screen
+            this.WindowState = FormWindowState.Maximized;
             currentMerchant = merchantUsername;
 
-            // Subscribe to product additions from MerchantProducts
             MerchantProducts.ProductAdded += OnProductAdded;
-
-            // Load existing products for this merchant
             LoadMerchantProducts();
-
-            // Load the shared cart into the grid
             RefreshCartGrid();
 
-            // Handle events
             dgvMenu.CellClick += DgvMenu_CellClick;
             dgvCart.CellClick += DgvCart_CellClick;
             btnPlaceOrder.Click += BtnPlaceOrder_Click;
-           // btnBack.Click += btnBack_Click;   // already wired in designer, but safe to reassign
+
+            // Responsive layout
+            this.Resize += OrderMenu_Resize;
+            AdjustDataGridViewHeights();
         }
 
-        // ===== FIX: missing event handler for pnlMenu.Paint =====
-        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        private void OrderMenu_Resize(object sender, EventArgs e)
         {
-            // Optional: custom drawing if needed – leave empty for now
+            AdjustDataGridViewHeights();
         }
+
+        private void AdjustDataGridViewHeights()
+        {
+            if (dgvMenu == null || dgvCart == null) return;
+
+            // Make DataGridViews fill most of their parent panels
+            int topMargin = panel1.Height + 20;
+            int bottomMargin = 20;
+            dgvMenu.Height = pnlMenu.Height - topMargin - bottomMargin;
+            dgvMenu.Width = pnlMenu.Width - 40;
+            dgvMenu.Left = 20;
+
+            dgvCart.Height = pnlCart.Height - panel2.Height - 100; // leave space for buttons
+            dgvCart.Width = pnlCart.Width - 40;
+            dgvCart.Left = 20;
+
+            // Reposition buttons and total label
+            int btnWidth = 180;
+            int btnHeight = 42;
+            int rightMargin = 30;
+            btnPlaceOrder.Width = btnWidth;
+            btnPlaceOrder.Height = btnHeight;
+            btnPlaceOrder.Left = pnlCart.Width - btnWidth - rightMargin;
+            btnPlaceOrder.Top = dgvCart.Bottom + 15;
+
+            btnBack.Width = btnWidth;
+            btnBack.Height = btnHeight;
+            btnBack.Left = btnPlaceOrder.Left - btnWidth - 20;
+            btnBack.Top = dgvCart.Bottom + 15;
+
+            lblGrandTotal.Left = 20;
+            lblGrandTotal.Top = dgvCart.Bottom + 25;
+        }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e) { }
 
         private void LoadMerchantProducts()
         {
@@ -66,8 +98,7 @@ namespace LogIn1
                 QuantityDialog qtyDialog = new QuantityDialog();
                 if (qtyDialog.ShowDialog() == DialogResult.OK)
                 {
-                    int quantity = qtyDialog.Quantity;
-                    AddToCart(productName, price, quantity);
+                    AddToCart(productName, price, qtyDialog.Quantity);
                 }
             }
         }
@@ -146,7 +177,7 @@ namespace LogIn1
 
             newOrder.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order placed. Stage: Pending");
 
-            OrderStorage.AddOrder(newOrder);  // <-- changed
+            OrderStorage.AddOrder(newOrder);
 
             MessageBox.Show($"Order placed successfully!\nOrder ID: {newOrder.OrderId}\nTotal: ₱{total:F2}\nThank you!",
                 "Order Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -155,11 +186,7 @@ namespace LogIn1
             RefreshCartGrid();
         }
 
-        private string AssignRider()
-        {
-            return null;   // initially unassigned, visible to all riders
-
-        }
+        private string AssignRider() => null;
 
         private void btnBack_Click(object sender, EventArgs e)
         {

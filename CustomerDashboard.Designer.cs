@@ -51,18 +51,20 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(334, 39);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(273, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1165, 854);
+            this.panel1.Size = new System.Drawing.Size(1251, 932);
             this.panel1.TabIndex = 0;
             // 
             // panel7
             // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.BackColor = System.Drawing.Color.Red;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.btnLogout);
-            this.panel7.Location = new System.Drawing.Point(880, 36);
+            this.panel7.Location = new System.Drawing.Point(1051, 36);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(263, 46);
@@ -71,12 +73,13 @@
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnLogout.Location = new System.Drawing.Point(-1, -1);
+            this.btnLogout.Location = new System.Drawing.Point(0, 0);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(263, 46);
+            this.btnLogout.Size = new System.Drawing.Size(261, 44);
             this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -84,28 +87,34 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.searchBarTextBox);
             this.panel4.Location = new System.Drawing.Point(18, 36);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(625, 46);
+            this.panel4.Size = new System.Drawing.Size(1676, 46);
             this.panel4.TabIndex = 2;
             // 
             // searchBarTextBox
             // 
             this.searchBarTextBox.BackColor = System.Drawing.Color.White;
             this.searchBarTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchBarTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.searchBarTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F);
-            this.searchBarTextBox.Location = new System.Drawing.Point(44, 8);
+            this.searchBarTextBox.Location = new System.Drawing.Point(0, 0);
             this.searchBarTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchBarTextBox.Name = "searchBarTextBox";
-            this.searchBarTextBox.Size = new System.Drawing.Size(549, 28);
+            this.searchBarTextBox.Size = new System.Drawing.Size(1674, 28);
             this.searchBarTextBox.TabIndex = 0;
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.welcomeMessageTextBox);
@@ -114,7 +123,7 @@
             this.panel3.Location = new System.Drawing.Point(18, 109);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1128, 708);
+            this.panel3.Size = new System.Drawing.Size(2179, 1540);
             this.panel3.TabIndex = 1;
             // 
             // welcomeMessageTextBox
@@ -142,6 +151,9 @@
             // 
             // flowMerchants
             // 
+            this.flowMerchants.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowMerchants.AutoScroll = true;
             this.flowMerchants.BackColor = System.Drawing.Color.White;
             this.flowMerchants.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -149,7 +161,7 @@
             this.flowMerchants.Location = new System.Drawing.Point(27, 164);
             this.flowMerchants.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowMerchants.Name = "flowMerchants";
-            this.flowMerchants.Size = new System.Drawing.Size(1074, 500);
+            this.flowMerchants.Size = new System.Drawing.Size(2125, 1332);
             this.flowMerchants.TabIndex = 4;
             this.flowMerchants.WrapContents = false;
             // 
@@ -161,14 +173,17 @@
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(34, 39);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(273, 857);
+            this.panel2.Size = new System.Drawing.Size(273, 932);
             this.panel2.TabIndex = 0;
             // 
             // panel9
             // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.pictureBox2);
@@ -180,17 +195,20 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::LogIn1.Properties.Resources.burgerkingads;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(194, 246);
+            this.pictureBox2.Size = new System.Drawing.Size(191, 244);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // panel8
             // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.pictureBox1);
@@ -202,17 +220,20 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::LogIn1.Properties.Resources.mcdoads;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(194, 238);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 235);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.btnViewOrder);
@@ -224,10 +245,11 @@
             // 
             // btnViewOrder
             // 
-            this.btnViewOrder.Location = new System.Drawing.Point(-1, -1);
+            this.btnViewOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnViewOrder.Location = new System.Drawing.Point(0, 0);
             this.btnViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewOrder.Name = "btnViewOrder";
-            this.btnViewOrder.Size = new System.Drawing.Size(194, 62);
+            this.btnViewOrder.Size = new System.Drawing.Size(191, 61);
             this.btnViewOrder.TabIndex = 0;
             this.btnViewOrder.Text = "View Order";
             this.btnViewOrder.UseVisualStyleBackColor = true;
@@ -235,6 +257,8 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.txtUsername);
@@ -284,7 +308,7 @@
 
         }
 
-        // Controls declaration
+        // Control declarations (keep unchanged)
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -297,7 +321,7 @@
         private System.Windows.Forms.Label txtUsername;
         private System.Windows.Forms.TextBox welcomeMessageTextBox;
         private System.Windows.Forms.Label MerchantsLabel;
-        private System.Windows.Forms.FlowLayoutPanel flowMerchants;   // renamed from panelMerchants
+        private System.Windows.Forms.FlowLayoutPanel flowMerchants;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnViewOrder;

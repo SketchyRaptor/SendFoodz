@@ -2,45 +2,14 @@
 {
     partial class SignUp
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        /// 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblConfirmPassword;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtConfirmPassword;
-        private System.Windows.Forms.Button btnCreateAccount;
-        private System.Windows.Forms.CheckBox chkShowPassword;
-        private System.Windows.Forms.Button btnBackToLogin;
-        
-        private System.Windows.Forms.RadioButton rbCustomer;
-        private System.Windows.Forms.RadioButton rbRider;
-        private System.Windows.Forms.GroupBox groupRole;
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
@@ -64,17 +33,19 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(122, 11);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(265, 37);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "SendFoodz Sign Up";
+
             // 
             // lblUsername
             // 
@@ -84,6 +55,7 @@
             this.lblUsername.Size = new System.Drawing.Size(70, 16);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
+
             // 
             // lblPassword
             // 
@@ -93,6 +65,7 @@
             this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password";
+
             // 
             // lblConfirmPassword
             // 
@@ -102,14 +75,15 @@
             this.lblConfirmPassword.Size = new System.Drawing.Size(115, 16);
             this.lblConfirmPassword.TabIndex = 4;
             this.lblConfirmPassword.Text = "Confirm Password";
+
             // 
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(19, 118);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUsername.Size = new System.Drawing.Size(400, 22);
             this.txtUsername.TabIndex = 5;
+
             // 
             // txtPassword
             // 
@@ -118,6 +92,7 @@
             this.txtPassword.Size = new System.Drawing.Size(400, 22);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
+
             // 
             // txtConfirmPassword
             // 
@@ -126,6 +101,7 @@
             this.txtConfirmPassword.Size = new System.Drawing.Size(400, 22);
             this.txtConfirmPassword.TabIndex = 7;
             this.txtConfirmPassword.UseSystemPasswordChar = true;
+
             // 
             // btnCreateAccount
             // 
@@ -138,6 +114,7 @@
             this.btnCreateAccount.Text = "Create Account";
             this.btnCreateAccount.UseVisualStyleBackColor = false;
             this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
+
             // 
             // chkShowPassword
             // 
@@ -147,7 +124,9 @@
             this.chkShowPassword.Size = new System.Drawing.Size(125, 20);
             this.chkShowPassword.TabIndex = 8;
             this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.UseVisualStyleBackColor = true;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
+
             // 
             // btnBackToLogin
             // 
@@ -163,6 +142,7 @@
             this.btnBackToLogin.Text = "Back to Login";
             this.btnBackToLogin.UseVisualStyleBackColor = false;
             this.btnBackToLogin.Click += new System.EventHandler(this.btnBackToLogin_Click_1);
+
             // 
             // groupRole
             // 
@@ -175,6 +155,7 @@
             this.groupRole.TabIndex = 0;
             this.groupRole.TabStop = false;
             this.groupRole.Text = "Select Role";
+
             // 
             // rbMerchant
             // 
@@ -183,27 +164,33 @@
             this.rbMerchant.Name = "rbMerchant";
             this.rbMerchant.Size = new System.Drawing.Size(83, 20);
             this.rbMerchant.TabIndex = 2;
-            this.rbMerchant.TabStop = true;
             this.rbMerchant.Text = "Merchant";
             this.rbMerchant.UseVisualStyleBackColor = true;
+
             // 
             // rbCustomer
             // 
+            this.rbCustomer.AutoSize = true;
             this.rbCustomer.Checked = true;
             this.rbCustomer.Location = new System.Drawing.Point(25, 30);
             this.rbCustomer.Name = "rbCustomer";
-            this.rbCustomer.Size = new System.Drawing.Size(123, 24);
+            this.rbCustomer.Size = new System.Drawing.Size(94, 20);
             this.rbCustomer.TabIndex = 0;
             this.rbCustomer.TabStop = true;
             this.rbCustomer.Text = "👤 Customer";
+            this.rbCustomer.UseVisualStyleBackColor = true;
+
             // 
             // rbRider
             // 
+            this.rbRider.AutoSize = true;
             this.rbRider.Location = new System.Drawing.Point(281, 30);
             this.rbRider.Name = "rbRider";
-            this.rbRider.Size = new System.Drawing.Size(104, 24);
+            this.rbRider.Size = new System.Drawing.Size(72, 20);
             this.rbRider.TabIndex = 1;
             this.rbRider.Text = "🛵 Rider";
+            this.rbRider.UseVisualStyleBackColor = true;
+
             // 
             // panel1
             // 
@@ -223,8 +210,9 @@
             this.panel1.Controls.Add(this.btnBackToLogin);
             this.panel1.Location = new System.Drawing.Point(181, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(455, 500);
+            this.panel1.Size = new System.Drawing.Size(500, 550);
             this.panel1.TabIndex = 11;
+
             // 
             // pictureBox1
             // 
@@ -235,6 +223,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+
             // 
             // label1
             // 
@@ -245,10 +234,13 @@
             this.label1.Size = new System.Drawing.Size(181, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Fast and Easy Food Delivery";
+
             // 
             // SignUp
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(255, 128, 0);
             this.ClientSize = new System.Drawing.Size(820, 650);
             this.Controls.Add(this.panel1);
             this.Name = "SignUp";
@@ -260,11 +252,21 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
-        #endregion
-
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblConfirmPassword;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
+        private System.Windows.Forms.Button btnCreateAccount;
+        private System.Windows.Forms.CheckBox chkShowPassword;
+        private System.Windows.Forms.Button btnBackToLogin;
+        private System.Windows.Forms.RadioButton rbCustomer;
+        private System.Windows.Forms.RadioButton rbRider;
+        private System.Windows.Forms.GroupBox groupRole;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

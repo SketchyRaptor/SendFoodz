@@ -12,11 +12,63 @@ namespace LogIn1
         // Store all merchant usernames for filtering
         private List<string> allMerchantUsernames;
 
+        // Responsive layout constants
+        private const float SidebarWidthPercent = 0.18f; // 18% of form width
+
         public CustomerDashboard()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
+
+            // -------------------------------
+            // 1. Apply responsive anchors & docks (programmatically)
+            // -------------------------------
+
+            // Sidebar panel (panel2) docks left, width set later
+            panel2.Dock = DockStyle.Left;
+
+            // Main content panel (panel1) fills the rest
+            panel1.Dock = DockStyle.Fill;
+
+            // Search panel: anchor top + left + right so it stretches
+            panel4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+
+            // Logout panel: anchor top + right
+            panel7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            // Main content area (panel3): anchor all sides
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+
+            // Merchants FlowLayoutPanel: anchor all sides so it fills panel3
+            flowMerchants.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+
+            // Inner panels of sidebar: anchor left+right (so they stretch horizontally)
+            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+
+            // Make search textbox fill its panel4
+            searchBarTextBox.Dock = DockStyle.Fill;
+
+            // Make welcome textbox only top+left anchored
+            welcomeMessageTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            // MerchantsLabel also top+left
+            MerchantsLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            // -------------------------------
+            // 2. Hook resize event and initial layout adjustment
+            // -------------------------------
+            this.Resize += CustomerDashboard_Resize;
+            AdjustLayout();
+
+            // -------------------------------
+            // 3. Original data loading logic
+            // -------------------------------
             LoadMerchantList();
-            LoadMerchants(""); // load all initially
+            LoadMerchants("");
             searchBarTextBox.TextChanged += SearchBarTextBox_TextChanged;
         }
 
@@ -26,7 +78,53 @@ namespace LogIn1
             welcomeMessageTextBox.Text = $"Welcome back, {CurrentUsername}!";
         }
 
-        // Load all merchant usernames from the global accounts list
+        // Adjust sidebar width and reposition inner elements on resize
+        private void CustomerDashboard_Resize(object sender, EventArgs e)
+        {
+            AdjustLayout();
+        }
+
+        private void AdjustLayout()
+        {
+            // 1. Set sidebar width as percentage of form client width
+            int newSidebarWidth = (int)(this.ClientSize.Width * SidebarWidthPercent);
+            newSidebarWidth = Math.Max(200, Math.Min(400, newSidebarWidth)); // min 200, max 400
+            panel2.Width = newSidebarWidth;
+
+            // 2. Reposition inner panels of sidebar (center them with fixed margins)
+            int innerMargin = 20;
+            int innerWidth = panel2.Width - 2 * innerMargin;
+
+            panel5.Width = innerWidth;
+            panel5.Left = innerMargin;
+
+            panel6.Width = innerWidth;
+            panel6.Left = innerMargin;
+
+            panel8.Width = innerWidth;
+            panel8.Left = innerMargin;
+
+            panel9.Width = innerWidth;
+            panel9.Left = innerMargin;
+
+            // 3. Adjust logout button panel position (top-right of panel1)
+            if (panel7 != null && panel1 != null)
+            {
+                panel7.Left = panel1.Width - panel7.Width - 20;
+            }
+
+            // 4. Adjust search bar width to leave space for logout button
+            if (panel4 != null && panel7 != null && panel1 != null)
+            {
+                int newSearchWidth = panel1.Width - panel7.Width - 40;
+                if (newSearchWidth > 100) panel4.Width = newSearchWidth;
+            }
+
+            // 5. Refresh flow layout (optional)
+            flowMerchants.PerformLayout();
+        }
+
+        // ---------- Original methods (unchanged) ----------
         private void LoadMerchantList()
         {
             allMerchantUsernames = accounts
@@ -35,20 +133,17 @@ namespace LogIn1
                 .ToList();
         }
 
-        // Display merchants whose username or product names contain the search text
         private void LoadMerchants(string searchText)
         {
             flowMerchants.Controls.Clear();
 
             if (string.IsNullOrWhiteSpace(searchText))
             {
-                // Show all merchants
                 foreach (string username in allMerchantUsernames)
                     AddMerchantButton(username);
                 return;
             }
 
-            // Filter merchants
             var filtered = allMerchantUsernames
                 .Where(username => MerchantMatchesSearch(username, searchText))
                 .ToList();
@@ -70,19 +165,15 @@ namespace LogIn1
                 AddMerchantButton(username);
         }
 
-        // Check if a merchant matches the search text (username or any product name)
         private bool MerchantMatchesSearch(string merchantUsername, string searchText)
         {
-            // Case-insensitive check
             if (merchantUsername.IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
                 return true;
 
-            // Get merchant's products
             var products = MerchantProducts.GetProductsForMerchant(merchantUsername);
             return products.Any(p => p.Name.IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0);
         }
 
-        // Helper to create a merchant button
         private void AddMerchantButton(string username)
         {
             Button merchantButton = new Button
@@ -95,19 +186,17 @@ namespace LogIn1
                 FlatStyle = FlatStyle.Flat,
                 Font = new Font("Segoe UI", 10F, FontStyle.Bold),
                 Margin = new Padding(10),
-                 ForeColor = Color.White,
+                ForeColor = Color.White,
                 TextAlign = ContentAlignment.MiddleCenter
             };
-            // Try to get merchant's background image
+
             Image bgImage = MerchantSettingsStorage.GetBackgroundImage(username);
             if (bgImage != null)
             {
                 merchantButton.BackgroundImage = bgImage;
                 merchantButton.BackgroundImageLayout = ImageLayout.Stretch;
-                // Make text readable by adding a semi-transparent overlay
                 merchantButton.FlatAppearance.BorderSize = 0;
-                // Optional: darken text background
-                merchantButton.BackColor = Color.FromArgb(100, 0, 0, 0);  // semi-transparent black
+                merchantButton.BackColor = Color.FromArgb(100, 0, 0, 0);
             }
             else
             {
@@ -119,13 +208,11 @@ namespace LogIn1
             flowMerchants.Controls.Add(merchantButton);
         }
 
-        // Handle search text changes
         private void SearchBarTextBox_TextChanged(object sender, EventArgs e)
         {
             LoadMerchants(searchBarTextBox.Text);
         }
 
-        // When a merchant button is clicked, open OrderMenu for that merchant
         private void MerchantButton_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -136,11 +223,10 @@ namespace LogIn1
             this.Hide();
         }
 
-        // Refresh merchant list when form is activated (e.g., after new signup)
         protected override void OnActivated(EventArgs e)
         {
             base.OnActivated(e);
-            LoadMerchantList();       // reload in case new merchant added
+            LoadMerchantList();
             LoadMerchants(searchBarTextBox.Text);
         }
 
@@ -155,9 +241,7 @@ namespace LogIn1
         {
             Form1 loginForm = new Form1();
             loginForm.Show();
-
             this.Close();
-
         }
     }
 }

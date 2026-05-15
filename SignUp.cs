@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static LogIn1.Form1;
 
@@ -16,7 +9,22 @@ namespace LogIn1
         public SignUp()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.Resize += SignUp_Resize;
+            CenterPanel(); // initial centering
+        }
 
+        private void SignUp_Resize(object sender, EventArgs e)
+        {
+            CenterPanel();
+        }
+
+        private void CenterPanel()
+        {
+            if (panel1 == null) return;
+            // Keep panel1 at its original fixed size (set in designer)
+            panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
+            panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
         }
 
         private void btnCreateAccount_Click(object sender, EventArgs e)
@@ -32,7 +40,6 @@ namespace LogIn1
             else if (rbRider.Checked)
                 role = "Rider";
 
-
             if (username == "" || password == "")
             {
                 MessageBox.Show("Please fill all fields");
@@ -45,7 +52,6 @@ namespace LogIn1
                 return;
             }
 
-            // check duplicate username
             foreach (var acc in Form1.accounts)
             {
                 if (acc.Username == username)
@@ -62,7 +68,7 @@ namespace LogIn1
                 Role = role
             });
 
-            MessageBox.Show("account created succesfully");
+            MessageBox.Show("Account created successfully");
 
             Form1 login = new Form1();
             login.Show();
@@ -72,29 +78,17 @@ namespace LogIn1
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             bool show = chkShowPassword.Checked;
-
             txtPassword.UseSystemPasswordChar = !show;
             txtConfirmPassword.UseSystemPasswordChar = !show;
-        }
-
-
-
-        private void SignUp_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SignUp_Load_1(object sender, EventArgs e)
-        {
-
         }
 
         private void btnBackToLogin_Click_1(object sender, EventArgs e)
         {
             Form1 loginForm = new Form1();
             loginForm.Show();
-
             this.Hide();
         }
+
+        private void SignUp_Load_1(object sender, EventArgs e) { }
     }
 }

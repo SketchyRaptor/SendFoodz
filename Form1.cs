@@ -1,11 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LogIn1
@@ -17,11 +13,30 @@ namespace LogIn1
             new Account { Username = "User123", Password = "123", Role = "Customer" }
         };
 
-        // NEW: store the currently logged-in username (for any role)
         public static string CurrentUsername { get; private set; }
+
         public Form1()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
+            this.Resize += Form1_Resize;
+            CenterLoginPanel();  // initial centering
+            this.MinimumSize = new Size(800, 600);  // prevent extreme shrinking
+        }
+
+        // Center the white panel inside the form on resize
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            CenterLoginPanel();
+        }
+
+        private void CenterLoginPanel()
+        {
+            if (panel1 == null) return;
+            int x = (this.ClientSize.Width - panel1.Width) / 2;
+            int y = (this.ClientSize.Height - panel1.Height) / 2;
+            panel1.Location = new Point(Math.Max(0, x), Math.Max(0, y));
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -31,8 +46,8 @@ namespace LogIn1
 
             if (username == "admin" && password == "admin123")
             {
-                MessageBox.Show("Admin login succesfull");
-                CurrentUsername = username;  // optional for admin
+                MessageBox.Show("Admin login successful");
+                CurrentUsername = username;
                 AdminDashboard admin = new AdminDashboard();
                 admin.Show();
                 this.Hide();
@@ -43,12 +58,11 @@ namespace LogIn1
             {
                 if (acc.Username == username && acc.Password == password)
                 {
-                    MessageBox.Show("login succesfull");
-                    CurrentUsername = username;  // Store the logged in usernames
-                    // Check user role and navigate to appropriate dashboard
+                    MessageBox.Show("Login successful");
+                    CurrentUsername = username;
                     if (acc.Role == "Merchant")
                     {
-                       MerchantDashBoard merchantDashBoard = new MerchantDashBoard();
+                        MerchantDashBoard merchantDashBoard = new MerchantDashBoard();
                         merchantDashBoard.Show();
                     }
                     else if (acc.Role == "Rider")
@@ -56,17 +70,15 @@ namespace LogIn1
                         RiderDashboard riderDashboard = new RiderDashboard();
                         riderDashboard.Show();
                     }
-                    else // Customer
+                    else
                     {
                         CustomerDashboard customerDashboard = new CustomerDashboard();
                         customerDashboard.Show();
                     }
-
                     this.Hide();
                     return;
                 }
             }
-
             MessageBox.Show("Invalid username or password");
         }
 
@@ -74,7 +86,7 @@ namespace LogIn1
         {
             public string Username { get; set; }
             public string Password { get; set; }
-            public string Role { get; set; } // "Customer", "Merchant", or "Rider"
+            public string Role { get; set; }
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -86,29 +98,19 @@ namespace LogIn1
         {
             SignUp signupForm = new SignUp();
             signupForm.Show();
-
             this.Hide();
         }
 
-        //load riders
         public static List<string> riders = new List<string>()
         {
-            "Rider001",
-            "Rider002",
-            "Rider003"
+            "Rider001", "Rider002", "Rider003"
         };
 
-        //load orders
         public static List<string> pendingOrders = new List<string>()
         {
-            "Order #1001",
-            "Order #1002",
-            "Order #1003"
+            "Order #1001", "Order #1002", "Order #1003"
         };
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void Form1_Load(object sender, EventArgs e) { }
     }
 }

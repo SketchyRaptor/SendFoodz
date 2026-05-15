@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LogIn1
@@ -15,11 +9,68 @@ namespace LogIn1
         public MerchantDashBoard()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+
+            this.Resize += MerchantDashBoard_Resize;
+            AdjustLayout();          // initial layout
+            this.MinimumSize = new Size(800, 600);
             LoadCurrentBackground();
         }
+
+        private void MerchantDashBoard_Resize(object sender, EventArgs e)
+        {
+            AdjustLayout();
+        }
+
+        private void AdjustLayout()
+        {
+            if (panelEditMenu == null) return;
+
+            // Make panelEditMenu fill most of panelContent with margins
+            int margin = 30;
+            int newWidth = panelContent.Width - 2 * margin;
+            int newHeight = panelContent.Height - 2 * margin;
+            panelEditMenu.Width = Math.Max(400, newWidth);
+            panelEditMenu.Height = Math.Max(300, newHeight);
+            panelEditMenu.Left = (panelContent.Width - panelEditMenu.Width) / 2;
+            panelEditMenu.Top = (panelContent.Height - panelEditMenu.Height) / 2;
+
+            // Reposition and resize inner controls
+            int btnWidth = 220;
+            int btnHeight = 64;
+            int spacing = 40;
+
+            // Buttons (Sales History, Edit Menu)
+            btnSalesHistory.Width = btnWidth;
+            btnSalesHistory.Height = btnHeight;
+            btnEditMenu.Width = btnWidth;
+            btnEditMenu.Height = btnHeight;
+
+            // Center them horizontally, stack vertically
+            int centerX = panelEditMenu.Width / 2;
+            btnSalesHistory.Left = centerX - btnWidth / 2;
+            btnSalesHistory.Top = 80;
+
+            btnEditMenu.Left = centerX - btnWidth / 2;
+            btnEditMenu.Top = btnSalesHistory.Bottom + spacing;
+
+            // Position upload button and preview on the right side
+            int previewWidth = 250;
+            int previewHeight = 155;
+            int rightMargin = 30;
+            picBackgroundPreview.Width = previewWidth;
+            picBackgroundPreview.Height = previewHeight;
+            picBackgroundPreview.Left = panelEditMenu.Width - previewWidth - rightMargin;
+            picBackgroundPreview.Top = 80;
+
+            btnUploadBackground.Width = 180;
+            btnUploadBackground.Height = 30;
+            btnUploadBackground.Left = picBackgroundPreview.Left;
+            btnUploadBackground.Top = picBackgroundPreview.Bottom + 10;
+        }
+
         private void LoadCurrentBackground()
         {
-            // Load existing background image if any
             Image bg = MerchantSettingsStorage.GetBackgroundImage(Form1.CurrentUsername);
             if (bg != null)
                 picBackgroundPreview.Image = bg;
@@ -49,34 +100,25 @@ namespace LogIn1
                 }
             }
         }
+
         private void btnEditMenu_Click(object sender, EventArgs e)
         {
-            // Navigate to MerchantProducts form
             MerchantProducts merchantProducts = new MerchantProducts(Form1.CurrentUsername);
             merchantProducts.Show();
-
             this.Hide();
         }
 
         private void btnSalesHistory_Click(object sender, EventArgs e)
         {
-            // Show sales history form
-            // You can create a new form called "SalesHistory" for this
-            MessageBox.Show("Sales History feature coming soon!\n\nHere you will be able to view all sales data for your products.",
-                "Sales History", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Uncomment below when you create the SalesHistory form
-            // SalesHistory salesHistory = new SalesHistory();
-            // salesHistory.Show();
-            // this.Hide();
+            MerchantHistory history = new MerchantHistory();
+            history.Show();
+            this.Hide();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            // Return to login form
             Form1 loginForm = new Form1();
             loginForm.Show();
-
             this.Close();
         }
     }

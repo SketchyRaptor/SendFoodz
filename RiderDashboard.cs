@@ -12,6 +12,7 @@ namespace LogIn1
         public RiderDashboard()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             currentRider = Form1.CurrentUsername;
             // Subscribe to new orders event
             OrderStorage.OrderAdded += RefreshOrders;

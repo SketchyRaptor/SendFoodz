@@ -37,7 +37,8 @@
             this.panelTop.Size = new System.Drawing.Size(1000, 70);
             this.panelTop.TabIndex = 0;
 
-            // btnBack
+            // btnBack (anchored to top-right)
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBack.BackColor = System.Drawing.Color.LightGray;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -59,7 +60,7 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Sales History";
 
-            // dgvOrders
+            // dgvOrders (will be resized in code)
             this.dgvOrders.AllowUserToAddRows = false;
             this.dgvOrders.AllowUserToDeleteRows = false;
             this.dgvOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -79,6 +80,7 @@
             this.dgvOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvOrders.Size = new System.Drawing.Size(960, 500);
             this.dgvOrders.TabIndex = 1;
+            // Anchor removed – we set size/position manually in AdjustLayout()
 
             // Columns
             this.colOrderId.HeaderText = "Order ID";
