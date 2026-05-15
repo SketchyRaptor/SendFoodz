@@ -153,6 +153,16 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Carteira_ícones_gratuitos_criados_por_vectorspoint {
+            get {
+                object obj = ResourceManager.GetObject("Carteira ícones gratuitos criados por vectorspoint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_Apr_17__2026__02_55_18_PM {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image Apr 17, 2026, 02_55_18 PM", resourceCulture);
@@ -243,6 +253,26 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download__5_ {
+            get {
+                object obj = ResourceManager.GetObject("download (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download__6_ {
+            get {
+                object obj = ResourceManager.GetObject("download (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_ksa2u5ksa2u5ksa2 {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_ksa2u5ksa2u5ksa2", resourceCulture);
@@ -253,9 +283,29 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gemini_Generated_Image_ksa2u5ksa2u5ksa21 {
+            get {
+                object obj = ResourceManager.GetObject("Gemini_Generated_Image_ksa2u5ksa2u5ksa21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gemini_Generated_Image_w76sjbw76sjbw76s {
             get {
                 object obj = ResourceManager.GetObject("Gemini_Generated_Image_w76sjbw76sjbw76s", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ícone_galaxy_store_verde {
+            get {
+                object obj = ResourceManager.GetObject("Ícone galaxy store verde", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +416,16 @@ namespace LogIn1.Properties {
         internal static System.Drawing.Bitmap Screenshot_11_5_2026_152747_claude_ai {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_11-5-2026_152747_claude.ai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_11_5_2026_152747_claude1 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_11-5-2026_152747_claude1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

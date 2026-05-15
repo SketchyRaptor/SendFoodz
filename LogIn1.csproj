@@ -274,5 +274,23 @@
   <ItemGroup>
     <None Include="Resources\burgerkingads.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_11-5-2026_152747_claude.ai1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_ksa2u5ksa2u5ksa21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ícone galaxy store verde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carteira ícones gratuitos criados por vectorspoint.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -206,11 +206,11 @@ namespace LogIn1
         {
             base.OnResize(e);
             foreach (Control ctrl in flowLayoutNewOrders.Controls)
-                if (ctrl is Panel p) p.Width = flowLayoutNewOrders.Width - 25;
+                if (ctrl is Panel p) p.Width = flowLayoutNewOrders.Width - 30;
             foreach (Control ctrl in flowLayoutCurrentOrders.Controls)
-                if (ctrl is Panel p) p.Width = flowLayoutCurrentOrders.Width - 25;
+                if (ctrl is Panel p) p.Width = flowLayoutCurrentOrders.Width - 30;
             foreach (Control ctrl in flowLayoutCompletedOrders.Controls)
-                if (ctrl is Panel p) p.Width = flowLayoutCompletedOrders.Width - 25;
+                if (ctrl is Panel p) p.Width = flowLayoutCompletedOrders.Width - 30;
         }
 
         // Existing empty handlers
