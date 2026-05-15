@@ -15,6 +15,8 @@ namespace LogIn1
         public AdminDashboard()
         {
             InitializeComponent();
+          
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
@@ -101,6 +103,11 @@ namespace LogIn1
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
