@@ -53,7 +53,7 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.mainPanel.Padding = new System.Windows.Forms.Padding(10);
             this.mainPanel.Size = new System.Drawing.Size(1400, 900);
             this.mainPanel.TabIndex = 0;
             // 
@@ -89,7 +89,7 @@
             this.pnlInputForm.Location = new System.Drawing.Point(0, 0);
             this.pnlInputForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlInputForm.Name = "pnlInputForm";
-            this.pnlInputForm.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.pnlInputForm.Padding = new System.Windows.Forms.Padding(15);
             this.pnlInputForm.Size = new System.Drawing.Size(419, 878);
             this.pnlInputForm.TabIndex = 0;
             // 
@@ -97,11 +97,13 @@
             // 
             this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnBack.BackColor = System.Drawing.Color.White;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(0)))));
+            this.btnBack.FlatAppearance.BorderSize = 2;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(15, 539);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Location = new System.Drawing.Point(15, 516);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(388, 45);
@@ -233,7 +235,7 @@
             this.btnSaveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnSaveProduct.ForeColor = System.Drawing.Color.White;
-            this.btnSaveProduct.Location = new System.Drawing.Point(15, 475);
+            this.btnSaveProduct.Location = new System.Drawing.Point(15, 463);
             this.btnSaveProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveProduct.Name = "btnSaveProduct";
             this.btnSaveProduct.Size = new System.Drawing.Size(388, 45);
