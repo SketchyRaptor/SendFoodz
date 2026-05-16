@@ -46,6 +46,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
@@ -69,13 +69,13 @@
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,12 +86,13 @@
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblTitle.Location = new System.Drawing.Point(132, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(365, 54);
+            this.lblTitle.Size = new System.Drawing.Size(312, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "SendFoodz Admin";
             // 
             // dgvUsers
             // 
+            this.dgvUsers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvUsers.ColumnHeadersHeight = 34;
             this.dgvUsers.Location = new System.Drawing.Point(20, 89);
             this.dgvUsers.Name = "dgvUsers";
@@ -102,6 +103,7 @@
             // 
             // dgvRiders
             // 
+            this.dgvRiders.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvRiders.ColumnHeadersHeight = 34;
             this.dgvRiders.Location = new System.Drawing.Point(24, 89);
             this.dgvRiders.Name = "dgvRiders";
@@ -111,6 +113,7 @@
             // 
             // dgvOrders
             // 
+            this.dgvOrders.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvOrders.ColumnHeadersHeight = 34;
             this.dgvOrders.Location = new System.Drawing.Point(24, 100);
             this.dgvOrders.Name = "dgvOrders";
@@ -172,7 +175,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
@@ -206,7 +209,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(147, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 29);
+            this.label3.Size = new System.Drawing.Size(191, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "Current Merchants";
             // 
@@ -220,6 +223,16 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView1.ColumnHeadersHeight = 34;
+            this.dataGridView1.Location = new System.Drawing.Point(20, 99);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(354, 126);
+            this.dataGridView1.TabIndex = 8;
             // 
             // button3
             // 
@@ -256,7 +269,7 @@
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label2.Location = new System.Drawing.Point(147, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 37);
+            this.label2.Size = new System.Drawing.Size(205, 31);
             this.label2.TabIndex = 7;
             this.label2.Text = "Current Riders";
             // 
@@ -307,7 +320,7 @@
             this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(145, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 37);
+            this.label1.Size = new System.Drawing.Size(197, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Current Users";
             // 
@@ -356,7 +369,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(142, 38);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(255, 37);
+            this.label4.Size = new System.Drawing.Size(217, 31);
             this.label4.TabIndex = 9;
             this.label4.Text = "Pending Orders";
             // 
@@ -370,15 +383,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeight = 34;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(354, 126);
-            this.dataGridView1.TabIndex = 8;
             // 
             // button4
             // 
@@ -422,6 +426,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -431,7 +436,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
