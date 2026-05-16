@@ -11,9 +11,9 @@ namespace LogIn1
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
 
-            this.Resize += MerchantDashBoard_Resize;
-            AdjustLayout();          // initial layout
-            this.MinimumSize = new Size(800, 600);
+            //this.Resize += MerchantDashBoard_Resize;
+           // AdjustLayout();          // initial layout
+            
             LoadCurrentBackground();
         }
 
@@ -120,6 +120,16 @@ namespace LogIn1
             Form1 loginForm = new Form1();
             loginForm.Show();
             this.Close();
+        }
+
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

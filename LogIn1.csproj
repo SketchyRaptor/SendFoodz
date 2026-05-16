@@ -292,5 +292,11 @@
   <ItemGroup>
     <None Include="Resources\Carteira ícones gratuitos criados por vectorspoint.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merchant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merchantdashboard.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

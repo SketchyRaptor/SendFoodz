@@ -413,6 +413,26 @@ namespace LogIn1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap merchant {
+            get {
+                object obj = ResourceManager.GetObject("merchant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap merchantdashboard {
+            get {
+                object obj = ResourceManager.GetObject("merchantdashboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_11_5_2026_152747_claude_ai {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_11-5-2026_152747_claude.ai", resourceCulture);
