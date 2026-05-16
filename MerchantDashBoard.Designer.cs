@@ -121,7 +121,7 @@ namespace LogIn1
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::LogIn1.Properties.Resources.merchantdashboard;
-            this.pictureBox2.Location = new System.Drawing.Point(44, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 62);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(337, 348);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
