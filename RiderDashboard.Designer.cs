@@ -108,7 +108,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.label3);
@@ -189,7 +189,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
@@ -371,7 +371,7 @@
             // flowLayoutNewOrders
             // 
             this.flowLayoutNewOrders.AutoScroll = true;
-            this.flowLayoutNewOrders.BackColor = System.Drawing.Color.White;
+            this.flowLayoutNewOrders.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutNewOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutNewOrders.Controls.Add(this.panel7);
             this.flowLayoutNewOrders.Location = new System.Drawing.Point(12, 417);
@@ -471,7 +471,7 @@
             // flowLayoutCurrentOrders
             // 
             this.flowLayoutCurrentOrders.AutoScroll = true;
-            this.flowLayoutCurrentOrders.BackColor = System.Drawing.Color.White;
+            this.flowLayoutCurrentOrders.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutCurrentOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutCurrentOrders.Controls.Add(this.panel8);
             this.flowLayoutCurrentOrders.Location = new System.Drawing.Point(12, 722);
@@ -554,7 +554,7 @@
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label9);
             this.panel10.Location = new System.Drawing.Point(12, 672);
@@ -574,7 +574,7 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label8);
             this.panel11.Location = new System.Drawing.Point(12, 366);
@@ -595,7 +595,7 @@
             // flowLayoutCompletedOrders
             // 
             this.flowLayoutCompletedOrders.AutoScroll = true;
-            this.flowLayoutCompletedOrders.BackColor = System.Drawing.Color.White;
+            this.flowLayoutCompletedOrders.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutCompletedOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutCompletedOrders.Controls.Add(this.panel13);
             this.flowLayoutCompletedOrders.Location = new System.Drawing.Point(1236, 165);
@@ -657,7 +657,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label10);
             this.panel12.Location = new System.Drawing.Point(1236, 115);
