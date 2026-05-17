@@ -176,7 +176,9 @@ namespace LogIn1
                 Total = total,
                 Status = "Active",
                 Stage = "Pending",
-                Rider = null // Initially no rider assigned
+                
+                Rider = null, // Initially no rider assigned,
+                OrderDate = DateTime.Now
             };
 
             foreach (var item in cart)

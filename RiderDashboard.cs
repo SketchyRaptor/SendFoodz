@@ -235,6 +235,7 @@ namespace LogIn1
                             order.Stage = "On the Way";
                             order.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order is on the way by rider {currentRider}");
                             RefreshOrders();
+                            OrderStorage.UpdateOrder(); // Add this line
                         }
                     };
                     orderPanel.Controls.Add(btnOnWay);
@@ -264,6 +265,7 @@ namespace LogIn1
                             order.Stage = "Delivered";
                             order.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order delivered by rider {currentRider}");
                             RefreshOrders();
+                            OrderStorage.UpdateOrder(); // Add this line
                         }
                     };
                     orderPanel.Controls.Add(btnDelivered);
@@ -298,6 +300,7 @@ namespace LogIn1
                 order.Stage = "Preparing";
                 order.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order accepted by rider {currentRider}");
                 RefreshOrders();
+                OrderStorage.UpdateOrder(); // Add this line
             }
         }
 

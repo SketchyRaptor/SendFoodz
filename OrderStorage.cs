@@ -8,6 +8,15 @@ namespace LogIn1
         public static List<Order> AllOrders { get; set; } = new List<Order>();
         public static event Action OrderAdded;   // <-- new event
 
+        // Add these events
+       
+        public static event Action OrderUpdated;  // Add this line
+
+        public static void UpdateOrder()
+        {
+            OrderUpdated?.Invoke();
+        }
+
         public static void AddOrder(Order order)
         {
             AllOrders.Add(order);
@@ -29,6 +38,7 @@ namespace LogIn1
         public string Status { get; set; }
         public string Rider { get; set; }
         public string Stage { get; set; }  // "Pending", "Preparing", "On the Way", "Delivered"
+        public DateTime OrderDate { get; set; }  // Add this line
         public List<string> HistoryLog { get; set; } = new List<string>();
 
         public Order()

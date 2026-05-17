@@ -317,12 +317,12 @@ namespace LogIn1
 
         public static List<string> riders = new List<string>()
         {
-            "Rider001", "Rider002", "Rider003"
+           // "Rider001", "Rider002", "Rider003"
         };
 
         public static List<string> pendingOrders = new List<string>()
         {
-            "Order #1001", "Order #1002", "Order #1003"
+            //"Order #1001", "Order #1002", "Order #1003"
         };
 
         private void Form1_Load(object sender, EventArgs e) { }

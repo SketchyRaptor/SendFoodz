@@ -46,7 +46,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMerchant = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMerchant)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -161,6 +161,7 @@
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pictureBox1
             // 
@@ -194,7 +195,7 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Controls.Add(this.dgvMerchant);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Location = new System.Drawing.Point(79, 255);
             this.panel5.Name = "panel5";
@@ -224,15 +225,16 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // dataGridView1
+            // dgvMerchant
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView1.ColumnHeadersHeight = 34;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(354, 126);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvMerchant.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvMerchant.ColumnHeadersHeight = 34;
+            this.dgvMerchant.Location = new System.Drawing.Point(20, 99);
+            this.dgvMerchant.Name = "dgvMerchant";
+            this.dgvMerchant.RowHeadersWidth = 62;
+            this.dgvMerchant.Size = new System.Drawing.Size(354, 126);
+            this.dgvMerchant.TabIndex = 8;
+            this.dgvMerchant.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMerchant_CellContentClick);
             // 
             // button3
             // 
@@ -426,7 +428,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMerchant)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -447,7 +449,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMerchant;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
