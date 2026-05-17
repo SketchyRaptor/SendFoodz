@@ -12,11 +12,22 @@ namespace LogIn1
             this.WindowState = FormWindowState.Maximized;
             this.Resize += SignUp_Resize;
             CenterPanel(); // initial centering
+
+            txtUsername.KeyPress += TxtUsername_KeyPress;
         }
 
         private void SignUp_Resize(object sender, EventArgs e)
         {
             CenterPanel();
+        }
+
+        private void TxtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow letters (A-Z, a-z), backspace, and space
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != ' ')
+            {
+                e.Handled = true; // This prevents the character from being entered
+            }
         }
 
         private void CenterPanel()
@@ -43,6 +54,13 @@ namespace LogIn1
             if (username == "" || password == "")
             {
                 MessageBox.Show("Please fill all fields");
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(username, @"^[a-zA-Z\s]+$"))
+            {
+                MessageBox.Show("Username can only contain letters and spaces", "Invalid Username",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
