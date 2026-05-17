@@ -70,7 +70,7 @@ namespace LogIn1
             Panel orderPanel = new Panel
             {
                 Width = targetPanel.Width - 25,
-                Height = 160, // Increased height to accommodate buttons better
+                Height = 220, // Increased height to accommodate buttons better
                 Margin = new Padding(3),
                 BorderStyle = BorderStyle.FixedSingle,
                 BackColor = Color.WhiteSmoke
@@ -110,6 +110,17 @@ namespace LogIn1
             };
             orderPanel.Controls.Add(lblCustomer);
 
+            Label lblAddress = new Label
+            {
+                Text = $"📍 {order.Address}",
+                Font = new Font("Microsoft Sans Serif", 8, FontStyle.Regular),
+                Location = new Point(130, 55),
+                AutoSize = true,
+                MaximumSize = new Size(350, 45),
+                ForeColor = Color.FromArgb(100, 100, 100)
+            };
+            orderPanel.Controls.Add(lblAddress);
+
             // Items summary
             string items = string.Join(", ", order.ItemsSummary);
             if (items.Length > 50) items = items.Substring(0, 47) + "...";
@@ -117,7 +128,7 @@ namespace LogIn1
             {
                 Text = items,
                 Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular),
-                Location = new Point(130, 58),
+                Location = new Point(130, 110),
                 AutoSize = true,
                 MaximumSize = new Size(300, 0)
             };
@@ -129,7 +140,7 @@ namespace LogIn1
                 Text = $"₱ {order.Total:F2}",
                 Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold),
                 ForeColor = Color.DarkGreen,
-                Location = new Point(130, 85),
+                Location = new Point(130, 135),
                 AutoSize = true
             };
             orderPanel.Controls.Add(lblPrice);

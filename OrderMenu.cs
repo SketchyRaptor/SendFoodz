@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LogIn1.LogIn1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -158,16 +159,24 @@ namespace LogIn1
                 return;
             }
 
+            // Show address dialog
+            AddressDialog addressDialog = new AddressDialog();
+            if (addressDialog.ShowDialog() != DialogResult.OK)
+            {
+                return; // User cancelled address input
+            }
+
             decimal total = cart.Sum(i => i.Total);
 
             Order newOrder = new Order
             {
                 CustomerName = Form1.CurrentUsername,
                 MerchantName = currentMerchant,
+                Address = addressDialog.DeliveryAddress, // Add the address
                 Total = total,
                 Status = "Active",
                 Stage = "Pending",
-                Rider = AssignRider()
+                Rider = null // Initially no rider assigned
             };
 
             foreach (var item in cart)
@@ -176,10 +185,11 @@ namespace LogIn1
             }
 
             newOrder.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order placed. Stage: Pending");
+            newOrder.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Delivery Address: {addressDialog.DeliveryAddress}");
 
             OrderStorage.AddOrder(newOrder);
 
-            MessageBox.Show($"Order placed successfully!\nOrder ID: {newOrder.OrderId}\nTotal: ₱{total:F2}\nThank you!",
+            MessageBox.Show($"Order placed successfully!\nOrder ID: {newOrder.OrderId}\nTotal: ₱{total:F2}\nDelivery Address: {addressDialog.DeliveryAddress}\n\nThank you for your order!",
                 "Order Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             cart.Clear();

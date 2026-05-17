@@ -219,7 +219,7 @@
             this.lblEarnings.AutoSize = true;
             this.lblEarnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEarnings.ForeColor = System.Drawing.Color.Red;
-            this.lblEarnings.Location = new System.Drawing.Point(152, 73);
+            this.lblEarnings.Location = new System.Drawing.Point(141, 73);
             this.lblEarnings.Name = "lblEarnings";
             this.lblEarnings.Size = new System.Drawing.Size(38, 40);
             this.lblEarnings.TabIndex = 4;

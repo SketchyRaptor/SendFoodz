@@ -21,6 +21,9 @@ namespace LogIn1
         public int OrderId { get; private set; }
         public string CustomerName { get; set; }
         public string MerchantName { get; set; }
+
+        public string Address { get; set; }
+
         public List<string> ItemsSummary { get; set; } = new List<string>();
         public decimal Total { get; set; }
         public string Status { get; set; }
