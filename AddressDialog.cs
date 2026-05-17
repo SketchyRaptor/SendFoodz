@@ -90,7 +90,7 @@ namespace LogIn1
                     Size = new System.Drawing.Size(300, 25),
                     DropDownStyle = ComboBoxStyle.DropDownList
                 };
-                cmbProvince.Items.AddRange(new string[] { "Metro Manila", "Bulacan", "Cavite", "Laguna", "Rizal", "Pampanga", "Other" });
+                cmbProvince.Items.AddRange(new string[] { "Metro Manila", "Bulacan", "Cavite", "Laguna", "Rizal", "Pampanga","Cebu", "Other" });
                 cmbProvince.SelectedIndex = 0;
 
                 Label lblLandmark = new Label
