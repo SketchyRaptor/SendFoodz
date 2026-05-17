@@ -63,8 +63,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.flowLayoutCurrentOrders = new System.Windows.Forms.FlowLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lblCOStatus = new System.Windows.Forms.Label();
             this.lblCOAdress = new System.Windows.Forms.Label();
             this.lblCOName = new System.Windows.Forms.Label();
             this.lblCOCode = new System.Windows.Forms.Label();
@@ -81,6 +79,8 @@
             this.lblRCOCode = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.lblCOStatus = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -97,13 +97,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.flowLayoutCurrentOrders.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.flowLayoutCompletedOrders.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -374,13 +374,16 @@
             // flowLayoutNewOrders
             // 
             this.flowLayoutNewOrders.AutoScroll = true;
+            this.flowLayoutNewOrders.AutoSize = true;
             this.flowLayoutNewOrders.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutNewOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutNewOrders.Controls.Add(this.panel7);
+            this.flowLayoutNewOrders.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutNewOrders.Location = new System.Drawing.Point(12, 417);
             this.flowLayoutNewOrders.Name = "flowLayoutNewOrders";
             this.flowLayoutNewOrders.Size = new System.Drawing.Size(1191, 243);
             this.flowLayoutNewOrders.TabIndex = 2;
+            this.flowLayoutNewOrders.WrapContents = false;
             // 
             // panel7
             // 
@@ -494,27 +497,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1179, 130);
             this.panel8.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.lblCOStatus);
-            this.panel9.Location = new System.Drawing.Point(960, 42);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 44);
-            this.panel9.TabIndex = 10;
-            // 
-            // lblCOStatus
-            // 
-            this.lblCOStatus.AutoSize = true;
-            this.lblCOStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCOStatus.ForeColor = System.Drawing.Color.White;
-            this.lblCOStatus.Location = new System.Drawing.Point(54, 12);
-            this.lblCOStatus.Name = "lblCOStatus";
-            this.lblCOStatus.Size = new System.Drawing.Size(98, 20);
-            this.lblCOStatus.TabIndex = 9;
-            this.lblCOStatus.Text = "On the way";
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // lblCOAdress
             // 
@@ -679,6 +662,27 @@
             this.label10.Text = "Recent Completed Orders";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
+            // lblCOStatus
+            // 
+            this.lblCOStatus.AutoSize = true;
+            this.lblCOStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCOStatus.ForeColor = System.Drawing.Color.White;
+            this.lblCOStatus.Location = new System.Drawing.Point(54, 9);
+            this.lblCOStatus.Name = "lblCOStatus";
+            this.lblCOStatus.Size = new System.Drawing.Size(98, 20);
+            this.lblCOStatus.TabIndex = 9;
+            this.lblCOStatus.Text = "On the way";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.lblCOStatus);
+            this.panel9.Location = new System.Drawing.Point(960, 42);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 44);
+            this.panel9.TabIndex = 10;
+            // 
             // RiderDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -720,8 +724,6 @@
             this.flowLayoutCurrentOrders.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -732,7 +734,10 @@
             this.panel13.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -777,8 +782,6 @@
         private System.Windows.Forms.Label lblCOAdress;
         private System.Windows.Forms.Label lblCOName;
         private System.Windows.Forms.Label lblCOCode;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label lblCOStatus;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel11;
@@ -791,5 +794,7 @@
         private System.Windows.Forms.Label lblRCOPrice;
         private System.Windows.Forms.Label lblRCOName;
         private System.Windows.Forms.Label lblRCOCode;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label lblCOStatus;
     }
 }

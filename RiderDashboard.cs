@@ -70,11 +70,15 @@ namespace LogIn1
             Panel orderPanel = new Panel
             {
                 Width = targetPanel.Width - 25,
-                Height = 144,
+                Height = 160, // Increased height to accommodate buttons better
                 Margin = new Padding(3),
                 BorderStyle = BorderStyle.FixedSingle,
                 BackColor = Color.WhiteSmoke
             };
+
+            // Add hover effect
+            orderPanel.MouseEnter += (s, e) => orderPanel.BackColor = Color.FromArgb(240, 240, 240);
+            orderPanel.MouseLeave += (s, e) => orderPanel.BackColor = Color.WhiteSmoke;
 
             // Picture placeholder
             PictureBox pic = new PictureBox
@@ -90,7 +94,7 @@ namespace LogIn1
             Label lblCode = new Label
             {
                 Text = $"Order #{order.OrderId}",
-                Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold),
                 Location = new Point(130, 10),
                 AutoSize = true
             };
@@ -100,7 +104,7 @@ namespace LogIn1
             Label lblCustomer = new Label
             {
                 Text = $"Customer: {order.CustomerName}",
-                Font = new Font("Microsoft Sans Serif", 8, FontStyle.Regular),
+                Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular),
                 Location = new Point(130, 35),
                 AutoSize = true
             };
@@ -112,8 +116,8 @@ namespace LogIn1
             Label lblItems = new Label
             {
                 Text = items,
-                Font = new Font("Microsoft Sans Serif", 8, FontStyle.Regular),
-                Location = new Point(130, 60),
+                Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular),
+                Location = new Point(130, 58),
                 AutoSize = true,
                 MaximumSize = new Size(300, 0)
             };
@@ -123,7 +127,7 @@ namespace LogIn1
             Label lblPrice = new Label
             {
                 Text = $"₱ {order.Total:F2}",
-                Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold),
                 ForeColor = Color.DarkGreen,
                 Location = new Point(130, 85),
                 AutoSize = true
@@ -132,42 +136,142 @@ namespace LogIn1
 
             if (showAcceptReject)
             {
+                // Accept button with hover effects
                 Button btnAccept = new Button
                 {
-                    Text = "Accept",
-                    BackColor = Color.Lime,
+                    Text = "ACCEPT",
+                    BackColor = Color.FromArgb(76, 175, 80),
+                    ForeColor = Color.White,
                     FlatStyle = FlatStyle.Flat,
-                    Location = new Point(800, 30),
-                    Size = new Size(100, 40),
-                    Tag = order
+                    Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                    Location = new Point(orderPanel.Width - 130, 30),
+                    Size = new Size(110, 40),
+                    Tag = order,
+                    Cursor = Cursors.Hand
                 };
+                btnAccept.FlatAppearance.BorderSize = 0;
+                btnAccept.MouseEnter += (s, e) => btnAccept.BackColor = Color.FromArgb(56, 142, 60);
+                btnAccept.MouseLeave += (s, e) => btnAccept.BackColor = Color.FromArgb(76, 175, 80);
                 btnAccept.Click += BtnAccept_Click;
                 orderPanel.Controls.Add(btnAccept);
 
+                // Reject button with hover effects
                 Button btnReject = new Button
                 {
-                    Text = "Reject",
-                    BackColor = Color.Red,
+                    Text = "REJECT",
+                    BackColor = Color.FromArgb(244, 67, 54),
                     ForeColor = Color.White,
                     FlatStyle = FlatStyle.Flat,
-                    Location = new Point(800, 80),
-                    Size = new Size(100, 40),
-                    Tag = order
+                    Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                    Location = new Point(orderPanel.Width - 130, 80),
+                    Size = new Size(110, 40),
+                    Tag = order,
+                    Cursor = Cursors.Hand
                 };
+                btnReject.FlatAppearance.BorderSize = 0;
+                btnReject.MouseEnter += (s, e) => btnReject.BackColor = Color.FromArgb(211, 47, 47);
+                btnReject.MouseLeave += (s, e) => btnReject.BackColor = Color.FromArgb(244, 67, 54);
                 btnReject.Click += BtnReject_Click;
                 orderPanel.Controls.Add(btnReject);
             }
             else
             {
+                // Show status with colored badge
+                Panel statusBadge = new Panel
+                {
+                    Location = new Point(orderPanel.Width - 130, 15),
+                    Size = new Size(110, 30),
+                    BackColor = order.Stage == "Preparing" ? Color.FromArgb(255, 152, 0) :
+                               order.Stage == "On the Way" ? Color.FromArgb(33, 150, 243) :
+                               Color.FromArgb(76, 175, 80)
+                };
+
                 Label lblStage = new Label
                 {
-                    Text = order.Stage,
+                    Text = order.Stage.ToUpper(),
                     Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
-                    ForeColor = order.Stage == "Delivered" ? Color.Green : Color.Orange,
-                    Location = new Point(800, 50),
-                    AutoSize = true
+                    ForeColor = Color.White,
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Dock = DockStyle.Fill,
+                    AutoSize = false
                 };
-                orderPanel.Controls.Add(lblStage);
+                statusBadge.Controls.Add(lblStage);
+                orderPanel.Controls.Add(statusBadge);
+
+                // Add action buttons based on stage
+                if (order.Stage == "Preparing")
+                {
+                    Button btnOnWay = new Button
+                    {
+                        Text = "START DELIVERY",
+                        BackColor = Color.FromArgb(33, 150, 243),
+                        ForeColor = Color.White,
+                        FlatStyle = FlatStyle.Flat,
+                        Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                        Location = new Point(orderPanel.Width - 130, 55),
+                        Size = new Size(110, 40),
+                        Tag = order,
+                        Cursor = Cursors.Hand
+                    };
+                    btnOnWay.FlatAppearance.BorderSize = 0;
+                    btnOnWay.MouseEnter += (s, e) => btnOnWay.BackColor = Color.FromArgb(25, 118, 210);
+                    btnOnWay.MouseLeave += (s, e) => btnOnWay.BackColor = Color.FromArgb(33, 150, 243);
+                    btnOnWay.Click += (s, e) =>
+                    {
+                        if (MessageBox.Show($"Mark order #{order.OrderId} as 'On the Way'?", "Confirm",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            order.Stage = "On the Way";
+                            order.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order is on the way by rider {currentRider}");
+                            RefreshOrders();
+                        }
+                    };
+                    orderPanel.Controls.Add(btnOnWay);
+                }
+                else if (order.Stage == "On the Way")
+                {
+                    Button btnDelivered = new Button
+                    {
+                        Text = "COMPLETE ORDER",
+                        BackColor = Color.FromArgb(76, 175, 80),
+                        ForeColor = Color.White,
+                        FlatStyle = FlatStyle.Flat,
+                        Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                        Location = new Point(orderPanel.Width - 130, 55),
+                        Size = new Size(110, 40),
+                        Tag = order,
+                        Cursor = Cursors.Hand
+                    };
+                    btnDelivered.FlatAppearance.BorderSize = 0;
+                    btnDelivered.MouseEnter += (s, e) => btnDelivered.BackColor = Color.FromArgb(56, 142, 60);
+                    btnDelivered.MouseLeave += (s, e) => btnDelivered.BackColor = Color.FromArgb(76, 175, 80);
+                    btnDelivered.Click += (s, e) =>
+                    {
+                        if (MessageBox.Show($"Mark order #{order.OrderId} as Delivered?", "Confirm Completion",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            order.Stage = "Delivered";
+                            order.HistoryLog.Add($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - Order delivered by rider {currentRider}");
+                            RefreshOrders();
+                        }
+                    };
+                    orderPanel.Controls.Add(btnDelivered);
+                }
+                else if (order.Stage == "Delivered")
+                {
+                    // Add a checkmark icon or completed badge
+                    Label lblCompleted = new Label
+                    {
+                        Text = "COMPLETED",
+                        Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold),
+                        ForeColor = Color.FromArgb(76, 175, 80),
+                        TextAlign = ContentAlignment.MiddleCenter,
+                        Location = new Point(orderPanel.Width - 130, 60),
+                        Size = new Size(110, 30),
+                        AutoSize = false
+                    };
+                    orderPanel.Controls.Add(lblCompleted);
+                }
             }
 
             targetPanel.Controls.Add(orderPanel);
@@ -238,5 +342,12 @@ namespace LogIn1
         {
 
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
     }
 }
