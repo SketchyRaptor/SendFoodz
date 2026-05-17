@@ -48,7 +48,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblTitle.Location = new System.Drawing.Point(178, 45);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(309, 48);
+            this.lblTitle.Size = new System.Drawing.Size(260, 41);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "SendFoodz Login";
             // 
@@ -59,7 +59,7 @@
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(51, 171);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 20);
+            this.lblUsername.Size = new System.Drawing.Size(73, 17);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Username";
             // 
@@ -70,7 +70,7 @@
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(51, 264);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.Size = new System.Drawing.Size(69, 17);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
@@ -80,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Location = new System.Drawing.Point(54, 193);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(369, 26);
+            this.txtUsername.Size = new System.Drawing.Size(369, 22);
             this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
@@ -89,7 +89,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Location = new System.Drawing.Point(55, 287);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(369, 26);
+            this.txtPassword.Size = new System.Drawing.Size(369, 22);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -117,7 +117,7 @@
             this.chkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkShowPassword.Location = new System.Drawing.Point(55, 319);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(148, 24);
+            this.chkShowPassword.Size = new System.Drawing.Size(129, 21);
             this.chkShowPassword.TabIndex = 6;
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.UseVisualStyleBackColor = false;
@@ -132,7 +132,7 @@
             this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.linkRegister.Location = new System.Drawing.Point(195, 437);
             this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(151, 22);
+            this.linkRegister.Size = new System.Drawing.Size(126, 18);
             this.linkRegister.TabIndex = 7;
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "REGISTER NOW";
@@ -153,7 +153,7 @@
             this.panel1.Controls.Add(this.chkShowPassword);
             this.panel1.Controls.Add(this.linkRegister);
             this.panel1.Controls.Add(this.lblPassword);
-            this.panel1.Location = new System.Drawing.Point(695, 79);
+            this.panel1.Location = new System.Drawing.Point(752, 72);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(469, 524);
             this.panel1.TabIndex = 8;
@@ -176,23 +176,22 @@
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(183, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 25);
+            this.label1.Size = new System.Drawing.Size(224, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Fast and Easy Food Delivery";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(-8, -6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(585, 721);
+            this.panel2.Size = new System.Drawing.Size(691, 721);
             this.panel2.TabIndex = 9;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label5);
@@ -201,7 +200,7 @@
             this.panel3.Controls.Add(this.btnRight);
             this.panel3.Controls.Add(this.btnLeft);
             this.panel3.Controls.Add(this.pictureBoxScroll);
-            this.panel3.Location = new System.Drawing.Point(47, 55);
+            this.panel3.Location = new System.Drawing.Point(112, 55);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(504, 562);
             this.panel3.TabIndex = 7;
@@ -209,12 +208,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(68, 163);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(46, 163);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(489, 40);
+            this.label4.Size = new System.Drawing.Size(411, 36);
             this.label4.TabIndex = 5;
             this.label4.Text = " Your Food Delivery Partner";
             // 
@@ -222,10 +221,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(117, 484);
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(89, 484);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(437, 40);
+            this.label5.Size = new System.Drawing.Size(363, 36);
             this.label5.TabIndex = 6;
             this.label5.Text = "Fast. Fresh. Delivered.   ";
             // 
@@ -233,10 +232,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(153, 95);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(141, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 40);
+            this.label3.Size = new System.Drawing.Size(208, 36);
             this.label3.TabIndex = 4;
             this.label3.Text = "SENDFOODZ";
             // 
@@ -244,41 +243,43 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(143, 29);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(134, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 40);
+            this.label2.Size = new System.Drawing.Size(233, 36);
             this.label2.TabIndex = 3;
             this.label2.Text = "Welcome Back!";
             // 
             // btnRight
             // 
+            this.btnRight.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRight.ForeColor = System.Drawing.Color.Red;
+            this.btnRight.ForeColor = System.Drawing.Color.OrangeRed;
             this.btnRight.Location = new System.Drawing.Point(427, 328);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(56, 54);
             this.btnRight.TabIndex = 2;
             this.btnRight.Text = "▶";
-            this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.UseVisualStyleBackColor = false;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // btnLeft
             // 
+            this.btnLeft.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeft.ForeColor = System.Drawing.Color.Red;
+            this.btnLeft.ForeColor = System.Drawing.Color.OrangeRed;
             this.btnLeft.Location = new System.Drawing.Point(18, 328);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(56, 54);
             this.btnLeft.TabIndex = 1;
             this.btnLeft.Text = "◀";
-            this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.UseVisualStyleBackColor = false;
             this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click_1);
             // 
             // pictureBoxScroll
             // 
             this.pictureBoxScroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxScroll.Location = new System.Drawing.Point(84, 250);
+            this.pictureBoxScroll.Location = new System.Drawing.Point(86, 250);
             this.pictureBoxScroll.Name = "pictureBoxScroll";
             this.pictureBoxScroll.Size = new System.Drawing.Size(330, 214);
             this.pictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -291,6 +292,7 @@
             this.ClientSize = new System.Drawing.Size(1344, 712);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
             this.Text = "SendFoodz Login";
             this.Load += new System.EventHandler(this.Form1_Load);
