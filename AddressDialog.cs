@@ -110,7 +110,7 @@ namespace LogIn1
                 btnOk = new Button
                 {
                     Text = "CONFIRM ADDRESS",
-                    DialogResult = DialogResult.OK,
+                    
                     Location = new System.Drawing.Point(150, 240),
                     Size = new System.Drawing.Size(130, 40),
                     BackColor = System.Drawing.Color.FromArgb(76, 175, 80),
@@ -119,7 +119,7 @@ namespace LogIn1
                     Font = new System.Drawing.Font("Segoe UI", 10, System.Drawing.FontStyle.Bold)
                 };
                 btnOk.FlatAppearance.BorderSize = 0;
-                btnOk.Click += (s, e) => ValidateAndSetAddress();
+                btnOk.Click += BtnOk_Click;
 
                 btnCancel = new Button
                 {
@@ -149,27 +149,33 @@ namespace LogIn1
                 Controls.Add(btnCancel);
             }
 
-            private void ValidateAndSetAddress()
+            private void BtnOk_Click(object sender, EventArgs e)
             {
+                // Validate Street Address
                 if (string.IsNullOrWhiteSpace(txtStreet.Text))
                 {
-                    MessageBox.Show("Please enter your street address.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please enter your street address.", "Missing Information",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtStreet.Focus();
-                    return;
+                    return; // STOP - don't close dialog
                 }
 
+                // Validate Barangay
                 if (string.IsNullOrWhiteSpace(txtBarangay.Text))
                 {
-                    MessageBox.Show("Please enter your barangay.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please enter your barangay.", "Missing Information",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtBarangay.Focus();
-                    return;
+                    return; // STOP - don't close dialog
                 }
 
+                // Validate City
                 if (string.IsNullOrWhiteSpace(txtCity.Text))
                 {
-                    MessageBox.Show("Please enter your city/municipality.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please enter your city/municipality.", "Missing Information",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtCity.Focus();
-                    return;
+                    return; // STOP - don't close dialog
                 }
 
                 // Build complete address
@@ -180,6 +186,7 @@ namespace LogIn1
                     DeliveryAddress += $" (Near: {txtAddress.Text})";
                 }
 
+                // ONLY close and return OK if validation passed
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
